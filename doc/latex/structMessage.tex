@@ -1,0 +1,103 @@
+\hypertarget{structMessage}{}\section{Message Struct Reference}
+\label{structMessage}\index{Message@{Message}}
+
+
+struct that embeds data related to the message and envelope  
+
+
+
+
+{\ttfamily \#include $<$communicate.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structMessage_a9d9fb4752c49738110413a6c2c02ab2d}{print}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{structMessage_a66dd9a1c2793e7f4f5718b40eaa8f99a}{count}}
+\item 
+int \mbox{\hyperlink{structMessage_ab84b0b508c7dd4e3852ea4f12b4afe07}{tag}}
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{structMessage_a377ce65ee6a414cb9ff14c344b34eda7}{sender}}
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{structMessage_a294808f8950df933fc36bf178f0b0608}{reciever}}
+\item 
+void $\ast$ \mbox{\hyperlink{structMessage_abb937f76a19076be9c3ba4349db00707}{buf}}
+\item 
+M\+P\+I\+\_\+\+Datatype \mbox{\hyperlink{structMessage_a5b21bf981f0142f06d9b3193d1505057}{datatype}}
+\item 
+M\+P\+I\+\_\+\+Status \mbox{\hyperlink{structMessage_a45010e58ede78479ac2d94b99573cd2f}{status}}
+\item 
+M\+P\+I\+\_\+\+Request \mbox{\hyperlink{structMessage_a05ea0926cf9173c46d2284492530095a}{request}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+struct that embeds data related to the message and envelope 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structMessage_a9d9fb4752c49738110413a6c2c02ab2d}\label{structMessage_a9d9fb4752c49738110413a6c2c02ab2d}} 
+\index{Message@{Message}!print@{print}}
+\index{print@{print}!Message@{Message}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Message\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structMessage_abb937f76a19076be9c3ba4349db00707}\label{structMessage_abb937f76a19076be9c3ba4349db00707}} 
+\index{Message@{Message}!buf@{buf}}
+\index{buf@{buf}!Message@{Message}}
+\subsubsection{\texorpdfstring{buf}{buf}}
+{\footnotesize\ttfamily void$\ast$ Message\+::buf}
+
+pointer to the buffer of the data \mbox{\Hypertarget{structMessage_a66dd9a1c2793e7f4f5718b40eaa8f99a}\label{structMessage_a66dd9a1c2793e7f4f5718b40eaa8f99a}} 
+\index{Message@{Message}!count@{count}}
+\index{count@{count}!Message@{Message}}
+\subsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} Message\+::count}
+
+count of the message \mbox{\Hypertarget{structMessage_a5b21bf981f0142f06d9b3193d1505057}\label{structMessage_a5b21bf981f0142f06d9b3193d1505057}} 
+\index{Message@{Message}!datatype@{datatype}}
+\index{datatype@{datatype}!Message@{Message}}
+\subsubsection{\texorpdfstring{datatype}{datatype}}
+{\footnotesize\ttfamily M\+P\+I\+\_\+\+Datatype Message\+::datatype}
+
+\mbox{\Hypertarget{structMessage_a294808f8950df933fc36bf178f0b0608}\label{structMessage_a294808f8950df933fc36bf178f0b0608}} 
+\index{Message@{Message}!reciever@{reciever}}
+\index{reciever@{reciever}!Message@{Message}}
+\subsubsection{\texorpdfstring{reciever}{reciever}}
+{\footnotesize\ttfamily \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} Message\+::reciever}
+
+who is the destination \mbox{\Hypertarget{structMessage_a05ea0926cf9173c46d2284492530095a}\label{structMessage_a05ea0926cf9173c46d2284492530095a}} 
+\index{Message@{Message}!request@{request}}
+\index{request@{request}!Message@{Message}}
+\subsubsection{\texorpdfstring{request}{request}}
+{\footnotesize\ttfamily M\+P\+I\+\_\+\+Request Message\+::request}
+
+\mbox{\Hypertarget{structMessage_a377ce65ee6a414cb9ff14c344b34eda7}\label{structMessage_a377ce65ee6a414cb9ff14c344b34eda7}} 
+\index{Message@{Message}!sender@{sender}}
+\index{sender@{sender}!Message@{Message}}
+\subsubsection{\texorpdfstring{sender}{sender}}
+{\footnotesize\ttfamily \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} Message\+::sender}
+
+who is sending \mbox{\Hypertarget{structMessage_a45010e58ede78479ac2d94b99573cd2f}\label{structMessage_a45010e58ede78479ac2d94b99573cd2f}} 
+\index{Message@{Message}!status@{status}}
+\index{status@{status}!Message@{Message}}
+\subsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily M\+P\+I\+\_\+\+Status Message\+::status}
+
+\mbox{\Hypertarget{structMessage_ab84b0b508c7dd4e3852ea4f12b4afe07}\label{structMessage_ab84b0b508c7dd4e3852ea4f12b4afe07}} 
+\index{Message@{Message}!tag@{tag}}
+\index{tag@{tag}!Message@{Message}}
+\subsubsection{\texorpdfstring{tag}{tag}}
+{\footnotesize\ttfamily int Message\+::tag}
+
+tag of the message 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/\mbox{\hyperlink{communicate_8h}{communicate.\+h}}\end{DoxyCompactItemize}

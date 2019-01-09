@@ -1,0 +1,830 @@
+\hypertarget{classTree}{}\section{Tree$<$ N, value $>$ Class Template Reference}
+\label{classTree}\index{Tree$<$ N, value $>$@{Tree$<$ N, value $>$}}
+
+
+This Class Generates a 4\+:1 balancerd A\+MR mesh.  
+
+
+
+
+{\ttfamily \#include $<$tree.\+h$>$}
+
+Inheritance diagram for Tree$<$ N, value $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTree}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTree_afd632b8d5a32c34865a305830558e256}{Tree}} (\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$length, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$coords, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nx, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} ny, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nz)
+\item 
+\mbox{\hyperlink{classTree_a6a43d80aaf3b7949cc412683161ef099}{Tree}} (\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$length, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$coords)
+\item 
+\mbox{\hyperlink{classTree_a1435fce46bded38e5de4b1d5a1e1aca2}{Tree}} ()
+\item 
+void \mbox{\hyperlink{classTree_a56922413af6789f6ca5f64e110dc269b}{construct}} (\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$length, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$coords, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nx, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} ny, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nz)
+\item 
+virtual void \mbox{\hyperlink{classTree_a01f065cafedac5e2845e9d17bf87b783}{level}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$level)
+\item 
+void \mbox{\hyperlink{classTree_aea583de3932917fd2cfbcd2d09318363}{centroid}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$xyz)
+\item 
+void \mbox{\hyperlink{classTree_a9be1d9b3344d8c7300bc600e4d959ef1}{enclosing\+Box}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$X)
+\item 
+virtual \mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$ N, value $>$\+::iterator \mbox{\hyperlink{classTree_aa9a32f0e006ee027c037669b8b1c7d01}{begin}} ()
+\item 
+virtual \mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$ N, value $>$\+::iterator \mbox{\hyperlink{classTree_a780c144c3fa4f648e7c616d7010721b0}{end}} ()
+\item 
+virtual \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree_a8af31c93aa821f0d853e920bcba1829a}{size}} ()
+\item 
+void \mbox{\hyperlink{classTree_aca5c23bba3aa776b573e4f81d3ada031}{reserve}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$reservedsize)
+\item 
+void \mbox{\hyperlink{classTree_a33f60f27d0cf871b68bf2ed82638d1c7}{siblings}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} mylevel, \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ $\ast$sibkey)
+\item 
+void \mbox{\hyperlink{classTree_af2b416c08ae9132bfd466fe3fa288033}{refine}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key)
+\item 
+void \mbox{\hyperlink{classTree_ab570c49c859bb12ab22f29eb1fb51e0f}{derefine}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key)
+\item 
+void \mbox{\hyperlink{classTree_a4b8830fdf12cdd981a853937b6289816}{refine\+Refine\+List}} ()
+\item 
+void \mbox{\hyperlink{classTree_a44a82b0e29d139138605cd55427bb0bd}{refine\+Refine\+List}} (\mbox{\hyperlink{definitions_8h_a55821d7929f3f16aaf1466129c209492}{bitvector}}$<$ N $>$ \&V)
+\item 
+void \mbox{\hyperlink{classTree_a79d852515f810c7d67d3b8f7d157a03b}{four\+To\+OneP}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} istart, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} iend)
+\item 
+void \mbox{\hyperlink{classTree_a5e5fe24ceea87aeaa4931eb770e63484}{refine\+Refine\+List}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} istart, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} iend)
+\item 
+void \mbox{\hyperlink{classTree_a645682dbe12c75b89752e94b4c13faa4}{four\+To\+One}} ()
+\item 
+void \mbox{\hyperlink{classTree_a272d3af67b3ab350755281bba8d4e18c}{find\+Flip\+Level}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$mylevel, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$changedirectionlevel, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$direction)
+\item 
+void \mbox{\hyperlink{classTree_add6b161eec89fc2a372f3e2f46862a98}{flip\+For\+Nbr}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ $\ast$key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$mylevel, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$changedirectionlevel, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$direction)
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree_a4bc3620d378608937e528270745f435e}{Is\+In\+Vector\+List}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key)
+\item 
+void \mbox{\hyperlink{classTree_a87d766216a59c8c77207f0fa2d093676}{add\+To\+List}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key)
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree_a5304383e6a6fea724e6ad4c8f5c4b754}{count}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key)
+\item 
+void \mbox{\hyperlink{classTree_a4527b5986587bad066e10ea733c1bc95}{add\+To\+Derefine\+List}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key)
+\begin{DoxyCompactList}\small\item\em If any of the siblings are listed in the dereffinement do not add to the list as derefining one child means removing all the siblings. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTree_a09d2a574f82bfd4e8f7974a6a3fda540}{derefine\+Derefine\+List}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nlevel)
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree_a2ef8077c21a8972b1ea126ec2fb9d4a5}{is\+Inside\+Solid}} (const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key, const \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$geom\+\_\+xyz, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} n)
+\item 
+virtual \mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$ N, value $>$\+::iterator \mbox{\hyperlink{classTree_a8337d6639f90ef96e4d42e1cbfab61dd}{find}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key)
+\item 
+void \mbox{\hyperlink{classTree_a5636d1c76405db54820d900909161987}{insert\+Key}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key)
+\item 
+void \mbox{\hyperlink{classTree_a799cfd84de5609b6a89284f116f03cfd}{convert\+Stl2\+Morton}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} geom\+\_\+size, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$geom\+\_\+xyz)
+\item 
+void \mbox{\hyperlink{classTree_a9ba1d0e46c90f677fb33480f3061624b}{push\+To\+Refinelist}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree_a01f065cafedac5e2845e9d17bf87b783}{level}})
+\item 
+bool \mbox{\hyperlink{classTree_a48d8a704bb776cb9720e53b4e849abc5}{is\+Boundary}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&key)
+\item 
+void \mbox{\hyperlink{classTree_afe37f37ae3c392c4df2abdf07dd7c5a3}{extract\+Boundary}} ()
+\item 
+void \mbox{\hyperlink{classTree_affd94b8b250ab921a02f987977c0b14c}{get\+Directions}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&key, vector$<$ \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \&directions)
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree_a214243106c17c81d193834cfeb7dfd85}{refine\+List\+Size}} ()
+\item 
+void \mbox{\hyperlink{classTree_ad047a737bb54fe039333c284f80994df}{clear\+Refine\+List}} ()
+\item 
+void \mbox{\hyperlink{classTree_a9e107129872bf20de6ea619136a74929}{extract\+BoundaryP}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} istart, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} iend)
+\item 
+bool \mbox{\hyperlink{classTree_af672673619621aa27e5e0c35dd3449d2}{is\+In\+Mesh\+List}} (const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&key)
+\item 
+bool \mbox{\hyperlink{classTree_a78d174e942a78fa20ac98db8c98ae6be}{is\+In\+Refine\+List}} (const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&key)
+\item 
+void \mbox{\hyperlink{classTree_abe71f9daa0c90b01a9144ade766c500f}{construct\+Higher\+Level\+Nbrs}} (const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&key, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&keylevel, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&direction, \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ $\ast$nbr)
+\item 
+void \mbox{\hyperlink{classTree_a76dbe79f57a7f640a6427f4bb4c4adef}{print\+Mesh}} ()
+\item 
+bool \mbox{\hyperlink{classTree_a1fc56044946bc23f6c31c103c30d25fa}{is\+Boundary}} (const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} direction)
+\item 
+std\+::pair$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$ \mbox{\hyperlink{classTree_ae4cedc682194265e242bc37bc3df1386}{read\+Refine\+List}} (typename std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator it)
+\item 
+\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \mbox{\hyperlink{classTree_acc8f2387fd43e2d148c7a800eddd0c31}{read\+Derefine\+List}} (typename std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator it)
+\item 
+void \mbox{\hyperlink{classTree_a7c243257bc4cbe0cec0d5b1a2098782c}{get\+Key}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} i, \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&key)
+\item 
+void \mbox{\hyperlink{classTree_a2c51dee6b6d3a07a38fbd465adab62f8}{clear\+Morton\+S\+TL}} ()
+\item 
+void \mbox{\hyperlink{classTree_a017dbf01d574294edbd8e9003e8d0002}{retain\+Four\+To\+One}} ()
+\item 
+void \mbox{\hyperlink{classTree_a69539d7a5eb07c519460846207b50ae8}{remove\+From\+Derefine\+List}} (typename std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator it)
+\item 
+unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator \mbox{\hyperlink{classTree_aba8489b0b3498e5995e1ab0fc6a7fbab}{Dbegin}} ()
+\item 
+unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator \mbox{\hyperlink{classTree_a89894433bb64a326f411f328890b187a}{Dend}} ()
+\item 
+void \mbox{\hyperlink{classTree_ac151fd0d1ed04e995d03d3cc6b5f7237}{derefine\+Derefine\+List}} ()
+\item 
+void \mbox{\hyperlink{classTree_a3dab87d8315821f5ee2cc20a1b80c393}{clear\+Mesh}} ()
+\item 
+void \mbox{\hyperlink{classTree_a52c75138e39fc5ee1cb034b3ef3d9b97}{push\+To\+Derefinelist}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nlevel)
+\item 
+unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator \mbox{\hyperlink{classTree_aac90381448bee888a44fb8089023d0d8}{Rbegin}} ()
+\item 
+unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator \mbox{\hyperlink{classTree_aa3414a027171fb07f8f4b9acb0699d9a}{Rend}} ()
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator \mbox{\hyperlink{classTree_a7844a0ee00798d6058e7a741cfe0e85b}{find\+In\+Derefine}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key)
+\item 
+void \mbox{\hyperlink{classTree_ad5d7ea8995c06e23b58f1ba00403427c}{morton\+S\+T\+Lclear}} ()
+\item 
+void \mbox{\hyperlink{classTree_a77e16d7a249bca09cf3deff800b85789}{flip\+Refine\+Elem\+Tag}} (typename std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator it)
+\item 
+void \mbox{\hyperlink{classTree_aa07840353d0eb24fe3af3ddf348f3378}{refinelist\+Reset}} ()
+\item 
+void \mbox{\hyperlink{classTree_ab93adb07d37664f0e359eb8ea9cf56d1}{construct\+Nonlocal\+Higher\+Level\+Nbrs}} (const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&key, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&keylevel, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&direction, \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ $\ast$nbr)
+\item 
+void \mbox{\hyperlink{classTree_a9e11471977b8d0079c204b858357f339}{insert\+Seed}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&key)
+\item 
+void \mbox{\hyperlink{classTree_acbedf93a6977d60abc4f08c789c7c30e}{insert\+Nbrs}} (vector$<$ int $>$ \&Nbrs)
+\item 
+void \mbox{\hyperlink{classTree_a49dcce2706c8e330950ac362826c3a9d}{enclosing\+Box\+Fixed\+Level}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} mylevel, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$X)
+\item 
+void \mbox{\hyperlink{classTree_a50c5721c4b9535029e4700419bec234c}{centroid\+Fixed\+Level}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} mylevel, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$xyz)
+\item 
+virtual void \mbox{\hyperlink{classTree_a945d137d27bb55d9feb5762ac821572a}{convert\+Coord\+To\+Morton}} (\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$xyz, \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&key)
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator \mbox{\hyperlink{classTree_a9462adc7e7806404cc1b75d9a26894ae}{find\+In\+List}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key)
+\item 
+\mbox{\hyperlink{classTree_afcec6e88f6434550c3abf3185a25ff53}{$\sim$\+Tree}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{definitions_8h_a55821d7929f3f16aaf1466129c209492}{bitvector}}$<$ N $>$ \mbox{\hyperlink{classTree_aa9c837fabf42230cfd53775130886cc6}{boundarylist}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} \mbox{\hyperlink{classTree_a6dd200497bd886db369d621cc05af09f}{ancestorlength}} \mbox{[}3\mbox{]}
+\item 
+\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} \mbox{\hyperlink{classTree_a2199b0f2221e9bac89bbf57ac1fef24e}{ancestorcoords}} \mbox{[}3\mbox{]}
+\item 
+\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \mbox{\hyperlink{classTree_a8b6e0e406bcbfc2b8e1598cfc967e6c8}{ancestorkey}} = 0
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree_a18a47db1dd6763090994bfe28d89b8f6}{npx}}
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree_af436baa75e35a4786a377b6fe237c5e0}{npy}}
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree_a0b132f3e84c33e27e1f78f0542081e7b}{npz}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$ N, value $>$ \mbox{\hyperlink{classTree_a2baee1e4878452eac675671775360145}{mesh}}
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$ \mbox{\hyperlink{classTree_a2fbb2b9ed44f73aa10192eab2a9d126b}{refinelist}}
+\item 
+\mbox{\hyperlink{definitions_8h_a55821d7929f3f16aaf1466129c209492}{bitvector}}$<$ N $>$ \mbox{\hyperlink{classTree_ab97dba8fe7958a363ff7eac2f8199dba}{morton\+S\+TL}}
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$ \mbox{\hyperlink{classTree_acfb17b257f964def045244fbd73f8c6c}{derefinelist}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$size\+\_\+t N1, typename value2 $>$ }\\class \mbox{\hyperlink{classTree_ab87a301be23011123f58ee948a55b2d9}{Hdf5\+Xmf}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$size\+\_\+t N, typename value$>$\newline
+class Tree$<$ N, value $>$}
+
+This Class Generates a 4\+:1 balancerd A\+MR mesh. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTree_afd632b8d5a32c34865a305830558e256}\label{classTree_afd632b8d5a32c34865a305830558e256}} 
+\index{Tree@{Tree}!Tree@{Tree}}
+\index{Tree@{Tree}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{Tree()}{Tree()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::\mbox{\hyperlink{classTree}{Tree}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{length,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{coords,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nx,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{ny,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nz }\end{DoxyParamCaption})}
+
+constructor \mbox{\Hypertarget{classTree_a6a43d80aaf3b7949cc412683161ef099}\label{classTree_a6a43d80aaf3b7949cc412683161ef099}} 
+\index{Tree@{Tree}!Tree@{Tree}}
+\index{Tree@{Tree}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{Tree()}{Tree()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::\mbox{\hyperlink{classTree}{Tree}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{length,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{coords }\end{DoxyParamCaption})}
+
+constructor \mbox{\Hypertarget{classTree_a1435fce46bded38e5de4b1d5a1e1aca2}\label{classTree_a1435fce46bded38e5de4b1d5a1e1aca2}} 
+\index{Tree@{Tree}!Tree@{Tree}}
+\index{Tree@{Tree}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{Tree()}{Tree()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::\mbox{\hyperlink{classTree}{Tree}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTree_afcec6e88f6434550c3abf3185a25ff53}\label{classTree_afcec6e88f6434550c3abf3185a25ff53}} 
+\index{Tree@{Tree}!````~Tree@{$\sim$\+Tree}}
+\index{````~Tree@{$\sim$\+Tree}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{$\sim$\+Tree()}{~Tree()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::$\sim$\mbox{\hyperlink{classTree}{Tree}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor of the class, it frees the memeory pointed by pointer in the hashmap value if allocated 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTree_a4527b5986587bad066e10ea733c1bc95}\label{classTree_a4527b5986587bad066e10ea733c1bc95}} 
+\index{Tree@{Tree}!add\+To\+Derefine\+List@{add\+To\+Derefine\+List}}
+\index{add\+To\+Derefine\+List@{add\+To\+Derefine\+List}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{add\+To\+Derefine\+List()}{addToDerefineList()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::add\+To\+Derefine\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key }\end{DoxyParamCaption})}
+
+
+
+If any of the siblings are listed in the dereffinement do not add to the list as derefining one child means removing all the siblings. 
+
+adds the element to derefinelist \mbox{\Hypertarget{classTree_a87d766216a59c8c77207f0fa2d093676}\label{classTree_a87d766216a59c8c77207f0fa2d093676}} 
+\index{Tree@{Tree}!add\+To\+List@{add\+To\+List}}
+\index{add\+To\+List@{add\+To\+List}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{add\+To\+List()}{addToList()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::add\+To\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key }\end{DoxyParamCaption})}
+
+adds element to refinelist \mbox{\Hypertarget{classTree_aa9a32f0e006ee027c037669b8b1c7d01}\label{classTree_aa9a32f0e006ee027c037669b8b1c7d01}} 
+\index{Tree@{Tree}!begin@{begin}}
+\index{begin@{begin}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$ N, value $>$\+::iterator \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+iterator returning the first object 
+
+Reimplemented in \mbox{\hyperlink{classFullTree_af2fbecbd352a329634a6fdc35f519968}{Full\+Tree$<$ N, value $>$}}.
+
+\mbox{\Hypertarget{classTree_aea583de3932917fd2cfbcd2d09318363}\label{classTree_aea583de3932917fd2cfbcd2d09318363}} 
+\index{Tree@{Tree}!centroid@{centroid}}
+\index{centroid@{centroid}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{centroid()}{centroid()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::centroid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{xyz }\end{DoxyParamCaption})}
+
+calculates the centroid of the cube given the morton key of the element \mbox{\Hypertarget{classTree_a50c5721c4b9535029e4700419bec234c}\label{classTree_a50c5721c4b9535029e4700419bec234c}} 
+\index{Tree@{Tree}!centroid\+Fixed\+Level@{centroid\+Fixed\+Level}}
+\index{centroid\+Fixed\+Level@{centroid\+Fixed\+Level}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{centroid\+Fixed\+Level()}{centroidFixedLevel()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::centroid\+Fixed\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{mylevel,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{xyz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a3dab87d8315821f5ee2cc20a1b80c393}\label{classTree_a3dab87d8315821f5ee2cc20a1b80c393}} 
+\index{Tree@{Tree}!clear\+Mesh@{clear\+Mesh}}
+\index{clear\+Mesh@{clear\+Mesh}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{clear\+Mesh()}{clearMesh()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::clear\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a2c51dee6b6d3a07a38fbd465adab62f8}\label{classTree_a2c51dee6b6d3a07a38fbd465adab62f8}} 
+\index{Tree@{Tree}!clear\+Morton\+S\+TL@{clear\+Morton\+S\+TL}}
+\index{clear\+Morton\+S\+TL@{clear\+Morton\+S\+TL}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{clear\+Morton\+S\+T\+L()}{clearMortonSTL()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::clear\+Morton\+S\+TL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_ad047a737bb54fe039333c284f80994df}\label{classTree_ad047a737bb54fe039333c284f80994df}} 
+\index{Tree@{Tree}!clear\+Refine\+List@{clear\+Refine\+List}}
+\index{clear\+Refine\+List@{clear\+Refine\+List}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{clear\+Refine\+List()}{clearRefineList()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::clear\+Refine\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a56922413af6789f6ca5f64e110dc269b}\label{classTree_a56922413af6789f6ca5f64e110dc269b}} 
+\index{Tree@{Tree}!construct@{construct}}
+\index{construct@{construct}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{construct()}{construct()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{length,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{coords,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nx,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{ny,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nz }\end{DoxyParamCaption})}
+
+need to initialize inside forest \mbox{\Hypertarget{classTree_abe71f9daa0c90b01a9144ade766c500f}\label{classTree_abe71f9daa0c90b01a9144ade766c500f}} 
+\index{Tree@{Tree}!construct\+Higher\+Level\+Nbrs@{construct\+Higher\+Level\+Nbrs}}
+\index{construct\+Higher\+Level\+Nbrs@{construct\+Higher\+Level\+Nbrs}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{construct\+Higher\+Level\+Nbrs()}{constructHigherLevelNbrs()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::construct\+Higher\+Level\+Nbrs (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&}]{key,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&}]{keylevel,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&}]{direction,  }\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ $\ast$}]{nbr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_ab93adb07d37664f0e359eb8ea9cf56d1}\label{classTree_ab93adb07d37664f0e359eb8ea9cf56d1}} 
+\index{Tree@{Tree}!construct\+Nonlocal\+Higher\+Level\+Nbrs@{construct\+Nonlocal\+Higher\+Level\+Nbrs}}
+\index{construct\+Nonlocal\+Higher\+Level\+Nbrs@{construct\+Nonlocal\+Higher\+Level\+Nbrs}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{construct\+Nonlocal\+Higher\+Level\+Nbrs()}{constructNonlocalHigherLevelNbrs()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::construct\+Nonlocal\+Higher\+Level\+Nbrs (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&}]{key,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&}]{keylevel,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&}]{direction,  }\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ $\ast$}]{nbr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a945d137d27bb55d9feb5762ac821572a}\label{classTree_a945d137d27bb55d9feb5762ac821572a}} 
+\index{Tree@{Tree}!convert\+Coord\+To\+Morton@{convert\+Coord\+To\+Morton}}
+\index{convert\+Coord\+To\+Morton@{convert\+Coord\+To\+Morton}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{convert\+Coord\+To\+Morton()}{convertCoordToMorton()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::convert\+Coord\+To\+Morton (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{xyz,  }\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+converts coordinates of a point to morton code
+
+!$<$ this function is to find a value given the key 
+
+Reimplemented in \mbox{\hyperlink{classFullTree_a1b0a9b6f0f5155dd8847905ee8aa1b56}{Full\+Tree$<$ N, value $>$}}.
+
+\mbox{\Hypertarget{classTree_a799cfd84de5609b6a89284f116f03cfd}\label{classTree_a799cfd84de5609b6a89284f116f03cfd}} 
+\index{Tree@{Tree}!convert\+Stl2\+Morton@{convert\+Stl2\+Morton}}
+\index{convert\+Stl2\+Morton@{convert\+Stl2\+Morton}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{convert\+Stl2\+Morton()}{convertStl2Morton()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::convert\+Stl2\+Morton (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{geom\+\_\+size,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{geom\+\_\+xyz }\end{DoxyParamCaption})}
+
+converts stl coordinates to morton and puts them in morton S\+TL
+
+!$<$ this function is to find a value given the key \mbox{\Hypertarget{classTree_a5304383e6a6fea724e6ad4c8f5c4b754}\label{classTree_a5304383e6a6fea724e6ad4c8f5c4b754}} 
+\index{Tree@{Tree}!count@{count}}
+\index{count@{count}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key }\end{DoxyParamCaption})}
+
+counts the number of elements \mbox{\Hypertarget{classTree_aba8489b0b3498e5995e1ab0fc6a7fbab}\label{classTree_aba8489b0b3498e5995e1ab0fc6a7fbab}} 
+\index{Tree@{Tree}!Dbegin@{Dbegin}}
+\index{Dbegin@{Dbegin}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{Dbegin()}{Dbegin()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::Dbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a89894433bb64a326f411f328890b187a}\label{classTree_a89894433bb64a326f411f328890b187a}} 
+\index{Tree@{Tree}!Dend@{Dend}}
+\index{Dend@{Dend}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{Dend()}{Dend()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::Dend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_ab570c49c859bb12ab22f29eb1fb51e0f}\label{classTree_ab570c49c859bb12ab22f29eb1fb51e0f}} 
+\index{Tree@{Tree}!derefine@{derefine}}
+\index{derefine@{derefine}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{derefine()}{derefine()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::derefine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key }\end{DoxyParamCaption})}
+
+if the morton code does not exist in mesh, refinement is not permitted (derefining a nonexsiting element not permitted) Also, if any of the siblings have a higher level of refinement, derefinement is ignored
+
+$<$if the key does not exist simply igonre doing anything \mbox{\Hypertarget{classTree_a09d2a574f82bfd4e8f7974a6a3fda540}\label{classTree_a09d2a574f82bfd4e8f7974a6a3fda540}} 
+\index{Tree@{Tree}!derefine\+Derefine\+List@{derefine\+Derefine\+List}}
+\index{derefine\+Derefine\+List@{derefine\+Derefine\+List}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{derefine\+Derefine\+List()}{derefineDerefineList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::derefine\+Derefine\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nlevel }\end{DoxyParamCaption})}
+
+Derefines the mesh \mbox{\Hypertarget{classTree_ac151fd0d1ed04e995d03d3cc6b5f7237}\label{classTree_ac151fd0d1ed04e995d03d3cc6b5f7237}} 
+\index{Tree@{Tree}!derefine\+Derefine\+List@{derefine\+Derefine\+List}}
+\index{derefine\+Derefine\+List@{derefine\+Derefine\+List}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{derefine\+Derefine\+List()}{derefineDerefineList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::derefine\+Derefine\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a9be1d9b3344d8c7300bc600e4d959ef1}\label{classTree_a9be1d9b3344d8c7300bc600e4d959ef1}} 
+\index{Tree@{Tree}!enclosing\+Box@{enclosing\+Box}}
+\index{enclosing\+Box@{enclosing\+Box}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{enclosing\+Box()}{enclosingBox()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::enclosing\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{X }\end{DoxyParamCaption})}
+
+calculates the range that an element occupies in 3D space for a given Element \mbox{\Hypertarget{classTree_a49dcce2706c8e330950ac362826c3a9d}\label{classTree_a49dcce2706c8e330950ac362826c3a9d}} 
+\index{Tree@{Tree}!enclosing\+Box\+Fixed\+Level@{enclosing\+Box\+Fixed\+Level}}
+\index{enclosing\+Box\+Fixed\+Level@{enclosing\+Box\+Fixed\+Level}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{enclosing\+Box\+Fixed\+Level()}{enclosingBoxFixedLevel()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::enclosing\+Box\+Fixed\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{mylevel,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{X }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a780c144c3fa4f648e7c616d7010721b0}\label{classTree_a780c144c3fa4f648e7c616d7010721b0}} 
+\index{Tree@{Tree}!end@{end}}
+\index{end@{end}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$ N, value $>$\+::iterator \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+iterator returning the last object 
+
+Reimplemented in \mbox{\hyperlink{classFullTree_a692131b057639fecdb1934b734cff1bb}{Full\+Tree$<$ N, value $>$}}.
+
+\mbox{\Hypertarget{classTree_afe37f37ae3c392c4df2abdf07dd7c5a3}\label{classTree_afe37f37ae3c392c4df2abdf07dd7c5a3}} 
+\index{Tree@{Tree}!extract\+Boundary@{extract\+Boundary}}
+\index{extract\+Boundary@{extract\+Boundary}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{extract\+Boundary()}{extractBoundary()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::extract\+Boundary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a9e107129872bf20de6ea619136a74929}\label{classTree_a9e107129872bf20de6ea619136a74929}} 
+\index{Tree@{Tree}!extract\+BoundaryP@{extract\+BoundaryP}}
+\index{extract\+BoundaryP@{extract\+BoundaryP}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{extract\+Boundary\+P()}{extractBoundaryP()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::extract\+BoundaryP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{istart,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{iend }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a8337d6639f90ef96e4d42e1cbfab61dd}\label{classTree_a8337d6639f90ef96e4d42e1cbfab61dd}} 
+\index{Tree@{Tree}!find@{find}}
+\index{find@{find}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$ N, value $>$\+::iterator \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+this function is to find a value given the key
+
+!$<$ this function is to find a value given the key 
+
+Reimplemented in \mbox{\hyperlink{classFullTree_ad0432afb277be83e79d33e1a748648a3}{Full\+Tree$<$ N, value $>$}}.
+
+\mbox{\Hypertarget{classTree_a272d3af67b3ab350755281bba8d4e18c}\label{classTree_a272d3af67b3ab350755281bba8d4e18c}} 
+\index{Tree@{Tree}!find\+Flip\+Level@{find\+Flip\+Level}}
+\index{find\+Flip\+Level@{find\+Flip\+Level}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{find\+Flip\+Level()}{findFlipLevel()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::find\+Flip\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{mylevel,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{changedirectionlevel,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{direction }\end{DoxyParamCaption})}
+
+detects the flip level, this info used in finding nonlocal neighbors \mbox{\Hypertarget{classTree_a7844a0ee00798d6058e7a741cfe0e85b}\label{classTree_a7844a0ee00798d6058e7a741cfe0e85b}} 
+\index{Tree@{Tree}!find\+In\+Derefine@{find\+In\+Derefine}}
+\index{find\+In\+Derefine@{find\+In\+Derefine}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{find\+In\+Derefine()}{findInDerefine()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::find\+In\+Derefine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key }\end{DoxyParamCaption})}
+
+Get the iterator from derefinelist 
+\begin{DoxyParams}{Parameters}
+{\em key} & E;iminate from derefinelist \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTree_a9462adc7e7806404cc1b75d9a26894ae}\label{classTree_a9462adc7e7806404cc1b75d9a26894ae}} 
+\index{Tree@{Tree}!find\+In\+List@{find\+In\+List}}
+\index{find\+In\+List@{find\+In\+List}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{find\+In\+List()}{findInList()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::find\+In\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key }\end{DoxyParamCaption})}
+
+!$<$ this function is to find a value given the key \mbox{\Hypertarget{classTree_add6b161eec89fc2a372f3e2f46862a98}\label{classTree_add6b161eec89fc2a372f3e2f46862a98}} 
+\index{Tree@{Tree}!flip\+For\+Nbr@{flip\+For\+Nbr}}
+\index{flip\+For\+Nbr@{flip\+For\+Nbr}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{flip\+For\+Nbr()}{flipForNbr()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::flip\+For\+Nbr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ $\ast$}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{mylevel,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{changedirectionlevel,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{direction }\end{DoxyParamCaption})}
+
+perform the actual operation to identify the nonlocal nbr \mbox{\Hypertarget{classTree_a77e16d7a249bca09cf3deff800b85789}\label{classTree_a77e16d7a249bca09cf3deff800b85789}} 
+\index{Tree@{Tree}!flip\+Refine\+Elem\+Tag@{flip\+Refine\+Elem\+Tag}}
+\index{flip\+Refine\+Elem\+Tag@{flip\+Refine\+Elem\+Tag}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{flip\+Refine\+Elem\+Tag()}{flipRefineElemTag()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::flip\+Refine\+Elem\+Tag (\begin{DoxyParamCaption}\item[{typename std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator}]{it }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a645682dbe12c75b89752e94b4c13faa4}\label{classTree_a645682dbe12c75b89752e94b4c13faa4}} 
+\index{Tree@{Tree}!four\+To\+One@{four\+To\+One}}
+\index{four\+To\+One@{four\+To\+One}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{four\+To\+One()}{fourToOne()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::four\+To\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+imposes 4\+:1 balance given the list of elments to be refined in the vector refine list
+
+$<$ all we are interested is the nonlocal neighbors, i.\+e. the neighbors of the parents as siblings will have same level $<$ this approach eliminates search algorithm as now we do not have the restrictions on cutting the cube that we had in the previous approach \mbox{\Hypertarget{classTree_a79d852515f810c7d67d3b8f7d157a03b}\label{classTree_a79d852515f810c7d67d3b8f7d157a03b}} 
+\index{Tree@{Tree}!four\+To\+OneP@{four\+To\+OneP}}
+\index{four\+To\+OneP@{four\+To\+OneP}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{four\+To\+One\+P()}{fourToOneP()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::four\+To\+OneP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{istart,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{iend }\end{DoxyParamCaption})}
+
+imposes 4\+:1 balance locally for each tree, while loop is eliminated due to parallel implementation \mbox{\Hypertarget{classTree_affd94b8b250ab921a02f987977c0b14c}\label{classTree_affd94b8b250ab921a02f987977c0b14c}} 
+\index{Tree@{Tree}!get\+Directions@{get\+Directions}}
+\index{get\+Directions@{get\+Directions}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{get\+Directions()}{getDirections()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::get\+Directions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&}]{key,  }\item[{vector$<$ \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \&}]{directions }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a7c243257bc4cbe0cec0d5b1a2098782c}\label{classTree_a7c243257bc4cbe0cec0d5b1a2098782c}} 
+\index{Tree@{Tree}!get\+Key@{get\+Key}}
+\index{get\+Key@{get\+Key}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{get\+Key()}{getKey()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::get\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{i,  }\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a5636d1c76405db54820d900909161987}\label{classTree_a5636d1c76405db54820d900909161987}} 
+\index{Tree@{Tree}!insert\+Key@{insert\+Key}}
+\index{insert\+Key@{insert\+Key}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{insert\+Key()}{insertKey()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::insert\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_acbedf93a6977d60abc4f08c789c7c30e}\label{classTree_acbedf93a6977d60abc4f08c789c7c30e}} 
+\index{Tree@{Tree}!insert\+Nbrs@{insert\+Nbrs}}
+\index{insert\+Nbrs@{insert\+Nbrs}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{insert\+Nbrs()}{insertNbrs()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::insert\+Nbrs (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{Nbrs }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nbrs} & add neighbors \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTree_a9e11471977b8d0079c204b858357f339}\label{classTree_a9e11471977b8d0079c204b858357f339}} 
+\index{Tree@{Tree}!insert\+Seed@{insert\+Seed}}
+\index{insert\+Seed@{insert\+Seed}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{insert\+Seed()}{insertSeed()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::insert\+Seed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&}]{key }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Eliminate from derefinelist \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTree_a48d8a704bb776cb9720e53b4e849abc5}\label{classTree_a48d8a704bb776cb9720e53b4e849abc5}} 
+\index{Tree@{Tree}!is\+Boundary@{is\+Boundary}}
+\index{is\+Boundary@{is\+Boundary}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{is\+Boundary()}{isBoundary()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+bool \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::is\+Boundary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a1fc56044946bc23f6c31c103c30d25fa}\label{classTree_a1fc56044946bc23f6c31c103c30d25fa}} 
+\index{Tree@{Tree}!is\+Boundary@{is\+Boundary}}
+\index{is\+Boundary@{is\+Boundary}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{is\+Boundary()}{isBoundary()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+bool \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::is\+Boundary (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{direction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_af672673619621aa27e5e0c35dd3449d2}\label{classTree_af672673619621aa27e5e0c35dd3449d2}} 
+\index{Tree@{Tree}!is\+In\+Mesh\+List@{is\+In\+Mesh\+List}}
+\index{is\+In\+Mesh\+List@{is\+In\+Mesh\+List}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{is\+In\+Mesh\+List()}{isInMeshList()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+bool \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::is\+In\+Mesh\+List (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a78d174e942a78fa20ac98db8c98ae6be}\label{classTree_a78d174e942a78fa20ac98db8c98ae6be}} 
+\index{Tree@{Tree}!is\+In\+Refine\+List@{is\+In\+Refine\+List}}
+\index{is\+In\+Refine\+List@{is\+In\+Refine\+List}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{is\+In\+Refine\+List()}{isInRefineList()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+bool \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::is\+In\+Refine\+List (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a2ef8077c21a8972b1ea126ec2fb9d4a5}\label{classTree_a2ef8077c21a8972b1ea126ec2fb9d4a5}} 
+\index{Tree@{Tree}!is\+Inside\+Solid@{is\+Inside\+Solid}}
+\index{is\+Inside\+Solid@{is\+Inside\+Solid}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{is\+Inside\+Solid()}{isInsideSolid()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::is\+Inside\+Solid (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key,  }\item[{const \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{geom\+\_\+xyz,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{n }\end{DoxyParamCaption})}
+
+tags the elements if any points of the gemoetry resides in the enclosing box \mbox{\Hypertarget{classTree_a4bc3620d378608937e528270745f435e}\label{classTree_a4bc3620d378608937e528270745f435e}} 
+\index{Tree@{Tree}!Is\+In\+Vector\+List@{Is\+In\+Vector\+List}}
+\index{Is\+In\+Vector\+List@{Is\+In\+Vector\+List}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{Is\+In\+Vector\+List()}{IsInVectorList()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::Is\+In\+Vector\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key }\end{DoxyParamCaption})}
+
+checks to see if a given code is already in the list \mbox{\Hypertarget{classTree_a01f065cafedac5e2845e9d17bf87b783}\label{classTree_a01f065cafedac5e2845e9d17bf87b783}} 
+\index{Tree@{Tree}!level@{level}}
+\index{level@{level}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{level()}{level()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+obtains the level of the element from morton key to prevent unnecesary bit operation, the morton code is placed from starting from left hand side
+
+now look and see if any siblings exist 
+
+Reimplemented in \mbox{\hyperlink{classFullTree_a2aadfbda309e246642550044712f98a0}{Full\+Tree$<$ N, value $>$}}.
+
+\mbox{\Hypertarget{classTree_ad5d7ea8995c06e23b58f1ba00403427c}\label{classTree_ad5d7ea8995c06e23b58f1ba00403427c}} 
+\index{Tree@{Tree}!morton\+S\+T\+Lclear@{morton\+S\+T\+Lclear}}
+\index{morton\+S\+T\+Lclear@{morton\+S\+T\+Lclear}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{morton\+S\+T\+Lclear()}{mortonSTLclear()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::morton\+S\+T\+Lclear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a76dbe79f57a7f640a6427f4bb4c4adef}\label{classTree_a76dbe79f57a7f640a6427f4bb4c4adef}} 
+\index{Tree@{Tree}!print\+Mesh@{print\+Mesh}}
+\index{print\+Mesh@{print\+Mesh}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{print\+Mesh()}{printMesh()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::print\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a52c75138e39fc5ee1cb034b3ef3d9b97}\label{classTree_a52c75138e39fc5ee1cb034b3ef3d9b97}} 
+\index{Tree@{Tree}!push\+To\+Derefinelist@{push\+To\+Derefinelist}}
+\index{push\+To\+Derefinelist@{push\+To\+Derefinelist}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{push\+To\+Derefinelist()}{pushToDerefinelist()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::push\+To\+Derefinelist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nlevel }\end{DoxyParamCaption})}
+
+!$<$ this function is to find a value given the key \mbox{\Hypertarget{classTree_a9ba1d0e46c90f677fb33480f3061624b}\label{classTree_a9ba1d0e46c90f677fb33480f3061624b}} 
+\index{Tree@{Tree}!push\+To\+Refinelist@{push\+To\+Refinelist}}
+\index{push\+To\+Refinelist@{push\+To\+Refinelist}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{push\+To\+Refinelist()}{pushToRefinelist()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::push\+To\+Refinelist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nlevel }\end{DoxyParamCaption})}
+
+Note that for dynamic mesh we need to make sure the element exists before adding to this list
+
+!$<$ this function is to find a value given the key \mbox{\Hypertarget{classTree_aac90381448bee888a44fb8089023d0d8}\label{classTree_aac90381448bee888a44fb8089023d0d8}} 
+\index{Tree@{Tree}!Rbegin@{Rbegin}}
+\index{Rbegin@{Rbegin}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{Rbegin()}{Rbegin()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::Rbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_acc8f2387fd43e2d148c7a800eddd0c31}\label{classTree_acc8f2387fd43e2d148c7a800eddd0c31}} 
+\index{Tree@{Tree}!read\+Derefine\+List@{read\+Derefine\+List}}
+\index{read\+Derefine\+List@{read\+Derefine\+List}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{read\+Derefine\+List()}{readDerefineList()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::read\+Derefine\+List (\begin{DoxyParamCaption}\item[{typename std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator}]{it }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_ae4cedc682194265e242bc37bc3df1386}\label{classTree_ae4cedc682194265e242bc37bc3df1386}} 
+\index{Tree@{Tree}!read\+Refine\+List@{read\+Refine\+List}}
+\index{read\+Refine\+List@{read\+Refine\+List}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{read\+Refine\+List()}{readRefineList()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+std\+::pair$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$ \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::read\+Refine\+List (\begin{DoxyParamCaption}\item[{typename std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator}]{it }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_af2b416c08ae9132bfd466fe3fa288033}\label{classTree_af2b416c08ae9132bfd466fe3fa288033}} 
+\index{Tree@{Tree}!refine@{refine}}
+\index{refine@{refine}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{refine()}{refine()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::refine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key }\end{DoxyParamCaption})}
+
+perfomrs refinement for a tagged element given the Morton Key \mbox{\Hypertarget{classTree_aa07840353d0eb24fe3af3ddf348f3378}\label{classTree_aa07840353d0eb24fe3af3ddf348f3378}} 
+\index{Tree@{Tree}!refinelist\+Reset@{refinelist\+Reset}}
+\index{refinelist\+Reset@{refinelist\+Reset}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{refinelist\+Reset()}{refinelistReset()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::refinelist\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a214243106c17c81d193834cfeb7dfd85}\label{classTree_a214243106c17c81d193834cfeb7dfd85}} 
+\index{Tree@{Tree}!refine\+List\+Size@{refine\+List\+Size}}
+\index{refine\+List\+Size@{refine\+List\+Size}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{refine\+List\+Size()}{refineListSize()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::refine\+List\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a4b8830fdf12cdd981a853937b6289816}\label{classTree_a4b8830fdf12cdd981a853937b6289816}} 
+\index{Tree@{Tree}!refine\+Refine\+List@{refine\+Refine\+List}}
+\index{refine\+Refine\+List@{refine\+Refine\+List}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{refine\+Refine\+List()}{refineRefineList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::refine\+Refine\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+performs derefinement on a single element given a morton key performs the refinement \mbox{\Hypertarget{classTree_a44a82b0e29d139138605cd55427bb0bd}\label{classTree_a44a82b0e29d139138605cd55427bb0bd}} 
+\index{Tree@{Tree}!refine\+Refine\+List@{refine\+Refine\+List}}
+\index{refine\+Refine\+List@{refine\+Refine\+List}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{refine\+Refine\+List()}{refineRefineList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::refine\+Refine\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a55821d7929f3f16aaf1466129c209492}{bitvector}}$<$ N $>$ \&}]{V }\end{DoxyParamCaption})}
+
+performs the refinement \mbox{\Hypertarget{classTree_a5e5fe24ceea87aeaa4931eb770e63484}\label{classTree_a5e5fe24ceea87aeaa4931eb770e63484}} 
+\index{Tree@{Tree}!refine\+Refine\+List@{refine\+Refine\+List}}
+\index{refine\+Refine\+List@{refine\+Refine\+List}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{refine\+Refine\+List()}{refineRefineList()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::refine\+Refine\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{istart,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{iend }\end{DoxyParamCaption})}
+
+performs the refinement \mbox{\Hypertarget{classTree_a69539d7a5eb07c519460846207b50ae8}\label{classTree_a69539d7a5eb07c519460846207b50ae8}} 
+\index{Tree@{Tree}!remove\+From\+Derefine\+List@{remove\+From\+Derefine\+List}}
+\index{remove\+From\+Derefine\+List@{remove\+From\+Derefine\+List}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{remove\+From\+Derefine\+List()}{removeFromDerefineList()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::remove\+From\+Derefine\+List (\begin{DoxyParamCaption}\item[{typename std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator}]{it }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em it} & E;iminate from derefinelist \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTree_aa3414a027171fb07f8f4b9acb0699d9a}\label{classTree_aa3414a027171fb07f8f4b9acb0699d9a}} 
+\index{Tree@{Tree}!Rend@{Rend}}
+\index{Rend@{Rend}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{Rend()}{Rend()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$\+::iterator \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::Rend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_aca5c23bba3aa776b573e4f81d3ada031}\label{classTree_aca5c23bba3aa776b573e4f81d3ada031}} 
+\index{Tree@{Tree}!reserve@{reserve}}
+\index{reserve@{reserve}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{reserve()}{reserve()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::reserve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{reservedsize }\end{DoxyParamCaption})}
+
+this function reserves the memory given the reservedsize of the mesh \mbox{\Hypertarget{classTree_a017dbf01d574294edbd8e9003e8d0002}\label{classTree_a017dbf01d574294edbd8e9003e8d0002}} 
+\index{Tree@{Tree}!retain\+Four\+To\+One@{retain\+Four\+To\+One}}
+\index{retain\+Four\+To\+One@{retain\+Four\+To\+One}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{retain\+Four\+To\+One()}{retainFourToOne()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::retain\+Four\+To\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTree_a33f60f27d0cf871b68bf2ed82638d1c7}\label{classTree_a33f60f27d0cf871b68bf2ed82638d1c7}} 
+\index{Tree@{Tree}!siblings@{siblings}}
+\index{siblings@{siblings}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{siblings()}{siblings()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::siblings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{mylevel,  }\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ $\ast$}]{sibkey }\end{DoxyParamCaption})}
+
+extracts the siblings from morton code \mbox{\Hypertarget{classTree_a8af31c93aa821f0d853e920bcba1829a}\label{classTree_a8af31c93aa821f0d853e920bcba1829a}} 
+\index{Tree@{Tree}!size@{size}}
+\index{size@{size}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+returns the size of the mesh 
+
+Reimplemented in \mbox{\hyperlink{classFullTree_a13bb6b68dea0e36255dbd7b057110806}{Full\+Tree$<$ N, value $>$}}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classTree_ab87a301be23011123f58ee948a55b2d9}\label{classTree_ab87a301be23011123f58ee948a55b2d9}} 
+\index{Tree@{Tree}!Hdf5\+Xmf@{Hdf5\+Xmf}}
+\index{Hdf5\+Xmf@{Hdf5\+Xmf}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{Hdf5\+Xmf}{Hdf5Xmf}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+template$<$size\+\_\+t N1, typename value2 $>$ \\
+friend class \mbox{\hyperlink{classHdf5Xmf}{Hdf5\+Xmf}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+this is a friend class to write out in hdf5 format 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classTree_a2199b0f2221e9bac89bbf57ac1fef24e}\label{classTree_a2199b0f2221e9bac89bbf57ac1fef24e}} 
+\index{Tree@{Tree}!ancestorcoords@{ancestorcoords}}
+\index{ancestorcoords@{ancestorcoords}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{ancestorcoords}{ancestorcoords}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::ancestorcoords\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+centeroid of the of the first generation (root) element \mbox{\Hypertarget{classTree_a8b6e0e406bcbfc2b8e1598cfc967e6c8}\label{classTree_a8b6e0e406bcbfc2b8e1598cfc967e6c8}} 
+\index{Tree@{Tree}!ancestorkey@{ancestorkey}}
+\index{ancestorkey@{ancestorkey}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{ancestorkey}{ancestorkey}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$N$>$ \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::ancestorkey = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+root value is always set as 0000000000000 \mbox{\Hypertarget{classTree_a6dd200497bd886db369d621cc05af09f}\label{classTree_a6dd200497bd886db369d621cc05af09f}} 
+\index{Tree@{Tree}!ancestorlength@{ancestorlength}}
+\index{ancestorlength@{ancestorlength}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{ancestorlength}{ancestorlength}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::ancestorlength\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+original length of the first generation (root) element \mbox{\Hypertarget{classTree_aa9c837fabf42230cfd53775130886cc6}\label{classTree_aa9c837fabf42230cfd53775130886cc6}} 
+\index{Tree@{Tree}!boundarylist@{boundarylist}}
+\index{boundarylist@{boundarylist}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{boundarylist}{boundarylist}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_a55821d7929f3f16aaf1466129c209492}{bitvector}}$<$N$>$ \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::boundarylist}
+
+list of elements of refinelist that are boundary elements \mbox{\Hypertarget{classTree_acfb17b257f964def045244fbd73f8c6c}\label{classTree_acfb17b257f964def045244fbd73f8c6c}} 
+\index{Tree@{Tree}!derefinelist@{derefinelist}}
+\index{derefinelist@{derefinelist}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{derefinelist}{derefinelist}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+std\+::unordered\+\_\+map$<$\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$N$>$, int$>$ \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::derefinelist\hspace{0.3cm}{\ttfamily [private]}}
+
+list of elements tagged to be removed, due to 4\+:1 balance this listi \mbox{\Hypertarget{classTree_a2baee1e4878452eac675671775360145}\label{classTree_a2baee1e4878452eac675671775360145}} 
+\index{Tree@{Tree}!mesh@{mesh}}
+\index{mesh@{mesh}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{mesh}{mesh}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$N, value$>$ \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::mesh\hspace{0.3cm}{\ttfamily [private]}}
+
+base main container \mbox{\Hypertarget{classTree_ab97dba8fe7958a363ff7eac2f8199dba}\label{classTree_ab97dba8fe7958a363ff7eac2f8199dba}} 
+\index{Tree@{Tree}!morton\+S\+TL@{morton\+S\+TL}}
+\index{morton\+S\+TL@{morton\+S\+TL}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{morton\+S\+TL}{mortonSTL}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_a55821d7929f3f16aaf1466129c209492}{bitvector}}$<$N$>$ \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::morton\+S\+TL\hspace{0.3cm}{\ttfamily [private]}}
+
+vector to store geometric points in morton code \mbox{\Hypertarget{classTree_a18a47db1dd6763090994bfe28d89b8f6}\label{classTree_a18a47db1dd6763090994bfe28d89b8f6}} 
+\index{Tree@{Tree}!npx@{npx}}
+\index{npx@{npx}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{npx}{npx}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::npx\hspace{0.3cm}{\ttfamily [protected]}}
+
+discritization in x direction \mbox{\Hypertarget{classTree_af436baa75e35a4786a377b6fe237c5e0}\label{classTree_af436baa75e35a4786a377b6fe237c5e0}} 
+\index{Tree@{Tree}!npy@{npy}}
+\index{npy@{npy}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{npy}{npy}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::npy\hspace{0.3cm}{\ttfamily [protected]}}
+
+discretization in y direction \mbox{\Hypertarget{classTree_a0b132f3e84c33e27e1f78f0542081e7b}\label{classTree_a0b132f3e84c33e27e1f78f0542081e7b}} 
+\index{Tree@{Tree}!npz@{npz}}
+\index{npz@{npz}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{npz}{npz}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::npz\hspace{0.3cm}{\ttfamily [protected]}}
+
+discretization in y direction \mbox{\Hypertarget{classTree_a2fbb2b9ed44f73aa10192eab2a9d126b}\label{classTree_a2fbb2b9ed44f73aa10192eab2a9d126b}} 
+\index{Tree@{Tree}!refinelist@{refinelist}}
+\index{refinelist@{refinelist}!Tree@{Tree}}
+\subsubsection{\texorpdfstring{refinelist}{refinelist}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+std\+::unordered\+\_\+map$<$\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$N$>$, int$>$ \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$\+::refinelist\hspace{0.3cm}{\ttfamily [private]}}
+
+list of elements tagged to be refined 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/\mbox{\hyperlink{tree_8h}{tree.\+h}}\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/\mbox{\hyperlink{tree_8cpp}{tree.\+cpp}}\end{DoxyCompactItemize}

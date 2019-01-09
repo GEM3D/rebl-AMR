@@ -1,0 +1,198 @@
+\hypertarget{definitions_8h}{}\section{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/definitions.h File Reference}
+\label{definitions_8h}\index{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/definitions.\+h@{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/definitions.\+h}}
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$bitset$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stack$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$mpi.\+h$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include \char`\"{}zoltan.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+set$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}params.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{definitions_8h_a56920ca57918a11822f9e3ca30cdf185}{hash}}~0
+\item 
+\#define \mbox{\hyperlink{definitions_8h_a2b712df63457e13f19d605ebe22cdbd2}{nonnative}}~1 /$\ast$!\textbackslash{} default S\+TD \mbox{\hyperlink{definitions_8h_a56920ca57918a11822f9e3ca30cdf185}{hash}} and comparison functions  $\ast$/
+\item 
+\#define \mbox{\hyperlink{definitions_8h_a8d23feea868a983c8c2b661e1e16972f}{R\+ED}}~\char`\"{}\textbackslash{}033\mbox{[}01;31m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{definitions_8h_acfbc006ea433ad708fdee3e82996e721}{G\+R\+E\+EN}}~\char`\"{}\textbackslash{}033\mbox{[}22;32m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{definitions_8h_abf681265909adf3d3e8116c93c0ba179}{Y\+E\+L\+L\+OW}}~\char`\"{}\textbackslash{}033\mbox{[}22;33m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{definitions_8h_a79d10e672abb49ad63eeaa8aaef57c38}{B\+L\+UE}}~\char`\"{}\textbackslash{}033\mbox{[}22;34m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{definitions_8h_a6f699060902f800f12aaae150f3a708e}{M\+A\+G\+E\+N\+TA}}~\char`\"{}\textbackslash{}033\mbox{[}22;35m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{definitions_8h_ad243f93c16bc4c1d3e0a13b84421d760}{C\+Y\+AN}}~\char`\"{}\textbackslash{}033\mbox{[}22;36m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{definitions_8h_ab702106cf3b3e96750b6845ded4e0299}{R\+E\+S\+ET}}~\char`\"{}\textbackslash{}033\mbox{[}22;0m\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} = double
+\item 
+using \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} = unsigned int
+\item 
+using \mbox{\hyperlink{definitions_8h_adbd822dbdb8152553a0f77b84915bd8d}{integer}} = int
+\item 
+{\footnotesize template$<$size\+\_\+t N$>$ }\\using \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}} = std\+::bitset$<$ N $>$
+\item 
+{\footnotesize template$<$size\+\_\+t N, typename value $>$ }\\using \mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}} = std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, value $\ast$ $>$
+\item 
+{\footnotesize template$<$size\+\_\+t M$>$ }\\using \mbox{\hyperlink{definitions_8h_ad1cc49840e065ce2a93cd243916d310c}{bitlist}} = std\+::list$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ M $>$ $>$
+\item 
+{\footnotesize template$<$size\+\_\+t N$>$ }\\using \mbox{\hyperlink{definitions_8h_a55821d7929f3f16aaf1466129c209492}{bitvector}} = std\+::vector$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ $>$
+\item 
+{\footnotesize template$<$size\+\_\+t N$>$ }\\using \mbox{\hyperlink{definitions_8h_ac6fc04f398a123aff7e39e0d6eaba32f}{bitunorderedset}} = std\+::unordered\+\_\+set$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\std\+::string \mbox{\hyperlink{definitions_8h_a49c5968265220480e31d6b469fb2e1e8}{Format\+With\+Commas}} (T value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{definitions_8h_a79d10e672abb49ad63eeaa8aaef57c38}\label{definitions_8h_a79d10e672abb49ad63eeaa8aaef57c38}} 
+\index{definitions.\+h@{definitions.\+h}!B\+L\+UE@{B\+L\+UE}}
+\index{B\+L\+UE@{B\+L\+UE}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+UE}{BLUE}}
+{\footnotesize\ttfamily \#define B\+L\+UE~\char`\"{}\textbackslash{}033\mbox{[}22;34m\char`\"{}}
+
+\mbox{\Hypertarget{definitions_8h_ad243f93c16bc4c1d3e0a13b84421d760}\label{definitions_8h_ad243f93c16bc4c1d3e0a13b84421d760}} 
+\index{definitions.\+h@{definitions.\+h}!C\+Y\+AN@{C\+Y\+AN}}
+\index{C\+Y\+AN@{C\+Y\+AN}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{C\+Y\+AN}{CYAN}}
+{\footnotesize\ttfamily \#define C\+Y\+AN~\char`\"{}\textbackslash{}033\mbox{[}22;36m\char`\"{}}
+
+\mbox{\Hypertarget{definitions_8h_acfbc006ea433ad708fdee3e82996e721}\label{definitions_8h_acfbc006ea433ad708fdee3e82996e721}} 
+\index{definitions.\+h@{definitions.\+h}!G\+R\+E\+EN@{G\+R\+E\+EN}}
+\index{G\+R\+E\+EN@{G\+R\+E\+EN}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{G\+R\+E\+EN}{GREEN}}
+{\footnotesize\ttfamily \#define G\+R\+E\+EN~\char`\"{}\textbackslash{}033\mbox{[}22;32m\char`\"{}}
+
+\mbox{\Hypertarget{definitions_8h_a56920ca57918a11822f9e3ca30cdf185}\label{definitions_8h_a56920ca57918a11822f9e3ca30cdf185}} 
+\index{definitions.\+h@{definitions.\+h}!hash@{hash}}
+\index{hash@{hash}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{hash}{hash}}
+{\footnotesize\ttfamily \#define hash~0}
+
+\mbox{\Hypertarget{definitions_8h_a6f699060902f800f12aaae150f3a708e}\label{definitions_8h_a6f699060902f800f12aaae150f3a708e}} 
+\index{definitions.\+h@{definitions.\+h}!M\+A\+G\+E\+N\+TA@{M\+A\+G\+E\+N\+TA}}
+\index{M\+A\+G\+E\+N\+TA@{M\+A\+G\+E\+N\+TA}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+G\+E\+N\+TA}{MAGENTA}}
+{\footnotesize\ttfamily \#define M\+A\+G\+E\+N\+TA~\char`\"{}\textbackslash{}033\mbox{[}22;35m\char`\"{}}
+
+\mbox{\Hypertarget{definitions_8h_a2b712df63457e13f19d605ebe22cdbd2}\label{definitions_8h_a2b712df63457e13f19d605ebe22cdbd2}} 
+\index{definitions.\+h@{definitions.\+h}!nonnative@{nonnative}}
+\index{nonnative@{nonnative}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{nonnative}{nonnative}}
+{\footnotesize\ttfamily \#define nonnative~1 /$\ast$!\textbackslash{} default S\+TD \mbox{\hyperlink{definitions_8h_a56920ca57918a11822f9e3ca30cdf185}{hash}} and comparison functions  $\ast$/}
+
+\mbox{\Hypertarget{definitions_8h_a8d23feea868a983c8c2b661e1e16972f}\label{definitions_8h_a8d23feea868a983c8c2b661e1e16972f}} 
+\index{definitions.\+h@{definitions.\+h}!R\+ED@{R\+ED}}
+\index{R\+ED@{R\+ED}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{R\+ED}{RED}}
+{\footnotesize\ttfamily \#define R\+ED~\char`\"{}\textbackslash{}033\mbox{[}01;31m\char`\"{}}
+
+\mbox{\Hypertarget{definitions_8h_ab702106cf3b3e96750b6845ded4e0299}\label{definitions_8h_ab702106cf3b3e96750b6845ded4e0299}} 
+\index{definitions.\+h@{definitions.\+h}!R\+E\+S\+ET@{R\+E\+S\+ET}}
+\index{R\+E\+S\+ET@{R\+E\+S\+ET}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{R\+E\+S\+ET}{RESET}}
+{\footnotesize\ttfamily \#define R\+E\+S\+ET~\char`\"{}\textbackslash{}033\mbox{[}22;0m\char`\"{}}
+
+\mbox{\Hypertarget{definitions_8h_abf681265909adf3d3e8116c93c0ba179}\label{definitions_8h_abf681265909adf3d3e8116c93c0ba179}} 
+\index{definitions.\+h@{definitions.\+h}!Y\+E\+L\+L\+OW@{Y\+E\+L\+L\+OW}}
+\index{Y\+E\+L\+L\+OW@{Y\+E\+L\+L\+OW}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{Y\+E\+L\+L\+OW}{YELLOW}}
+{\footnotesize\ttfamily \#define Y\+E\+L\+L\+OW~\char`\"{}\textbackslash{}033\mbox{[}22;33m\char`\"{}}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{definitions_8h_ad1cc49840e065ce2a93cd243916d310c}\label{definitions_8h_ad1cc49840e065ce2a93cd243916d310c}} 
+\index{definitions.\+h@{definitions.\+h}!bitlist@{bitlist}}
+\index{bitlist@{bitlist}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{bitlist}{bitlist}}
+{\footnotesize\ttfamily template$<$size\+\_\+t M$>$ \\
+using \mbox{\hyperlink{definitions_8h_ad1cc49840e065ce2a93cd243916d310c}{bitlist}} =  std\+::list$<$\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$M$>$ $>$}
+
+\mbox{\Hypertarget{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}\label{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}} 
+\index{definitions.\+h@{definitions.\+h}!bitmap@{bitmap}}
+\index{bitmap@{bitmap}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{bitmap}{bitmap}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+using \mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}} =  std\+::unordered\+\_\+map$<$\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$N$>$, value $\ast$$>$}
+
+\mbox{\Hypertarget{definitions_8h_ac6fc04f398a123aff7e39e0d6eaba32f}\label{definitions_8h_ac6fc04f398a123aff7e39e0d6eaba32f}} 
+\index{definitions.\+h@{definitions.\+h}!bitunorderedset@{bitunorderedset}}
+\index{bitunorderedset@{bitunorderedset}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{bitunorderedset}{bitunorderedset}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N$>$ \\
+using \mbox{\hyperlink{definitions_8h_ac6fc04f398a123aff7e39e0d6eaba32f}{bitunorderedset}} =  std\+::unordered\+\_\+set$<$\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$N$>$ $>$}
+
+\mbox{\Hypertarget{definitions_8h_a55821d7929f3f16aaf1466129c209492}\label{definitions_8h_a55821d7929f3f16aaf1466129c209492}} 
+\index{definitions.\+h@{definitions.\+h}!bitvector@{bitvector}}
+\index{bitvector@{bitvector}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{bitvector}{bitvector}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N$>$ \\
+using \mbox{\hyperlink{definitions_8h_a55821d7929f3f16aaf1466129c209492}{bitvector}} =  std\+::vector$<$\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$N$>$ $>$}
+
+\mbox{\Hypertarget{definitions_8h_adbd822dbdb8152553a0f77b84915bd8d}\label{definitions_8h_adbd822dbdb8152553a0f77b84915bd8d}} 
+\index{definitions.\+h@{definitions.\+h}!integer@{integer}}
+\index{integer@{integer}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{integer}{integer}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{definitions_8h_adbd822dbdb8152553a0f77b84915bd8d}{integer}} =  int}
+
+\mbox{\Hypertarget{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}\label{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}} 
+\index{definitions.\+h@{definitions.\+h}!morton@{morton}}
+\index{morton@{morton}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{morton}{morton}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N$>$ \\
+using \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}} =  std\+::bitset$<$N$>$}
+
+\mbox{\Hypertarget{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}\label{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}} 
+\index{definitions.\+h@{definitions.\+h}!real@{real}}
+\index{real@{real}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{real}{real}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} =  double}
+
+\mbox{\Hypertarget{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}\label{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}} 
+\index{definitions.\+h@{definitions.\+h}!uint@{uint}}
+\index{uint@{uint}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{uint}{uint}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} =  unsigned int}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{definitions_8h_a49c5968265220480e31d6b469fb2e1e8}\label{definitions_8h_a49c5968265220480e31d6b469fb2e1e8}} 
+\index{definitions.\+h@{definitions.\+h}!Format\+With\+Commas@{Format\+With\+Commas}}
+\index{Format\+With\+Commas@{Format\+With\+Commas}!definitions.\+h@{definitions.\+h}}
+\subsubsection{\texorpdfstring{Format\+With\+Commas()}{FormatWithCommas()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::string Format\+With\+Commas (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})}
+

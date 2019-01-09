@@ -1,0 +1,262 @@
+\hypertarget{classFullTree}{}\section{Full\+Tree$<$ N, value $>$ Class Template Reference}
+\label{classFullTree}\index{Full\+Tree$<$ N, value $>$@{Full\+Tree$<$ N, value $>$}}
+
+
+This Class is specifically designed for weak analysis to operate on the fulltree topology in this class, level is preset by the user and the level function is redefined to make use of the polymorphism.  
+
+
+
+
+{\ttfamily \#include $<$tree.\+h$>$}
+
+Inheritance diagram for Full\+Tree$<$ N, value $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFullTree}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFullTree_a7e91df045a1e04bb4d749d67300a1c3b}{Full\+Tree}} (\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$length, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$coords)
+\item 
+void \mbox{\hyperlink{classFullTree_a1f880ec827fcd885759f6eafc76048be}{set\+Level}} (const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&l)
+\item 
+void \mbox{\hyperlink{classFullTree_a2aadfbda309e246642550044712f98a0}{level}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$level)
+\item 
+void \mbox{\hyperlink{classFullTree_abce6ea3ea3393373f32a5b7ccfcac976}{insert\+Key}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key)
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classFullTree_abed32a809a754eab0ae47257da1863b4}{get\+Level}} ()
+\item 
+void \mbox{\hyperlink{classFullTree_ade3b60e3f3622a49edb5b7a88e348667}{nbrs\+Constrcut}} (vector$<$ \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \&Nbrs, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} myrank)
+\item 
+bool \mbox{\hyperlink{classFullTree_acb1eec16a6b73e2a465b7a32319fe4f6}{is\+Boundary}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&direction, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} myrank)
+\item 
+\mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$ N, value $>$\+::iterator \mbox{\hyperlink{classFullTree_ad0432afb277be83e79d33e1a748648a3}{find}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key)
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classFullTree_a13bb6b68dea0e36255dbd7b057110806}{size}} ()
+\item 
+void \mbox{\hyperlink{classFullTree_a1b0a9b6f0f5155dd8847905ee8aa1b56}{convert\+Coord\+To\+Morton}} (\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$xyz, \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&key)
+\item 
+void \mbox{\hyperlink{classFullTree_a71034640d78c83c761cc005a77f83afa}{assign\+Procs}} (vector$<$ \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \&Nbrs, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} myrank)
+\item 
+void \mbox{\hyperlink{classFullTree_ae820d50b6b006f8bcdbcbcc5aa2fc9f6}{find\+Flip\+Level}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ \mbox{\hyperlink{params_8h_a869e77c8856c40dc7369197ee4ee8059ab8317ae7816b83628f4e2bcff586e2f5}{W\+S\+I\+ZE}} $>$ key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classFullTree_a1bcc4d0daf8ad12569054422379b556f}{fixedlevel}}, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$changedirectionlevel, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$direction)
+\item 
+void \mbox{\hyperlink{classFullTree_ad3d930eda377be811df22070f6364865}{flip\+For\+Nbr}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ \mbox{\hyperlink{params_8h_a869e77c8856c40dc7369197ee4ee8059ab8317ae7816b83628f4e2bcff586e2f5}{W\+S\+I\+ZE}} $>$ $\ast$key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classFullTree_a1bcc4d0daf8ad12569054422379b556f}{fixedlevel}}, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$changedirectionlevel, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$direction)
+\item 
+\mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$ N, value $>$\+::iterator \mbox{\hyperlink{classFullTree_af2fbecbd352a329634a6fdc35f519968}{begin}} ()
+\item 
+\mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$ N, value $>$\+::iterator \mbox{\hyperlink{classFullTree_a692131b057639fecdb1934b734cff1bb}{end}} ()
+\item 
+\mbox{\hyperlink{classFullTree_a8b2e043f141edee101d55ad0ea497d9f}{$\sim$\+Full\+Tree}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classFullTree_a1bcc4d0daf8ad12569054422379b556f}{fixedlevel}}
+\item 
+\mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$ N, value $>$ \mbox{\hyperlink{classFullTree_a98c8b05985b0cf911db0d6252aa98396}{mesh}}
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$ \mbox{\hyperlink{classFullTree_aa4cfcbc1c6029ecd353759159a8d8844}{refinelist}}
+\item 
+\mbox{\hyperlink{definitions_8h_a55821d7929f3f16aaf1466129c209492}{bitvector}}$<$ N $>$ \mbox{\hyperlink{classFullTree_a91af9d7a974af6484dc61c20cd78d1bc}{morton\+S\+TL}}
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$, int $>$ \mbox{\hyperlink{classFullTree_a4c87e86cce1c7f0f92651ad87d3823ec}{derefinelist}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$size\+\_\+t N, typename value$>$\newline
+class Full\+Tree$<$ N, value $>$}
+
+This Class is specifically designed for weak analysis to operate on the fulltree topology in this class, level is preset by the user and the level function is redefined to make use of the polymorphism. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFullTree_a7e91df045a1e04bb4d749d67300a1c3b}\label{classFullTree_a7e91df045a1e04bb4d749d67300a1c3b}} 
+\index{Full\+Tree@{Full\+Tree}!Full\+Tree@{Full\+Tree}}
+\index{Full\+Tree@{Full\+Tree}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{Full\+Tree()}{FullTree()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::\mbox{\hyperlink{classFullTree}{Full\+Tree}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{length,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{coords }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFullTree_a8b2e043f141edee101d55ad0ea497d9f}\label{classFullTree_a8b2e043f141edee101d55ad0ea497d9f}} 
+\index{Full\+Tree@{Full\+Tree}!````~Full\+Tree@{$\sim$\+Full\+Tree}}
+\index{````~Full\+Tree@{$\sim$\+Full\+Tree}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{$\sim$\+Full\+Tree()}{~FullTree()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::$\sim$\mbox{\hyperlink{classFullTree}{Full\+Tree}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classFullTree_a71034640d78c83c761cc005a77f83afa}\label{classFullTree_a71034640d78c83c761cc005a77f83afa}} 
+\index{Full\+Tree@{Full\+Tree}!assign\+Procs@{assign\+Procs}}
+\index{assign\+Procs@{assign\+Procs}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{assign\+Procs()}{assignProcs()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::assign\+Procs (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \&}]{Nbrs,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{myrank }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFullTree_af2fbecbd352a329634a6fdc35f519968}\label{classFullTree_af2fbecbd352a329634a6fdc35f519968}} 
+\index{Full\+Tree@{Full\+Tree}!begin@{begin}}
+\index{begin@{begin}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$ N, value $>$\+::iterator \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+iterator returning the first object 
+
+Reimplemented from \mbox{\hyperlink{classTree_aa9a32f0e006ee027c037669b8b1c7d01}{Tree$<$ N, value $>$}}.
+
+\mbox{\Hypertarget{classFullTree_a1b0a9b6f0f5155dd8847905ee8aa1b56}\label{classFullTree_a1b0a9b6f0f5155dd8847905ee8aa1b56}} 
+\index{Full\+Tree@{Full\+Tree}!convert\+Coord\+To\+Morton@{convert\+Coord\+To\+Morton}}
+\index{convert\+Coord\+To\+Morton@{convert\+Coord\+To\+Morton}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{convert\+Coord\+To\+Morton()}{convertCoordToMorton()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::convert\+Coord\+To\+Morton (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{xyz,  }\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+!$<$ this function is to find a value given the key 
+
+Reimplemented from \mbox{\hyperlink{classTree_a945d137d27bb55d9feb5762ac821572a}{Tree$<$ N, value $>$}}.
+
+\mbox{\Hypertarget{classFullTree_a692131b057639fecdb1934b734cff1bb}\label{classFullTree_a692131b057639fecdb1934b734cff1bb}} 
+\index{Full\+Tree@{Full\+Tree}!end@{end}}
+\index{end@{end}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$ N, value $>$\+::iterator \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+iterator returning the last object 
+
+Reimplemented from \mbox{\hyperlink{classTree_a780c144c3fa4f648e7c616d7010721b0}{Tree$<$ N, value $>$}}.
+
+\mbox{\Hypertarget{classFullTree_ad0432afb277be83e79d33e1a748648a3}\label{classFullTree_ad0432afb277be83e79d33e1a748648a3}} 
+\index{Full\+Tree@{Full\+Tree}!find@{find}}
+\index{find@{find}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$ N, value $>$\+::iterator \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+this function is to find a value given the key
+
+!$<$ this function is to find a value given the key 
+
+Reimplemented from \mbox{\hyperlink{classTree_a8337d6639f90ef96e4d42e1cbfab61dd}{Tree$<$ N, value $>$}}.
+
+\mbox{\Hypertarget{classFullTree_ae820d50b6b006f8bcdbcbcc5aa2fc9f6}\label{classFullTree_ae820d50b6b006f8bcdbcbcc5aa2fc9f6}} 
+\index{Full\+Tree@{Full\+Tree}!find\+Flip\+Level@{find\+Flip\+Level}}
+\index{find\+Flip\+Level@{find\+Flip\+Level}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{find\+Flip\+Level()}{findFlipLevel()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::find\+Flip\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ \mbox{\hyperlink{params_8h_a869e77c8856c40dc7369197ee4ee8059ab8317ae7816b83628f4e2bcff586e2f5}{W\+S\+I\+ZE}} $>$}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{fixedlevel,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{changedirectionlevel,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{direction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFullTree_ad3d930eda377be811df22070f6364865}\label{classFullTree_ad3d930eda377be811df22070f6364865}} 
+\index{Full\+Tree@{Full\+Tree}!flip\+For\+Nbr@{flip\+For\+Nbr}}
+\index{flip\+For\+Nbr@{flip\+For\+Nbr}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{flip\+For\+Nbr()}{flipForNbr()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::flip\+For\+Nbr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ \mbox{\hyperlink{params_8h_a869e77c8856c40dc7369197ee4ee8059ab8317ae7816b83628f4e2bcff586e2f5}{W\+S\+I\+ZE}} $>$ $\ast$}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{fixedlevel,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{changedirectionlevel,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{direction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFullTree_abed32a809a754eab0ae47257da1863b4}\label{classFullTree_abed32a809a754eab0ae47257da1863b4}} 
+\index{Full\+Tree@{Full\+Tree}!get\+Level@{get\+Level}}
+\index{get\+Level@{get\+Level}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{get\+Level()}{getLevel()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFullTree_abce6ea3ea3393373f32a5b7ccfcac976}\label{classFullTree_abce6ea3ea3393373f32a5b7ccfcac976}} 
+\index{Full\+Tree@{Full\+Tree}!insert\+Key@{insert\+Key}}
+\index{insert\+Key@{insert\+Key}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{insert\+Key()}{insertKey()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::insert\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFullTree_acb1eec16a6b73e2a465b7a32319fe4f6}\label{classFullTree_acb1eec16a6b73e2a465b7a32319fe4f6}} 
+\index{Full\+Tree@{Full\+Tree}!is\+Boundary@{is\+Boundary}}
+\index{is\+Boundary@{is\+Boundary}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{is\+Boundary()}{isBoundary()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+bool \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::is\+Boundary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&}]{direction,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{myrank }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFullTree_a2aadfbda309e246642550044712f98a0}\label{classFullTree_a2aadfbda309e246642550044712f98a0}} 
+\index{Full\+Tree@{Full\+Tree}!level@{level}}
+\index{level@{level}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{level()}{level()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+obtains the level of the element from morton key to prevent unnecesary bit operation, the morton code is placed from starting from left hand side
+
+now look and see if any siblings exist 
+
+Reimplemented from \mbox{\hyperlink{classTree_a01f065cafedac5e2845e9d17bf87b783}{Tree$<$ N, value $>$}}.
+
+\mbox{\Hypertarget{classFullTree_ade3b60e3f3622a49edb5b7a88e348667}\label{classFullTree_ade3b60e3f3622a49edb5b7a88e348667}} 
+\index{Full\+Tree@{Full\+Tree}!nbrs\+Constrcut@{nbrs\+Constrcut}}
+\index{nbrs\+Constrcut@{nbrs\+Constrcut}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{nbrs\+Constrcut()}{nbrsConstrcut()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::nbrs\+Constrcut (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \&}]{Nbrs,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{myrank }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFullTree_a1f880ec827fcd885759f6eafc76048be}\label{classFullTree_a1f880ec827fcd885759f6eafc76048be}} 
+\index{Full\+Tree@{Full\+Tree}!set\+Level@{set\+Level}}
+\index{set\+Level@{set\+Level}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{set\+Level()}{setLevel()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::set\+Level (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&}]{l }\end{DoxyParamCaption})}
+
+constructor sets the maximum level for refinement \mbox{\Hypertarget{classFullTree_a13bb6b68dea0e36255dbd7b057110806}\label{classFullTree_a13bb6b68dea0e36255dbd7b057110806}} 
+\index{Full\+Tree@{Full\+Tree}!size@{size}}
+\index{size@{size}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+returns the size of the mesh 
+
+Reimplemented from \mbox{\hyperlink{classTree_a8af31c93aa821f0d853e920bcba1829a}{Tree$<$ N, value $>$}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classFullTree_a4c87e86cce1c7f0f92651ad87d3823ec}\label{classFullTree_a4c87e86cce1c7f0f92651ad87d3823ec}} 
+\index{Full\+Tree@{Full\+Tree}!derefinelist@{derefinelist}}
+\index{derefinelist@{derefinelist}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{derefinelist}{derefinelist}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+std\+::unordered\+\_\+map$<$\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$N$>$, int$>$ \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::derefinelist\hspace{0.3cm}{\ttfamily [private]}}
+
+list of elements tagged to be removed, due to 4\+:1 balance this listi \mbox{\Hypertarget{classFullTree_a1bcc4d0daf8ad12569054422379b556f}\label{classFullTree_a1bcc4d0daf8ad12569054422379b556f}} 
+\index{Full\+Tree@{Full\+Tree}!fixedlevel@{fixedlevel}}
+\index{fixedlevel@{fixedlevel}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{fixedlevel}{fixedlevel}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::fixedlevel\hspace{0.3cm}{\ttfamily [private]}}
+
+maximum level of full tree \mbox{\Hypertarget{classFullTree_a98c8b05985b0cf911db0d6252aa98396}\label{classFullTree_a98c8b05985b0cf911db0d6252aa98396}} 
+\index{Full\+Tree@{Full\+Tree}!mesh@{mesh}}
+\index{mesh@{mesh}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{mesh}{mesh}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$N, value$>$ \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::mesh\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classFullTree_a91af9d7a974af6484dc61c20cd78d1bc}\label{classFullTree_a91af9d7a974af6484dc61c20cd78d1bc}} 
+\index{Full\+Tree@{Full\+Tree}!morton\+S\+TL@{morton\+S\+TL}}
+\index{morton\+S\+TL@{morton\+S\+TL}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{morton\+S\+TL}{mortonSTL}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_a55821d7929f3f16aaf1466129c209492}{bitvector}}$<$N$>$ \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::morton\+S\+TL\hspace{0.3cm}{\ttfamily [private]}}
+
+vector to store geometric points in morton code \mbox{\Hypertarget{classFullTree_aa4cfcbc1c6029ecd353759159a8d8844}\label{classFullTree_aa4cfcbc1c6029ecd353759159a8d8844}} 
+\index{Full\+Tree@{Full\+Tree}!refinelist@{refinelist}}
+\index{refinelist@{refinelist}!Full\+Tree@{Full\+Tree}}
+\subsubsection{\texorpdfstring{refinelist}{refinelist}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+std\+::unordered\+\_\+map$<$\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$N$>$, int$>$ \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ N, value $>$\+::refinelist\hspace{0.3cm}{\ttfamily [private]}}
+
+list of elements tagged to be refined 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/\mbox{\hyperlink{tree_8h}{tree.\+h}}\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/\mbox{\hyperlink{full__tree_8cpp}{full\+\_\+tree.\+cpp}}\end{DoxyCompactItemize}

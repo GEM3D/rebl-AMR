@@ -1,0 +1,47 @@
+var params_8h =
+[
+    [ "METHOD", "params_8h.html#a7acfc6e2f2442cbb9d8657e96d73bbec", null ],
+    [ "ReblAmrResult", "params_8h.html#affa707cc0886cde416cabae66be2f22b", null ],
+    [ "ReblAmrErrorCodes", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7", [
+      [ "SUCCESS", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7ac7f69f7c9e5aea9b8f54cf02870e2bf8", null ],
+      [ "NUM_INPUT_ARGS", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7ae2cb31851cb1842b977bc0f153d11588", null ],
+      [ "MPI_INIT_CHECK_FAIL", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7abd7764bd3a76db5a378da2a4000bc456", null ],
+      [ "MPI_INIT_FAIL", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7a7817b3e245598d2ae48ee50cb94d9427", null ],
+      [ "MPI_DUP_FAIL", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7a9b43388982267c18f4450af0f102ab80", null ],
+      [ "COMSIZE_FAIL", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7ade18e7b6e186b7902145cf12045d1aad", null ],
+      [ "PROC_LEVEL", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7a7daa74d9da01e994227dc0c367b79b95", null ],
+      [ "MESH_LEVEL", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7ab740a7c72dd8a9cc01221a7747daf345", null ],
+      [ "MPI_GET_RANK_FAIL", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7a552627076ab7732a34b9b6762d23f797", null ],
+      [ "MPI_COMSIZE_FAIL", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7a2856e8492bf0e6f954ef8046f57026e7", null ],
+      [ "COMBINED_SIZE", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7ab1b3872d9cb06574f2a884e46fd9c84e", null ],
+      [ "NO_SEED", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7ace4b2b8caef4c84b2a9f44c02f387b10", null ],
+      [ "GRAPH_CREATE_FAIL", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7a5fcd69731a0b0150fb895ce431727205", null ],
+      [ "MPI_INEIGHBOR_FAIL_ZX", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7a93fe36e569a95d0332382ac998cf9f8c", null ],
+      [ "MPI_INEIGHBOR_FAIL_XY", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7a5d8b197dfd56d985926259f28f6a6a2f", null ],
+      [ "BLOCK_NUMBER_FAIL", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7a7c4ba46c9af41778d44ed050ace448fb", null ],
+      [ "ALLOCATION_FAIL", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7ae93ec7fc09f109351dcf4067bb214623", null ],
+      [ "MPI_FINALIZE_FAIL", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7ae0d5f87670f6bac46fb578168c0cbcef", null ],
+      [ "MPI_ERROR_HANDLE_FAIL", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7aa4910ff39fc0cc6575d91062d9bba2a0", null ],
+      [ "CONNECTIVITY_CONSTRUCTION_FAIL", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7a02fa2ee2473833d3e7164a2eb671a7b8", null ],
+      [ "THOMAS_FAIL", "params_8h.html#a6d2559537edf923a43f7ca68c4a0b2c7abe6990d3d100869f48c72fc1fc1a1fe7", null ]
+    ] ],
+    [ "ReblAmrParameters", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059", [
+      [ "PROCSIZE", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059ab3d1097d7132ac8b8c33439eb2e7c02f", null ],
+      [ "TREESIZE", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059a719bd37d9b2b9f69b6810cb9c57ff609", null ],
+      [ "ZOLTAN_ON", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059abbe30a0eac1951ce821536bcb28a29bc", null ],
+      [ "ZOLTAN_GEOMETRIC_PARTITION", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059ace8418fba5050dcc1c9317313849cbe6", null ],
+      [ "WEIGHT", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059a9747ee647b4e8f6329a394f45e4e92aa", null ],
+      [ "WR", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059a82486eb1581ede01bd8ab6697460de01", null ],
+      [ "WEAK", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059afe4722ca9de2cfd88591a69de2430c0a", null ],
+      [ "WSIZE", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059ab8317ae7816b83628f4e2bcff586e2f5", null ],
+      [ "REORDER", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059ac9424061a71de8a6a01763ef2e1c97b7", null ],
+      [ "OVERLAP", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059acb2f0de53b7bc584fc5838a34911189c", null ],
+      [ "PART_METHOD", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059a467497eecd6354af8483eb0c79ce5d45", null ],
+      [ "npx", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059a2c6aa1c337918cdc9cbf0921ea631965", null ],
+      [ "npy", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059a6312e0341f7131bd95bd587158b9c4d2", null ],
+      [ "npz", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059ab8dc3eff14aabfc11dd8bd794d8ecc18", null ],
+      [ "CHECK_MESH", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059a07745944e3db8ad357b437db4bd8ded3", null ],
+      [ "MPI_ERROR_DISABLE", "params_8h.html#a869e77c8856c40dc7369197ee4ee8059af6ff2f1fe09514977e84ec8b9e0e81fe", null ]
+    ] ],
+    [ "ReblAmrGetErrorEnum", "params_8h.html#a1310ec04131919b2ae72f3e3b547d276", null ]
+];

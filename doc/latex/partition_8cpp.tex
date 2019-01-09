@@ -1,0 +1,58 @@
+\hypertarget{partition_8cpp}{}\section{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/partition.cpp File Reference}
+\label{partition_8cpp}\index{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/partition.\+cpp@{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/partition.\+cpp}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}typedefs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tree.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}partition.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{partition_8cpp_a156b862ebf6d213f5da19b9e3ccb779e}{T\+OL}}~\char`\"{}1.\+1\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{partition_8cpp_a6ad2871ad3f64c732b17fa7eee57cec0}{get\+\_\+number\+\_\+of\+\_\+objects}} (void $\ast$data, int $\ast$ierr)
+\item 
+static int \mbox{\hyperlink{partition_8cpp_a3f7803e55e2f26d86aafeb3e5512571d}{get\+\_\+num\+\_\+geometry}} (void $\ast$data, int $\ast$ierr)
+\item 
+static void \mbox{\hyperlink{partition_8cpp_ac2693675e55942058ee52f02d909b568}{get\+\_\+object\+\_\+list}} (void $\ast$data, int size\+G\+ID, int size\+L\+ID, Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR global\+ID, Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR local\+ID, int wgt\+\_\+dim, float $\ast$obj\+\_\+wgts, int $\ast$ierr)
+\item 
+static void \mbox{\hyperlink{partition_8cpp_a1527ba0550f8457693bb832a66395b56}{get\+\_\+geometry\+\_\+list}} (void $\ast$data, int size\+G\+ID, int size\+L\+ID, int num\+\_\+obj, Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR global\+ID, Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR local\+ID, int num\+\_\+dim, double $\ast$geom\+\_\+vec, int $\ast$ierr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{partition_8cpp_a156b862ebf6d213f5da19b9e3ccb779e}\label{partition_8cpp_a156b862ebf6d213f5da19b9e3ccb779e}} 
+\index{partition.\+cpp@{partition.\+cpp}!T\+OL@{T\+OL}}
+\index{T\+OL@{T\+OL}!partition.\+cpp@{partition.\+cpp}}
+\subsubsection{\texorpdfstring{T\+OL}{TOL}}
+{\footnotesize\ttfamily \#define T\+OL~\char`\"{}1.\+1\char`\"{}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{partition_8cpp_a1527ba0550f8457693bb832a66395b56}\label{partition_8cpp_a1527ba0550f8457693bb832a66395b56}} 
+\index{partition.\+cpp@{partition.\+cpp}!get\+\_\+geometry\+\_\+list@{get\+\_\+geometry\+\_\+list}}
+\index{get\+\_\+geometry\+\_\+list@{get\+\_\+geometry\+\_\+list}!partition.\+cpp@{partition.\+cpp}}
+\subsubsection{\texorpdfstring{get\+\_\+geometry\+\_\+list()}{get\_geometry\_list()}}
+{\footnotesize\ttfamily static void get\+\_\+geometry\+\_\+list (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{int}]{size\+G\+ID,  }\item[{int}]{size\+L\+ID,  }\item[{int}]{num\+\_\+obj,  }\item[{Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR}]{global\+ID,  }\item[{Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR}]{local\+ID,  }\item[{int}]{num\+\_\+dim,  }\item[{double $\ast$}]{geom\+\_\+vec,  }\item[{int $\ast$}]{ierr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{partition_8cpp_a3f7803e55e2f26d86aafeb3e5512571d}\label{partition_8cpp_a3f7803e55e2f26d86aafeb3e5512571d}} 
+\index{partition.\+cpp@{partition.\+cpp}!get\+\_\+num\+\_\+geometry@{get\+\_\+num\+\_\+geometry}}
+\index{get\+\_\+num\+\_\+geometry@{get\+\_\+num\+\_\+geometry}!partition.\+cpp@{partition.\+cpp}}
+\subsubsection{\texorpdfstring{get\+\_\+num\+\_\+geometry()}{get\_num\_geometry()}}
+{\footnotesize\ttfamily static int get\+\_\+num\+\_\+geometry (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{int $\ast$}]{ierr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{partition_8cpp_a6ad2871ad3f64c732b17fa7eee57cec0}\label{partition_8cpp_a6ad2871ad3f64c732b17fa7eee57cec0}} 
+\index{partition.\+cpp@{partition.\+cpp}!get\+\_\+number\+\_\+of\+\_\+objects@{get\+\_\+number\+\_\+of\+\_\+objects}}
+\index{get\+\_\+number\+\_\+of\+\_\+objects@{get\+\_\+number\+\_\+of\+\_\+objects}!partition.\+cpp@{partition.\+cpp}}
+\subsubsection{\texorpdfstring{get\+\_\+number\+\_\+of\+\_\+objects()}{get\_number\_of\_objects()}}
+{\footnotesize\ttfamily static int get\+\_\+number\+\_\+of\+\_\+objects (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{int $\ast$}]{ierr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{partition_8cpp_ac2693675e55942058ee52f02d909b568}\label{partition_8cpp_ac2693675e55942058ee52f02d909b568}} 
+\index{partition.\+cpp@{partition.\+cpp}!get\+\_\+object\+\_\+list@{get\+\_\+object\+\_\+list}}
+\index{get\+\_\+object\+\_\+list@{get\+\_\+object\+\_\+list}!partition.\+cpp@{partition.\+cpp}}
+\subsubsection{\texorpdfstring{get\+\_\+object\+\_\+list()}{get\_object\_list()}}
+{\footnotesize\ttfamily static void get\+\_\+object\+\_\+list (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{int}]{size\+G\+ID,  }\item[{int}]{size\+L\+ID,  }\item[{Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR}]{global\+ID,  }\item[{Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR}]{local\+ID,  }\item[{int}]{wgt\+\_\+dim,  }\item[{float $\ast$}]{obj\+\_\+wgts,  }\item[{int $\ast$}]{ierr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+

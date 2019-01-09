@@ -1,0 +1,95 @@
+\hypertarget{classfullOctreeTop}{
+\section{fullOctreeTop$<$ N $>$ Class Template Reference}
+\label{classfullOctreeTop}\index{fullOctreeTop@{fullOctreeTop}}
+}
+
+
+{\ttfamily \#include $<$scale.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfullOctreeTop_a12f92276ec4139dcd1ca8be5f54f2c7d}{fullOctreeTop} ()
+\item 
+void \hyperlink{classfullOctreeTop_a2ac642778cc0a360e4077ace0498530c}{convertRank2Bits} (int myrank)
+\item 
+void \hyperlink{classfullOctreeTop_a03cfaef9b474524b82dec9c77e07ef96}{constructNbrProcs} ()
+\item 
+bool \hyperlink{classfullOctreeTop_ac6953cc241ee8e048b4fc4867f9a21f1}{isBoundary} (uint \&direction)
+\item 
+void \hyperlink{classfullOctreeTop_a1e5fd8556f13e91699381f589eb1e372}{checkGraphConsistency} (int myrank)
+\item 
+\hyperlink{classfullOctreeTop_a3e4c45e27e7a9e571fb27af03075fc70}{$\sim$Scale} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint \hyperlink{classfullOctreeTop_a15287409a42ab0318bea9c8312d7736f}{fullOctreeLevel}
+\item 
+morton$<$ N $>$ \hyperlink{classfullOctreeTop_a77b39b1cd91efb3fbbb1f99fe59567d1}{rootKey}
+\item 
+vector$<$ int $>$ \hyperlink{classfullOctreeTop_a2a6819a1dafdbb62deed31d3365603b5}{Nbr}
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$size\_\-t N$>$ class fullOctreeTop$<$ N $>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfullOctreeTop_a12f92276ec4139dcd1ca8be5f54f2c7d}{
+\index{fullOctreeTop@{fullOctreeTop}!fullOctreeTop@{fullOctreeTop}}
+\index{fullOctreeTop@{fullOctreeTop}!fullOctreeTop@{fullOctreeTop}}
+\subsubsection[{fullOctreeTop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ {\bf fullOctreeTop}$<$ N $>$::{\bf fullOctreeTop} ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfullOctreeTop_a12f92276ec4139dcd1ca8be5f54f2c7d}
+\hypertarget{classfullOctreeTop_a3e4c45e27e7a9e571fb27af03075fc70}{
+\index{fullOctreeTop@{fullOctreeTop}!$\sim$Scale@{$\sim$Scale}}
+\index{$\sim$Scale@{$\sim$Scale}!fullOctreeTop@{fullOctreeTop}}
+\subsubsection[{$\sim$Scale}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ {\bf fullOctreeTop}$<$ N $>$::$\sim$Scale ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfullOctreeTop_a3e4c45e27e7a9e571fb27af03075fc70}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfullOctreeTop_a1e5fd8556f13e91699381f589eb1e372}{
+\index{fullOctreeTop@{fullOctreeTop}!checkGraphConsistency@{checkGraphConsistency}}
+\index{checkGraphConsistency@{checkGraphConsistency}!fullOctreeTop@{fullOctreeTop}}
+\subsubsection[{checkGraphConsistency}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ void {\bf fullOctreeTop}$<$ N $>$::checkGraphConsistency (int {\em myrank})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfullOctreeTop_a1e5fd8556f13e91699381f589eb1e372}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em myrank}]check symmetry of the communication graph, if not symmetric, due to the use of MPI\_\-Probe it will deadlock \end{DoxyParams}
+\hypertarget{classfullOctreeTop_a03cfaef9b474524b82dec9c77e07ef96}{
+\index{fullOctreeTop@{fullOctreeTop}!constructNbrProcs@{constructNbrProcs}}
+\index{constructNbrProcs@{constructNbrProcs}!fullOctreeTop@{fullOctreeTop}}
+\subsubsection[{constructNbrProcs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ void {\bf fullOctreeTop}$<$ N $>$::constructNbrProcs ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfullOctreeTop_a03cfaef9b474524b82dec9c77e07ef96}
+\hypertarget{classfullOctreeTop_a2ac642778cc0a360e4077ace0498530c}{
+\index{fullOctreeTop@{fullOctreeTop}!convertRank2Bits@{convertRank2Bits}}
+\index{convertRank2Bits@{convertRank2Bits}!fullOctreeTop@{fullOctreeTop}}
+\subsubsection[{convertRank2Bits}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ void {\bf fullOctreeTop}$<$ N $>$::convertRank2Bits (int {\em myrank})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfullOctreeTop_a2ac642778cc0a360e4077ace0498530c}
+\hypertarget{classfullOctreeTop_ac6953cc241ee8e048b4fc4867f9a21f1}{
+\index{fullOctreeTop@{fullOctreeTop}!isBoundary@{isBoundary}}
+\index{isBoundary@{isBoundary}!fullOctreeTop@{fullOctreeTop}}
+\subsubsection[{isBoundary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ bool {\bf fullOctreeTop}$<$ N $>$::isBoundary (uint \& {\em direction})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfullOctreeTop_ac6953cc241ee8e048b4fc4867f9a21f1}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classfullOctreeTop_a15287409a42ab0318bea9c8312d7736f}{
+\index{fullOctreeTop@{fullOctreeTop}!fullOctreeLevel@{fullOctreeLevel}}
+\index{fullOctreeLevel@{fullOctreeLevel}!fullOctreeTop@{fullOctreeTop}}
+\subsubsection[{fullOctreeLevel}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ uint {\bf fullOctreeTop}$<$ N $>$::{\bf fullOctreeLevel}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classfullOctreeTop_a15287409a42ab0318bea9c8312d7736f}
+\hypertarget{classfullOctreeTop_a2a6819a1dafdbb62deed31d3365603b5}{
+\index{fullOctreeTop@{fullOctreeTop}!Nbr@{Nbr}}
+\index{Nbr@{Nbr}!fullOctreeTop@{fullOctreeTop}}
+\subsubsection[{Nbr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ vector$<$int$>$ {\bf fullOctreeTop}$<$ N $>$::{\bf Nbr}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classfullOctreeTop_a2a6819a1dafdbb62deed31d3365603b5}
+\hypertarget{classfullOctreeTop_a77b39b1cd91efb3fbbb1f99fe59567d1}{
+\index{fullOctreeTop@{fullOctreeTop}!rootKey@{rootKey}}
+\index{rootKey@{rootKey}!fullOctreeTop@{fullOctreeTop}}
+\subsubsection[{rootKey}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ morton$<$N$>$ {\bf fullOctreeTop}$<$ N $>$::{\bf rootKey}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classfullOctreeTop_a77b39b1cd91efb3fbbb1f99fe59567d1}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/jhasbestan/Morton\_\-Parallel\_\-v0/src/include/\hyperlink{scale_8h}{scale.h}\item 
+/home/jhasbestan/Morton\_\-Parallel\_\-v0/src/\hyperlink{scale_8cpp}{scale.cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,127 @@
+\hypertarget{classTemplatedForest}{
+\section{TemplatedForest$<$ N, Nvalue, M, Mvalue, T $>$ Class Template Reference}
+\label{classTemplatedForest}\index{TemplatedForest@{TemplatedForest}}
+}
+
+
+{\ttfamily \#include $<$templateForest.h$>$}\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+real \hyperlink{classTemplatedForest_a06f7d7d964f553fa04b7ec98022b1434}{ancestorlength} \mbox{[}3\mbox{]}
+\item 
+real \hyperlink{classTemplatedForest_a33e679903d44367ba048d401694b3eb5}{ancestorcoords} \mbox{[}3\mbox{]}
+\item 
+uint \hyperlink{classTemplatedForest_a5cf96af68fafcdde214e9125fc3bc8e2}{npx}
+\item 
+uint \hyperlink{classTemplatedForest_a4172d85562b587e738c55dcebea68d5a}{npy}
+\item 
+uint \hyperlink{classTemplatedForest_ad52e1ef3aa696efd96f73acce54d6bba}{npz}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structMpiCom}{MpiCom} \hyperlink{classTemplatedForest_ae035f47727cbf2b23e423c48b6dea3db}{Com}
+\item 
+treelist$<$ N, Nvalue $>$ \hyperlink{classTemplatedForest_af8453636607eeaa4f9594d698cf163a9}{trees}
+\item 
+bitlist$<$ M $>$ \hyperlink{classTemplatedForest_a49435a137ed1829498d249829139b4a9}{seeds}
+\item 
+uint \hyperlink{classTemplatedForest_ae87d21b2598b557756e71a66379373a9}{maxseedlevel}
+\item 
+\hyperlink{classTree}{Tree}$<$ M, real $>$ \hyperlink{classTemplatedForest_a269716c3758205686408d0ba4d40e1ea}{geom}
+\item 
+vector$<$ uint $>$ \hyperlink{classTemplatedForest_acd86a531acf3af46b1efc635301edd64}{destination}
+\item 
+vector$<$ uint $>$ \hyperlink{classTemplatedForest_aec4740142a33423f11d38fa4b6a0fa1b}{nbrsOfNbrs}
+\item 
+struct Zoltan\_\-Struct $\ast$ \hyperlink{classTemplatedForest_ad0940abd76a40dbb80c63ea322c6278b}{zz} = nullptr
+\item 
+\hyperlink{structZoltan__Out}{Zoltan\_\-Out} \hyperlink{classTemplatedForest_a4c6cc2bddf68e03763e76377df46b42a}{zoltan\_\-out}
+\item 
+MPI\_\-Comm \hyperlink{classTemplatedForest_ad6be6bd985ac82d6e6b9c6caa288f87b}{graphComm}
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$size\_\-t N, typename Nvalue, size\_\-t M, typename Mvalue, template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ class TemplatedForest$<$ N, Nvalue, M, Mvalue, T $>$}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classTemplatedForest_a33e679903d44367ba048d401694b3eb5}{
+\index{TemplatedForest@{TemplatedForest}!ancestorcoords@{ancestorcoords}}
+\index{ancestorcoords@{ancestorcoords}!TemplatedForest@{TemplatedForest}}
+\subsubsection[{ancestorcoords}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename Nvalue , size\_\-t M, typename Mvalue , template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ real {\bf TemplatedForest}$<$ N, Nvalue, M, Mvalue, T $>$::{\bf ancestorcoords}\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classTemplatedForest_a33e679903d44367ba048d401694b3eb5}
+centeroid of the of the first generation (root) element \hypertarget{classTemplatedForest_a06f7d7d964f553fa04b7ec98022b1434}{
+\index{TemplatedForest@{TemplatedForest}!ancestorlength@{ancestorlength}}
+\index{ancestorlength@{ancestorlength}!TemplatedForest@{TemplatedForest}}
+\subsubsection[{ancestorlength}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename Nvalue , size\_\-t M, typename Mvalue , template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ real {\bf TemplatedForest}$<$ N, Nvalue, M, Mvalue, T $>$::{\bf ancestorlength}\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classTemplatedForest_a06f7d7d964f553fa04b7ec98022b1434}
+original length of the first generation (root) element \hypertarget{classTemplatedForest_ae035f47727cbf2b23e423c48b6dea3db}{
+\index{TemplatedForest@{TemplatedForest}!Com@{Com}}
+\index{Com@{Com}!TemplatedForest@{TemplatedForest}}
+\subsubsection[{Com}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename Nvalue , size\_\-t M, typename Mvalue , template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ {\bf MpiCom} {\bf TemplatedForest}$<$ N, Nvalue, M, Mvalue, T $>$::{\bf Com}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classTemplatedForest_ae035f47727cbf2b23e423c48b6dea3db}
+\hypertarget{classTemplatedForest_acd86a531acf3af46b1efc635301edd64}{
+\index{TemplatedForest@{TemplatedForest}!destination@{destination}}
+\index{destination@{destination}!TemplatedForest@{TemplatedForest}}
+\subsubsection[{destination}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename Nvalue , size\_\-t M, typename Mvalue , template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ vector$<$uint$>$ {\bf TemplatedForest}$<$ N, Nvalue, M, Mvalue, T $>$::{\bf destination}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classTemplatedForest_acd86a531acf3af46b1efc635301edd64}
+\hypertarget{classTemplatedForest_a269716c3758205686408d0ba4d40e1ea}{
+\index{TemplatedForest@{TemplatedForest}!geom@{geom}}
+\index{geom@{geom}!TemplatedForest@{TemplatedForest}}
+\subsubsection[{geom}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename Nvalue , size\_\-t M, typename Mvalue , template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ {\bf Tree}$<$M, real$>$ {\bf TemplatedForest}$<$ N, Nvalue, M, Mvalue, T $>$::{\bf geom}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classTemplatedForest_a269716c3758205686408d0ba4d40e1ea}
+\hypertarget{classTemplatedForest_ad6be6bd985ac82d6e6b9c6caa288f87b}{
+\index{TemplatedForest@{TemplatedForest}!graphComm@{graphComm}}
+\index{graphComm@{graphComm}!TemplatedForest@{TemplatedForest}}
+\subsubsection[{graphComm}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename Nvalue , size\_\-t M, typename Mvalue , template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ MPI\_\-Comm {\bf TemplatedForest}$<$ N, Nvalue, M, Mvalue, T $>$::{\bf graphComm}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classTemplatedForest_ad6be6bd985ac82d6e6b9c6caa288f87b}
+Each seed will contain its own geometry points to search, this assumption implicitly coincides processor topology with geometry voxelization this way tree's root will be morton code used in geometry voxelization and no extra operation is necessary \hypertarget{classTemplatedForest_ae87d21b2598b557756e71a66379373a9}{
+\index{TemplatedForest@{TemplatedForest}!maxseedlevel@{maxseedlevel}}
+\index{maxseedlevel@{maxseedlevel}!TemplatedForest@{TemplatedForest}}
+\subsubsection[{maxseedlevel}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename Nvalue , size\_\-t M, typename Mvalue , template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ uint {\bf TemplatedForest}$<$ N, Nvalue, M, Mvalue, T $>$::{\bf maxseedlevel}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classTemplatedForest_ae87d21b2598b557756e71a66379373a9}
+finds tha maximum level of the seeds \hypertarget{classTemplatedForest_aec4740142a33423f11d38fa4b6a0fa1b}{
+\index{TemplatedForest@{TemplatedForest}!nbrsOfNbrs@{nbrsOfNbrs}}
+\index{nbrsOfNbrs@{nbrsOfNbrs}!TemplatedForest@{TemplatedForest}}
+\subsubsection[{nbrsOfNbrs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename Nvalue , size\_\-t M, typename Mvalue , template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ vector$<$uint$>$ {\bf TemplatedForest}$<$ N, Nvalue, M, Mvalue, T $>$::{\bf nbrsOfNbrs}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classTemplatedForest_aec4740142a33423f11d38fa4b6a0fa1b}
+\hypertarget{classTemplatedForest_a5cf96af68fafcdde214e9125fc3bc8e2}{
+\index{TemplatedForest@{TemplatedForest}!npx@{npx}}
+\index{npx@{npx}!TemplatedForest@{TemplatedForest}}
+\subsubsection[{npx}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename Nvalue , size\_\-t M, typename Mvalue , template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ uint {\bf TemplatedForest}$<$ N, Nvalue, M, Mvalue, T $>$::{\bf npx}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classTemplatedForest_a5cf96af68fafcdde214e9125fc3bc8e2}
+discritization in x direction, this value for proc tree is 2, therefore forest needs its own value of npx \hypertarget{classTemplatedForest_a4172d85562b587e738c55dcebea68d5a}{
+\index{TemplatedForest@{TemplatedForest}!npy@{npy}}
+\index{npy@{npy}!TemplatedForest@{TemplatedForest}}
+\subsubsection[{npy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename Nvalue , size\_\-t M, typename Mvalue , template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ uint {\bf TemplatedForest}$<$ N, Nvalue, M, Mvalue, T $>$::{\bf npy}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classTemplatedForest_a4172d85562b587e738c55dcebea68d5a}
+discretization in y direction \hypertarget{classTemplatedForest_ad52e1ef3aa696efd96f73acce54d6bba}{
+\index{TemplatedForest@{TemplatedForest}!npz@{npz}}
+\index{npz@{npz}!TemplatedForest@{TemplatedForest}}
+\subsubsection[{npz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename Nvalue , size\_\-t M, typename Mvalue , template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ uint {\bf TemplatedForest}$<$ N, Nvalue, M, Mvalue, T $>$::{\bf npz}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classTemplatedForest_ad52e1ef3aa696efd96f73acce54d6bba}
+discretization in z direction \hypertarget{classTemplatedForest_a49435a137ed1829498d249829139b4a9}{
+\index{TemplatedForest@{TemplatedForest}!seeds@{seeds}}
+\index{seeds@{seeds}!TemplatedForest@{TemplatedForest}}
+\subsubsection[{seeds}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename Nvalue , size\_\-t M, typename Mvalue , template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ bitlist$<$M$>$ {\bf TemplatedForest}$<$ N, Nvalue, M, Mvalue, T $>$::{\bf seeds}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classTemplatedForest_a49435a137ed1829498d249829139b4a9}
+seeds: morton code for boxes to grow tree \hypertarget{classTemplatedForest_af8453636607eeaa4f9594d698cf163a9}{
+\index{TemplatedForest@{TemplatedForest}!trees@{trees}}
+\index{trees@{trees}!TemplatedForest@{TemplatedForest}}
+\subsubsection[{trees}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename Nvalue , size\_\-t M, typename Mvalue , template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ treelist$<$N, Nvalue$>$ {\bf TemplatedForest}$<$ N, Nvalue, M, Mvalue, T $>$::{\bf trees}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classTemplatedForest_af8453636607eeaa4f9594d698cf163a9}
+list of trees that each processor includes \hypertarget{classTemplatedForest_a4c6cc2bddf68e03763e76377df46b42a}{
+\index{TemplatedForest@{TemplatedForest}!zoltan\_\-out@{zoltan\_\-out}}
+\index{zoltan\_\-out@{zoltan\_\-out}!TemplatedForest@{TemplatedForest}}
+\subsubsection[{zoltan\_\-out}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename Nvalue , size\_\-t M, typename Mvalue , template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ {\bf Zoltan\_\-Out} {\bf TemplatedForest}$<$ N, Nvalue, M, Mvalue, T $>$::{\bf zoltan\_\-out}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classTemplatedForest_a4c6cc2bddf68e03763e76377df46b42a}
+\hypertarget{classTemplatedForest_ad0940abd76a40dbb80c63ea322c6278b}{
+\index{TemplatedForest@{TemplatedForest}!zz@{zz}}
+\index{zz@{zz}!TemplatedForest@{TemplatedForest}}
+\subsubsection[{zz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename Nvalue , size\_\-t M, typename Mvalue , template$<$ size\_\-t L, typename Lvalue $>$ class T$>$ struct Zoltan\_\-Struct$\ast$ {\bf TemplatedForest}$<$ N, Nvalue, M, Mvalue, T $>$::{\bf zz} = nullptr\hspace{0.3cm}{\ttfamily  \mbox{[}read, private\mbox{]}}}}
+\label{classTemplatedForest_ad0940abd76a40dbb80c63ea322c6278b}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/jhasbestan/Morton\_\-Parallel\_\-v0/src/include/\hyperlink{templateForest_8h}{templateForest.h}\end{DoxyCompactItemize}

@@ -1,0 +1,195 @@
+\hypertarget{classCommPoint2Point}{}\section{Comm\+Point2\+Point$<$ Type $>$ Class Template Reference}
+\label{classCommPoint2Point}\index{Comm\+Point2\+Point$<$ Type $>$@{Comm\+Point2\+Point$<$ Type $>$}}
+
+
+A template wrapper around M\+PI functions for point to point communication.  
+
+
+
+
+{\ttfamily \#include $<$communicate.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCommPoint2Point_aa23f80d9c92ccc7d1ce601ec829c6ff7}{Comm\+Point2\+Point}} (void $\ast$buff, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} size, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$tg, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} snd, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} rcv, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} type, M\+P\+I\+\_\+\+Comm com)
+\item 
+\mbox{\hyperlink{classCommPoint2Point_a2d595c46eb1c130069ad90c9782cf63e}{Comm\+Point2\+Point}} (void $\ast$buff, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} size, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} snd, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} rcv)
+\item 
+\mbox{\hyperlink{classCommPoint2Point_a7e60b9a67fcae40edaa4410425fac6ab}{Comm\+Point2\+Point}} (void $\ast$buff, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} size)
+\item 
+void \mbox{\hyperlink{classCommPoint2Point_a26bf177b75a31154c5d008b0ac7364f0}{assign\+Sender}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} sndr)
+\item 
+void \mbox{\hyperlink{classCommPoint2Point_a0b5ed7ad903ab51aa0429e54bcf6d58e}{assign\+Reciever}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} rcv)
+\item 
+\mbox{\hyperlink{definitions_8h_adbd822dbdb8152553a0f77b84915bd8d}{integer}} \mbox{\hyperlink{classCommPoint2Point_aea7be5ce3b1dcd98c6d02c165be9867c}{my\+Rank}} ()
+\item 
+\mbox{\hyperlink{definitions_8h_adbd822dbdb8152553a0f77b84915bd8d}{integer}} \mbox{\hyperlink{classCommPoint2Point_a7b2195c888a452f25f1567fa1006459e}{my\+Size}} ()
+\item 
+void \mbox{\hyperlink{classCommPoint2Point_a91a4f9779a315269bd95543254bfe0ff}{Irecv}} ()
+\item 
+void \mbox{\hyperlink{classCommPoint2Point_a6415fa1d951388ab158d441539337ed0}{Isend}} ()
+\item 
+void \mbox{\hyperlink{classCommPoint2Point_a98dd7b3bbe9cb5b603d9bb29371eb7db}{recv}} ()
+\item 
+void \mbox{\hyperlink{classCommPoint2Point_a974ce073715ec520a0c56f003cb8a1b0}{send}} ()
+\item 
+void \mbox{\hyperlink{classCommPoint2Point_a9093c564a679e5df134859ed3841a84c}{get\+Offset}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} myvalue, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$offset)
+\item 
+\mbox{\hyperlink{classCommPoint2Point_ad2f7721e07287b51cf589d03c1165966}{$\sim$\+Comm\+Point2\+Point}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structMpiCom}{Mpi\+Com}} \mbox{\hyperlink{classCommPoint2Point_a992996e177ca0ae1096da26abad93915}{Com}}
+\item 
+\mbox{\hyperlink{structMessage}{Message}} \mbox{\hyperlink{classCommPoint2Point_ab3b02cefcb07c7d4dbd0ce262d5eb6bd}{Msg}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Type$>$\newline
+class Comm\+Point2\+Point$<$ Type $>$}
+
+A template wrapper around M\+PI functions for point to point communication. 
+
+class \mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}} abstracts point to point communications and functions 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCommPoint2Point_aa23f80d9c92ccc7d1ce601ec829c6ff7}\label{classCommPoint2Point_aa23f80d9c92ccc7d1ce601ec829c6ff7}} 
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\subsubsection{\texorpdfstring{Comm\+Point2\+Point()}{CommPoint2Point()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+\mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}}$<$ Type $>$\+::\mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}} (\begin{DoxyParamCaption}\item[{void $\ast$}]{buff,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{size,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{tg,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{snd,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{rcv,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{type,  }\item[{M\+P\+I\+\_\+\+Comm}]{Comm }\end{DoxyParamCaption})}
+
+full constructor $<$ default tag for message send and recieve is \char`\"{}0\char`\"{}, M\+P\+I\+\_\+\+A\+N\+Y\+\_\+\+T\+AG is onlu OK for recieve commnad so it can not be used here 
+\begin{DoxyParams}{Parameters}
+{\em Comm} & If communicator is not specified it will be set as M\+P\+I\+\_\+\+C\+O\+M\+M\+\_\+\+W\+O\+R\+LD by default \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCommPoint2Point_a2d595c46eb1c130069ad90c9782cf63e}\label{classCommPoint2Point_a2d595c46eb1c130069ad90c9782cf63e}} 
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\subsubsection{\texorpdfstring{Comm\+Point2\+Point()}{CommPoint2Point()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+\mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}}$<$ Type $>$\+::\mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}} (\begin{DoxyParamCaption}\item[{void $\ast$}]{buff,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{size,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{snd,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{rcv }\end{DoxyParamCaption})}
+
+default constructor 
+\begin{DoxyParams}{Parameters}
+{\em rcv} & another constructor for Communicator class \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCommPoint2Point_a7e60b9a67fcae40edaa4410425fac6ab}\label{classCommPoint2Point_a7e60b9a67fcae40edaa4410425fac6ab}} 
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\subsubsection{\texorpdfstring{Comm\+Point2\+Point()}{CommPoint2Point()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+\mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}}$<$ Type $>$\+::\mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}} (\begin{DoxyParamCaption}\item[{void $\ast$}]{buff,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{size }\end{DoxyParamCaption})}
+
+deferring the assigment of sender and reciever 
+\begin{DoxyParams}{Parameters}
+{\em size} & another constructor for Communicator class, deferes assigning sender and reciever \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCommPoint2Point_ad2f7721e07287b51cf589d03c1165966}\label{classCommPoint2Point_ad2f7721e07287b51cf589d03c1165966}} 
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!````~Comm\+Point2\+Point@{$\sim$\+Comm\+Point2\+Point}}
+\index{````~Comm\+Point2\+Point@{$\sim$\+Comm\+Point2\+Point}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\subsubsection{\texorpdfstring{$\sim$\+Comm\+Point2\+Point()}{~CommPoint2Point()}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+\mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}}$<$ Type $>$\+::$\sim$\mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCommPoint2Point_a0b5ed7ad903ab51aa0429e54bcf6d58e}\label{classCommPoint2Point_a0b5ed7ad903ab51aa0429e54bcf6d58e}} 
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!assign\+Reciever@{assign\+Reciever}}
+\index{assign\+Reciever@{assign\+Reciever}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\subsubsection{\texorpdfstring{assign\+Reciever()}{assignReciever()}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+void \mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}}$<$ Type $>$\+::assign\+Reciever (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{rcv }\end{DoxyParamCaption})}
+
+assigns the sender of the message \mbox{\Hypertarget{classCommPoint2Point_a26bf177b75a31154c5d008b0ac7364f0}\label{classCommPoint2Point_a26bf177b75a31154c5d008b0ac7364f0}} 
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!assign\+Sender@{assign\+Sender}}
+\index{assign\+Sender@{assign\+Sender}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\subsubsection{\texorpdfstring{assign\+Sender()}{assignSender()}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+void \mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}}$<$ Type $>$\+::assign\+Sender (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{sndr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCommPoint2Point_a9093c564a679e5df134859ed3841a84c}\label{classCommPoint2Point_a9093c564a679e5df134859ed3841a84c}} 
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!get\+Offset@{get\+Offset}}
+\index{get\+Offset@{get\+Offset}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\subsubsection{\texorpdfstring{get\+Offset()}{getOffset()}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+void \mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}}$<$ Type $>$\+::get\+Offset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{myvalue,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{offset }\end{DoxyParamCaption})}
+
+calculates the offset of each processor for variable myvalue 
+\begin{DoxyParams}{Parameters}
+{\em offset} & gets the number of elements before the current processor, it is needed for globally defining the elements \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCommPoint2Point_a91a4f9779a315269bd95543254bfe0ff}\label{classCommPoint2Point_a91a4f9779a315269bd95543254bfe0ff}} 
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!Irecv@{Irecv}}
+\index{Irecv@{Irecv}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\subsubsection{\texorpdfstring{Irecv()}{Irecv()}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+void \mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}}$<$ Type $>$\+::Irecv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+non-\/blocking recieve \mbox{\Hypertarget{classCommPoint2Point_a6415fa1d951388ab158d441539337ed0}\label{classCommPoint2Point_a6415fa1d951388ab158d441539337ed0}} 
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!Isend@{Isend}}
+\index{Isend@{Isend}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\subsubsection{\texorpdfstring{Isend()}{Isend()}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+void \mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}}$<$ Type $>$\+::Isend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+non-\/blocking send \mbox{\Hypertarget{classCommPoint2Point_aea7be5ce3b1dcd98c6d02c165be9867c}\label{classCommPoint2Point_aea7be5ce3b1dcd98c6d02c165be9867c}} 
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!my\+Rank@{my\+Rank}}
+\index{my\+Rank@{my\+Rank}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\subsubsection{\texorpdfstring{my\+Rank()}{myRank()}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+int \mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}}$<$ Type $>$\+::my\+Rank (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+assigns the destination the message gets the ranl of the processor \mbox{\Hypertarget{classCommPoint2Point_a7b2195c888a452f25f1567fa1006459e}\label{classCommPoint2Point_a7b2195c888a452f25f1567fa1006459e}} 
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!my\+Size@{my\+Size}}
+\index{my\+Size@{my\+Size}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\subsubsection{\texorpdfstring{my\+Size()}{mySize()}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+int \mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}}$<$ Type $>$\+::my\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCommPoint2Point_a98dd7b3bbe9cb5b603d9bb29371eb7db}\label{classCommPoint2Point_a98dd7b3bbe9cb5b603d9bb29371eb7db}} 
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!recv@{recv}}
+\index{recv@{recv}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\subsubsection{\texorpdfstring{recv()}{recv()}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+void \mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}}$<$ Type $>$\+::recv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+blocking recieve \mbox{\Hypertarget{classCommPoint2Point_a974ce073715ec520a0c56f003cb8a1b0}\label{classCommPoint2Point_a974ce073715ec520a0c56f003cb8a1b0}} 
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!send@{send}}
+\index{send@{send}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+void \mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}}$<$ Type $>$\+::send (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+blocking send 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCommPoint2Point_a992996e177ca0ae1096da26abad93915}\label{classCommPoint2Point_a992996e177ca0ae1096da26abad93915}} 
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!Com@{Com}}
+\index{Com@{Com}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\subsubsection{\texorpdfstring{Com}{Com}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+\mbox{\hyperlink{structMpiCom}{Mpi\+Com}} \mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}}$<$ Type $>$\+::Com\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCommPoint2Point_ab3b02cefcb07c7d4dbd0ce262d5eb6bd}\label{classCommPoint2Point_ab3b02cefcb07c7d4dbd0ce262d5eb6bd}} 
+\index{Comm\+Point2\+Point@{Comm\+Point2\+Point}!Msg@{Msg}}
+\index{Msg@{Msg}!Comm\+Point2\+Point@{Comm\+Point2\+Point}}
+\subsubsection{\texorpdfstring{Msg}{Msg}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+\mbox{\hyperlink{structMessage}{Message}} \mbox{\hyperlink{classCommPoint2Point}{Comm\+Point2\+Point}}$<$ Type $>$\+::Msg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/\mbox{\hyperlink{communicate_8h}{communicate.\+h}}\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/\mbox{\hyperlink{communicate_8cpp}{communicate.\+cpp}}\end{DoxyCompactItemize}

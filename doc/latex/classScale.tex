@@ -1,0 +1,95 @@
+\hypertarget{classScale}{
+\section{Scale$<$ N $>$ Class Template Reference}
+\label{classScale}\index{Scale@{Scale}}
+}
+
+
+{\ttfamily \#include $<$scale.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classScale_a3a5aac56c720ec136899e4ea321d8377}{Scale} ()
+\item 
+void \hyperlink{classScale_aab804122485a038184899d95b7c1bea4}{convertRank2Bits} (int myrank)
+\item 
+void \hyperlink{classScale_ac022f89a6d1e9dcd4e6380d39e5d6fdd}{constructNbrProcs} ()
+\item 
+bool \hyperlink{classScale_acfcd50192078b937a19be52c1c6099a1}{isBoundary} (uint \&direction)
+\item 
+void \hyperlink{classScale_a8df0d89e4b1df03382d9a8c0ddc43ba0}{checkGraphConsistency} (int myrank)
+\item 
+\hyperlink{classScale_a76e8ff2b4110cef6885e96bb4dfaf159}{$\sim$Scale} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint \hyperlink{classScale_a346a8932dff67a83f5d4c52f0dd854d7}{fullTreeLevel}
+\item 
+morton$<$ N $>$ \hyperlink{classScale_a791e37e8f1f874120767ca2ee4d4d980}{rootKey}
+\item 
+vector$<$ int $>$ \hyperlink{classScale_a1e38e92d1d5dc5827d42b50d1d15de02}{Nbr}
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$size\_\-t N$>$ class Scale$<$ N $>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classScale_a3a5aac56c720ec136899e4ea321d8377}{
+\index{Scale@{Scale}!Scale@{Scale}}
+\index{Scale@{Scale}!Scale@{Scale}}
+\subsubsection[{Scale}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ {\bf Scale}$<$ N $>$::{\bf Scale} ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classScale_a3a5aac56c720ec136899e4ea321d8377}
+\hypertarget{classScale_a76e8ff2b4110cef6885e96bb4dfaf159}{
+\index{Scale@{Scale}!$\sim$Scale@{$\sim$Scale}}
+\index{$\sim$Scale@{$\sim$Scale}!Scale@{Scale}}
+\subsubsection[{$\sim$Scale}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ {\bf Scale}$<$ N $>$::$\sim${\bf Scale} ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classScale_a76e8ff2b4110cef6885e96bb4dfaf159}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classScale_a8df0d89e4b1df03382d9a8c0ddc43ba0}{
+\index{Scale@{Scale}!checkGraphConsistency@{checkGraphConsistency}}
+\index{checkGraphConsistency@{checkGraphConsistency}!Scale@{Scale}}
+\subsubsection[{checkGraphConsistency}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ void {\bf Scale}$<$ N $>$::checkGraphConsistency (int {\em myrank})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classScale_a8df0d89e4b1df03382d9a8c0ddc43ba0}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em myrank}]check symmetry of the communication graph, if not symmetric, due to the use of MPI\_\-Probe it will deadlock \end{DoxyParams}
+\hypertarget{classScale_ac022f89a6d1e9dcd4e6380d39e5d6fdd}{
+\index{Scale@{Scale}!constructNbrProcs@{constructNbrProcs}}
+\index{constructNbrProcs@{constructNbrProcs}!Scale@{Scale}}
+\subsubsection[{constructNbrProcs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ void {\bf Scale}$<$ N $>$::constructNbrProcs ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classScale_ac022f89a6d1e9dcd4e6380d39e5d6fdd}
+\hypertarget{classScale_aab804122485a038184899d95b7c1bea4}{
+\index{Scale@{Scale}!convertRank2Bits@{convertRank2Bits}}
+\index{convertRank2Bits@{convertRank2Bits}!Scale@{Scale}}
+\subsubsection[{convertRank2Bits}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ void {\bf Scale}$<$ N $>$::convertRank2Bits (int {\em myrank})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classScale_aab804122485a038184899d95b7c1bea4}
+\hypertarget{classScale_acfcd50192078b937a19be52c1c6099a1}{
+\index{Scale@{Scale}!isBoundary@{isBoundary}}
+\index{isBoundary@{isBoundary}!Scale@{Scale}}
+\subsubsection[{isBoundary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ bool {\bf Scale}$<$ N $>$::isBoundary (uint \& {\em direction})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classScale_acfcd50192078b937a19be52c1c6099a1}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classScale_a346a8932dff67a83f5d4c52f0dd854d7}{
+\index{Scale@{Scale}!fullTreeLevel@{fullTreeLevel}}
+\index{fullTreeLevel@{fullTreeLevel}!Scale@{Scale}}
+\subsubsection[{fullTreeLevel}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ uint {\bf Scale}$<$ N $>$::{\bf fullTreeLevel}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classScale_a346a8932dff67a83f5d4c52f0dd854d7}
+\hypertarget{classScale_a1e38e92d1d5dc5827d42b50d1d15de02}{
+\index{Scale@{Scale}!Nbr@{Nbr}}
+\index{Nbr@{Nbr}!Scale@{Scale}}
+\subsubsection[{Nbr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ vector$<$int$>$ {\bf Scale}$<$ N $>$::{\bf Nbr}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classScale_a1e38e92d1d5dc5827d42b50d1d15de02}
+\hypertarget{classScale_a791e37e8f1f874120767ca2ee4d4d980}{
+\index{Scale@{Scale}!rootKey@{rootKey}}
+\index{rootKey@{rootKey}!Scale@{Scale}}
+\subsubsection[{rootKey}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N$>$ morton$<$N$>$ {\bf Scale}$<$ N $>$::{\bf rootKey}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classScale_a791e37e8f1f874120767ca2ee4d4d980}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/jhasbestan/Morton\_\-Parallel\_\-v0/src/include/\hyperlink{scale_8h}{scale.h}\item 
+/home/jhasbestan/Morton\_\-Parallel\_\-v0/src/\hyperlink{scale_8cpp}{scale.cpp}\end{DoxyCompactItemize}

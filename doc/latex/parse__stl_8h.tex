@@ -1,0 +1,43 @@
+\hypertarget{parse__stl_8h}{}\section{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/parse\+\_\+stl.h File Reference}
+\label{parse__stl_8h}\index{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/parse\+\_\+stl.\+h@{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/parse\+\_\+stl.\+h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$streambuf$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstl_1_1point}{stl\+::point}}
+\begin{DoxyCompactList}\small\item\em Structure to hold coordinates of a point. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structstl_1_1triangle}{stl\+::triangle}}
+\begin{DoxyCompactList}\small\item\em structure to store normals and vertices of a triangle \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structstl_1_1stl__data}{stl\+::stl\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em structure to store vector of triangles read in from $\ast$.stl file \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classVector3}{Vector3}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacestl}{stl}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{namespacestl_ae4582d172b238234aa86690bb28044e9}{stl\+::operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{structtriangle}{triangle}} \&t)
+\item 
+\mbox{\hyperlink{structstl__data}{stl\+\_\+data}} \mbox{\hyperlink{namespacestl_ad322d44b1c95c5975c33f9a5abe8df9d}{stl\+::parse\+\_\+stl}} (const std\+::string \&stl\+\_\+path)
+\item 
+void \mbox{\hyperlink{parse__stl_8h_a31fbede2b2ea8fee84970fec0730bfe6}{check\+Mesh}} (std\+::vector$<$ \mbox{\hyperlink{structstl_1_1triangle}{stl\+::triangle}} $>$ \&triangles)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{parse__stl_8h_a31fbede2b2ea8fee84970fec0730bfe6}\label{parse__stl_8h_a31fbede2b2ea8fee84970fec0730bfe6}} 
+\index{parse\+\_\+stl.\+h@{parse\+\_\+stl.\+h}!check\+Mesh@{check\+Mesh}}
+\index{check\+Mesh@{check\+Mesh}!parse\+\_\+stl.\+h@{parse\+\_\+stl.\+h}}
+\subsubsection{\texorpdfstring{check\+Mesh()}{checkMesh()}}
+{\footnotesize\ttfamily void check\+Mesh (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structstl_1_1triangle}{stl\+::triangle}} $>$ \&}]{triangles }\end{DoxyParamCaption})}
+

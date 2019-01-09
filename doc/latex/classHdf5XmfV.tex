@@ -1,0 +1,69 @@
+\hypertarget{classHdf5XmfV}{
+\section{Hdf5XmfV$<$ N, value $>$ Class Template Reference}
+\label{classHdf5XmfV}\index{Hdf5XmfV@{Hdf5XmfV}}
+}
+
+
+This class writes out \hyperlink{classVoxel}{Voxel} data in hdf5 format with $\ast$.xmf as metadata suitable for paraview and visit,.  
+
+
+{\ttfamily \#include $<$tree.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classHdf5XmfV_aa628576f1c167b9ae740b35fe820ccb9}{xdmfPolyvertexSerial} (\hyperlink{classVoxel}{Voxel}$<$ N, value $>$ \&V)
+\item 
+void \hyperlink{classHdf5XmfV_acbfe982bd279b8b319192599ff5a2dbe}{writeHdf5PolyvertexSerial} (\hyperlink{classVoxel}{Voxel}$<$ N, value $>$ \&V)
+\item 
+void \hyperlink{classHdf5XmfV_a59e1e8befe19492a44253a6e2a88dbf4}{writeP} (\hyperlink{classVoxel}{Voxel}$<$ N, value $>$ \&V)
+\item 
+void \hyperlink{classHdf5XmfV_ac0518586e7645121c0cd0b1fbf1cedda}{writeHdf5MultiBlockSerial} (\hyperlink{classVoxel}{Voxel}$<$ N, value $>$ \&V)
+\item 
+void \hyperlink{classHdf5XmfV_a303a20a8b00db8f318e86e3619d8d206}{xdmfMultiBlockSerial} (\hyperlink{classVoxel}{Voxel}$<$ N, value $>$ \&V)
+\item 
+void \hyperlink{classHdf5XmfV_a1b5ca0189c327d3080da1de92a99047f}{write} (\hyperlink{classVoxel}{Voxel}$<$ N, value $>$ \&V)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$size\_\-t N, typename value$>$ class Hdf5XmfV$<$ N, value $>$}
+
+This class writes out \hyperlink{classVoxel}{Voxel} data in hdf5 format with $\ast$.xmf as metadata suitable for paraview and visit,. $\ast$ $\ast$
+
+the reason for keeping these separate is because \hyperlink{classTree}{Tree} data will have a solution vector soon and that class will be much more different down the road 
+
+\subsection{Member Function Documentation}
+\hypertarget{classHdf5XmfV_a1b5ca0189c327d3080da1de92a99047f}{
+\index{Hdf5XmfV@{Hdf5XmfV}!write@{write}}
+\index{write@{write}!Hdf5XmfV@{Hdf5XmfV}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename value $>$ void {\bf Hdf5XmfV}$<$ N, value $>$::write ({\bf Voxel}$<$ N, value $>$ \& {\em V})}}
+\label{classHdf5XmfV_a1b5ca0189c327d3080da1de92a99047f}
+writes out only the elements with highest level in hdf5 \hypertarget{classHdf5XmfV_ac0518586e7645121c0cd0b1fbf1cedda}{
+\index{Hdf5XmfV@{Hdf5XmfV}!writeHdf5MultiBlockSerial@{writeHdf5MultiBlockSerial}}
+\index{writeHdf5MultiBlockSerial@{writeHdf5MultiBlockSerial}!Hdf5XmfV@{Hdf5XmfV}}
+\subsubsection[{writeHdf5MultiBlockSerial}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename value $>$ void {\bf Hdf5XmfV}$<$ N, value $>$::writeHdf5MultiBlockSerial ({\bf Voxel}$<$ N, value $>$ \& {\em V})}}
+\label{classHdf5XmfV_ac0518586e7645121c0cd0b1fbf1cedda}
+writes out all the elements \hypertarget{classHdf5XmfV_acbfe982bd279b8b319192599ff5a2dbe}{
+\index{Hdf5XmfV@{Hdf5XmfV}!writeHdf5PolyvertexSerial@{writeHdf5PolyvertexSerial}}
+\index{writeHdf5PolyvertexSerial@{writeHdf5PolyvertexSerial}!Hdf5XmfV@{Hdf5XmfV}}
+\subsubsection[{writeHdf5PolyvertexSerial}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename value $>$ void {\bf Hdf5XmfV}$<$ N, value $>$::writeHdf5PolyvertexSerial ({\bf Voxel}$<$ N, value $>$ \& {\em V})}}
+\label{classHdf5XmfV_acbfe982bd279b8b319192599ff5a2dbe}
+\hypertarget{classHdf5XmfV_a59e1e8befe19492a44253a6e2a88dbf4}{
+\index{Hdf5XmfV@{Hdf5XmfV}!writeP@{writeP}}
+\index{writeP@{writeP}!Hdf5XmfV@{Hdf5XmfV}}
+\subsubsection[{writeP}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename value $>$ void {\bf Hdf5XmfV}$<$ N, value $>$::writeP ({\bf Voxel}$<$ N, value $>$ \& {\em V})}}
+\label{classHdf5XmfV_a59e1e8befe19492a44253a6e2a88dbf4}
+write only the centroids of the cubes \hypertarget{classHdf5XmfV_a303a20a8b00db8f318e86e3619d8d206}{
+\index{Hdf5XmfV@{Hdf5XmfV}!xdmfMultiBlockSerial@{xdmfMultiBlockSerial}}
+\index{xdmfMultiBlockSerial@{xdmfMultiBlockSerial}!Hdf5XmfV@{Hdf5XmfV}}
+\subsubsection[{xdmfMultiBlockSerial}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename value $>$ void {\bf Hdf5XmfV}$<$ N, value $>$::xdmfMultiBlockSerial ({\bf Voxel}$<$ N, value $>$ \& {\em V})}}
+\label{classHdf5XmfV_a303a20a8b00db8f318e86e3619d8d206}
+\hypertarget{classHdf5XmfV_aa628576f1c167b9ae740b35fe820ccb9}{
+\index{Hdf5XmfV@{Hdf5XmfV}!xdmfPolyvertexSerial@{xdmfPolyvertexSerial}}
+\index{xdmfPolyvertexSerial@{xdmfPolyvertexSerial}!Hdf5XmfV@{Hdf5XmfV}}
+\subsubsection[{xdmfPolyvertexSerial}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\_\-t N, typename value $>$ void {\bf Hdf5XmfV}$<$ N, value $>$::xdmfPolyvertexSerial ({\bf Voxel}$<$ N, value $>$ \& {\em V})}}
+\label{classHdf5XmfV_aa628576f1c167b9ae740b35fe820ccb9}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/jhasbestan/Morton\_\-Parellel/Modify/src/include/\hyperlink{tree_8h}{tree.h}\end{DoxyCompactItemize}

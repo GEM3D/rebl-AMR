@@ -1,0 +1,100 @@
+\hypertarget{classPhdf5}{}\section{Phdf5$<$ N, Nvalue, M, Mvalue $>$ Class Template Reference}
+\label{classPhdf5}\index{Phdf5$<$ N, Nvalue, M, Mvalue $>$@{Phdf5$<$ N, Nvalue, M, Mvalue $>$}}
+
+
+This Writes out \mbox{\hyperlink{classTree}{Tree}} data in hdf5 format in parallel with $\ast$.xmf as metadata suitable for paraview and visit.  
+
+
+
+
+{\ttfamily \#include $<$phdf5.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPhdf5_afc8ea2b7a2dfa770d5dec38e8b9f8d91}{Phdf5}} ()
+\item 
+void \mbox{\hyperlink{classPhdf5_a09da9d5b8a098327ed178237532f99c9}{write\+Polyvertex}} (\mbox{\hyperlink{classForest}{Forest}}$<$ N, Nvalue, M, Mvalue $>$ \&F, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} appx)
+\item 
+void \mbox{\hyperlink{classPhdf5_afb34f940fb0ca36971a73a09800c388a}{xdmf\+Polyvertex}} (\mbox{\hyperlink{definitions_8h_adbd822dbdb8152553a0f77b84915bd8d}{integer}} my\+\_\+rank, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} appx)
+\item 
+void \mbox{\hyperlink{classPhdf5_aae8557e831c06005dd887d04073a171d}{write\+Multi\+Block}} (\mbox{\hyperlink{classForest}{Forest}}$<$ N, Nvalue, M, Mvalue $>$ \&F, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} appx)
+\item 
+void \mbox{\hyperlink{classPhdf5_a6f869e6df79d216b7746b35869b8d82f}{xdmf\+Multi\+Block}} (\mbox{\hyperlink{classForest}{Forest}}$<$ N, Nvalue, M, Mvalue $>$ \&F, \mbox{\hyperlink{definitions_8h_adbd822dbdb8152553a0f77b84915bd8d}{integer}} comsize, \mbox{\hyperlink{definitions_8h_adbd822dbdb8152553a0f77b84915bd8d}{integer}} my\+\_\+rank, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} offset, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} appx)
+\item 
+\mbox{\hyperlink{classPhdf5_aeff77d62aae395bc368d2baa132ac3f0}{$\sim$\+Phdf5}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classPhdf5_a4bb1cd4f86aac47741578a1d904ce2b0}{totalnumber}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue$>$\newline
+class Phdf5$<$ N, Nvalue, M, Mvalue $>$}
+
+This Writes out \mbox{\hyperlink{classTree}{Tree}} data in hdf5 format in parallel with $\ast$.xmf as metadata suitable for paraview and visit. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPhdf5_afc8ea2b7a2dfa770d5dec38e8b9f8d91}\label{classPhdf5_afc8ea2b7a2dfa770d5dec38e8b9f8d91}} 
+\index{Phdf5@{Phdf5}!Phdf5@{Phdf5}}
+\index{Phdf5@{Phdf5}!Phdf5@{Phdf5}}
+\subsubsection{\texorpdfstring{Phdf5()}{Phdf5()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+\mbox{\hyperlink{classPhdf5}{Phdf5}}$<$ N, Nvalue, M, Mvalue $>$\+::\mbox{\hyperlink{classPhdf5}{Phdf5}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPhdf5_aeff77d62aae395bc368d2baa132ac3f0}\label{classPhdf5_aeff77d62aae395bc368d2baa132ac3f0}} 
+\index{Phdf5@{Phdf5}!````~Phdf5@{$\sim$\+Phdf5}}
+\index{````~Phdf5@{$\sim$\+Phdf5}!Phdf5@{Phdf5}}
+\subsubsection{\texorpdfstring{$\sim$\+Phdf5()}{~Phdf5()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+\mbox{\hyperlink{classPhdf5}{Phdf5}}$<$ N, Nvalue, M, Mvalue $>$\+::$\sim$\mbox{\hyperlink{classPhdf5}{Phdf5}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPhdf5_aae8557e831c06005dd887d04073a171d}\label{classPhdf5_aae8557e831c06005dd887d04073a171d}} 
+\index{Phdf5@{Phdf5}!write\+Multi\+Block@{write\+Multi\+Block}}
+\index{write\+Multi\+Block@{write\+Multi\+Block}!Phdf5@{Phdf5}}
+\subsubsection{\texorpdfstring{write\+Multi\+Block()}{writeMultiBlock()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classPhdf5}{Phdf5}}$<$ N, Nvalue, M, Mvalue $>$\+::write\+Multi\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classForest}{Forest}}$<$ N, Nvalue, M, Mvalue $>$ \&}]{F,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{appx }\end{DoxyParamCaption})}
+
+writes each element as block and mesh is combination of blocks, appx sets the appendix as string for the output file \mbox{\Hypertarget{classPhdf5_a09da9d5b8a098327ed178237532f99c9}\label{classPhdf5_a09da9d5b8a098327ed178237532f99c9}} 
+\index{Phdf5@{Phdf5}!write\+Polyvertex@{write\+Polyvertex}}
+\index{write\+Polyvertex@{write\+Polyvertex}!Phdf5@{Phdf5}}
+\subsubsection{\texorpdfstring{write\+Polyvertex()}{writePolyvertex()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classPhdf5}{Phdf5}}$<$ N, Nvalue, M, Mvalue $>$\+::write\+Polyvertex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classForest}{Forest}}$<$ N, Nvalue, M, Mvalue $>$ \&}]{F,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{appx }\end{DoxyParamCaption})}
+
+writes only the centeroids of the mesh, appx sets the appendix as string for the output file \mbox{\Hypertarget{classPhdf5_a6f869e6df79d216b7746b35869b8d82f}\label{classPhdf5_a6f869e6df79d216b7746b35869b8d82f}} 
+\index{Phdf5@{Phdf5}!xdmf\+Multi\+Block@{xdmf\+Multi\+Block}}
+\index{xdmf\+Multi\+Block@{xdmf\+Multi\+Block}!Phdf5@{Phdf5}}
+\subsubsection{\texorpdfstring{xdmf\+Multi\+Block()}{xdmfMultiBlock()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classPhdf5}{Phdf5}}$<$ N, Nvalue, M, Mvalue $>$\+::xdmf\+Multi\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classForest}{Forest}}$<$ N, Nvalue, M, Mvalue $>$ \&}]{F,  }\item[{\mbox{\hyperlink{definitions_8h_adbd822dbdb8152553a0f77b84915bd8d}{integer}}}]{comsize,  }\item[{\mbox{\hyperlink{definitions_8h_adbd822dbdb8152553a0f77b84915bd8d}{integer}}}]{my\+\_\+rank,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{offset,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{appx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPhdf5_afb34f940fb0ca36971a73a09800c388a}\label{classPhdf5_afb34f940fb0ca36971a73a09800c388a}} 
+\index{Phdf5@{Phdf5}!xdmf\+Polyvertex@{xdmf\+Polyvertex}}
+\index{xdmf\+Polyvertex@{xdmf\+Polyvertex}!Phdf5@{Phdf5}}
+\subsubsection{\texorpdfstring{xdmf\+Polyvertex()}{xdmfPolyvertex()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classPhdf5}{Phdf5}}$<$ N, Nvalue, M, Mvalue $>$\+::xdmf\+Polyvertex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_adbd822dbdb8152553a0f77b84915bd8d}{integer}}}]{my\+\_\+rank,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{appx }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classPhdf5_a4bb1cd4f86aac47741578a1d904ce2b0}\label{classPhdf5_a4bb1cd4f86aac47741578a1d904ce2b0}} 
+\index{Phdf5@{Phdf5}!totalnumber@{totalnumber}}
+\index{totalnumber@{totalnumber}!Phdf5@{Phdf5}}
+\subsubsection{\texorpdfstring{totalnumber}{totalnumber}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classPhdf5}{Phdf5}}$<$ N, Nvalue, M, Mvalue $>$\+::totalnumber\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/\mbox{\hyperlink{phdf5_8h}{phdf5.\+h}}\end{DoxyCompactItemize}

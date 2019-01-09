@@ -1,0 +1,138 @@
+\hypertarget{classGeomSTL}{}\section{Geom\+S\+TL Class Reference}
+\label{classGeomSTL}\index{Geom\+S\+TL@{Geom\+S\+TL}}
+
+
+{\ttfamily \#include $<$geom\+S\+T\+L.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGeomSTL_a90b2b4613d18ae27f53393233b063207}{Geom\+S\+TL}} ()
+\item 
+void \mbox{\hyperlink{classGeomSTL_abda226b5dab2871a7b61bfaf2203234d}{construct}} (\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$xyz1)
+\item 
+\mbox{\hyperlink{structstl__data}{stl\+\_\+data}} \mbox{\hyperlink{classGeomSTL_ab73af5ba40ffa45cbff467fc6421088c}{parse\+\_\+stl}} (const std\+::string \&stl\+\_\+path)
+\item 
+float \mbox{\hyperlink{classGeomSTL_a4da4da9fdbd99722ca7e2005420a8e68}{parse\+\_\+float}} (std\+::ifstream \&s)
+\item 
+\mbox{\hyperlink{structpoint}{point}} \mbox{\hyperlink{classGeomSTL_a188d94b64201e5d2ee6ce8919742c240}{parse\+\_\+point}} (std\+::ifstream \&s)
+\item 
+\mbox{\hyperlink{structstl__data}{stl\+\_\+data}} \mbox{\hyperlink{classGeomSTL_a4dd58852b67375603db2735f4ab119ce}{parse\+S\+TL}} (const std\+::string \&stl\+\_\+path)
+\item 
+void \mbox{\hyperlink{classGeomSTL_aeccef8dc47681bd8b594bdcf93fdf910}{read\+S\+T\+L\+Geom}} (char $\ast$argv\mbox{[}$\,$\mbox{]}, const \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$\mbox{\hyperlink{classGeomSTL_a38716d8c3db44ebc059e020d2ce926b2}{xyz}})
+\item 
+void \mbox{\hyperlink{classGeomSTL_a55768801abe34a2326c1a5013924faac}{check\+Mesh}} (std\+::vector$<$ \mbox{\hyperlink{structtriangle}{triangle}} $>$ \&triangles)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classGeomSTL_ae5999187224ca4a905f6281f83ad10d4}{geom\+\_\+nn}}
+\item 
+\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$ \mbox{\hyperlink{classGeomSTL_aa042c614009a5473c8bd34bf6cda0561}{geom\+\_\+xyz}}
+\item 
+\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$\+\_\+\+\_\+restrict\+\_\+\+\_\+ \mbox{\hyperlink{classGeomSTL_a090ec3d4d4a5be7eb0a0874ce91b07a3}{triangle\+\_\+center}}
+\item 
+\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} \mbox{\hyperlink{classGeomSTL_a38716d8c3db44ebc059e020d2ce926b2}{xyz}} \mbox{[}6\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ }\\class \mbox{\hyperlink{classGeomSTL_a8d90a8b4dd53f0733e15d6eed6d2dcdd}{Rebl\+Amr}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGeomSTL_a90b2b4613d18ae27f53393233b063207}\label{classGeomSTL_a90b2b4613d18ae27f53393233b063207}} 
+\index{Geom\+S\+TL@{Geom\+S\+TL}!Geom\+S\+TL@{Geom\+S\+TL}}
+\index{Geom\+S\+TL@{Geom\+S\+TL}!Geom\+S\+TL@{Geom\+S\+TL}}
+\subsubsection{\texorpdfstring{Geom\+S\+T\+L()}{GeomSTL()}}
+{\footnotesize\ttfamily Geom\+S\+T\+L\+::\+Geom\+S\+TL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGeomSTL_a55768801abe34a2326c1a5013924faac}\label{classGeomSTL_a55768801abe34a2326c1a5013924faac}} 
+\index{Geom\+S\+TL@{Geom\+S\+TL}!check\+Mesh@{check\+Mesh}}
+\index{check\+Mesh@{check\+Mesh}!Geom\+S\+TL@{Geom\+S\+TL}}
+\subsubsection{\texorpdfstring{check\+Mesh()}{checkMesh()}}
+{\footnotesize\ttfamily void Geom\+S\+T\+L\+::check\+Mesh (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structtriangle}{triangle}} $>$ \&}]{triangles }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGeomSTL_abda226b5dab2871a7b61bfaf2203234d}\label{classGeomSTL_abda226b5dab2871a7b61bfaf2203234d}} 
+\index{Geom\+S\+TL@{Geom\+S\+TL}!construct@{construct}}
+\index{construct@{construct}!Geom\+S\+TL@{Geom\+S\+TL}}
+\subsubsection{\texorpdfstring{construct()}{construct()}}
+{\footnotesize\ttfamily void Geom\+S\+T\+L\+::construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{xyz1 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGeomSTL_a4da4da9fdbd99722ca7e2005420a8e68}\label{classGeomSTL_a4da4da9fdbd99722ca7e2005420a8e68}} 
+\index{Geom\+S\+TL@{Geom\+S\+TL}!parse\+\_\+float@{parse\+\_\+float}}
+\index{parse\+\_\+float@{parse\+\_\+float}!Geom\+S\+TL@{Geom\+S\+TL}}
+\subsubsection{\texorpdfstring{parse\+\_\+float()}{parse\_float()}}
+{\footnotesize\ttfamily float Geom\+S\+T\+L\+::parse\+\_\+float (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGeomSTL_a188d94b64201e5d2ee6ce8919742c240}\label{classGeomSTL_a188d94b64201e5d2ee6ce8919742c240}} 
+\index{Geom\+S\+TL@{Geom\+S\+TL}!parse\+\_\+point@{parse\+\_\+point}}
+\index{parse\+\_\+point@{parse\+\_\+point}!Geom\+S\+TL@{Geom\+S\+TL}}
+\subsubsection{\texorpdfstring{parse\+\_\+point()}{parse\_point()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} Geom\+S\+T\+L\+::parse\+\_\+point (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGeomSTL_ab73af5ba40ffa45cbff467fc6421088c}\label{classGeomSTL_ab73af5ba40ffa45cbff467fc6421088c}} 
+\index{Geom\+S\+TL@{Geom\+S\+TL}!parse\+\_\+stl@{parse\+\_\+stl}}
+\index{parse\+\_\+stl@{parse\+\_\+stl}!Geom\+S\+TL@{Geom\+S\+TL}}
+\subsubsection{\texorpdfstring{parse\+\_\+stl()}{parse\_stl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structstl__data}{stl\+\_\+data}} Geom\+S\+T\+L\+::parse\+\_\+stl (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{stl\+\_\+path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGeomSTL_a4dd58852b67375603db2735f4ab119ce}\label{classGeomSTL_a4dd58852b67375603db2735f4ab119ce}} 
+\index{Geom\+S\+TL@{Geom\+S\+TL}!parse\+S\+TL@{parse\+S\+TL}}
+\index{parse\+S\+TL@{parse\+S\+TL}!Geom\+S\+TL@{Geom\+S\+TL}}
+\subsubsection{\texorpdfstring{parse\+S\+T\+L()}{parseSTL()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structstl__data}{stl\+\_\+data}} Geom\+S\+T\+L\+::parse\+S\+TL (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{stl\+\_\+path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGeomSTL_aeccef8dc47681bd8b594bdcf93fdf910}\label{classGeomSTL_aeccef8dc47681bd8b594bdcf93fdf910}} 
+\index{Geom\+S\+TL@{Geom\+S\+TL}!read\+S\+T\+L\+Geom@{read\+S\+T\+L\+Geom}}
+\index{read\+S\+T\+L\+Geom@{read\+S\+T\+L\+Geom}!Geom\+S\+TL@{Geom\+S\+TL}}
+\subsubsection{\texorpdfstring{read\+S\+T\+L\+Geom()}{readSTLGeom()}}
+{\footnotesize\ttfamily void Geom\+S\+T\+L\+::read\+S\+T\+L\+Geom (\begin{DoxyParamCaption}\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{const \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{xyz }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classGeomSTL_a8d90a8b4dd53f0733e15d6eed6d2dcdd}\label{classGeomSTL_a8d90a8b4dd53f0733e15d6eed6d2dcdd}} 
+\index{Geom\+S\+TL@{Geom\+S\+TL}!Rebl\+Amr@{Rebl\+Amr}}
+\index{Rebl\+Amr@{Rebl\+Amr}!Geom\+S\+TL@{Geom\+S\+TL}}
+\subsubsection{\texorpdfstring{Rebl\+Amr}{ReblAmr}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+friend class \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classGeomSTL_ae5999187224ca4a905f6281f83ad10d4}\label{classGeomSTL_ae5999187224ca4a905f6281f83ad10d4}} 
+\index{Geom\+S\+TL@{Geom\+S\+TL}!geom\+\_\+nn@{geom\+\_\+nn}}
+\index{geom\+\_\+nn@{geom\+\_\+nn}!Geom\+S\+TL@{Geom\+S\+TL}}
+\subsubsection{\texorpdfstring{geom\+\_\+nn}{geom\_nn}}
+{\footnotesize\ttfamily int Geom\+S\+T\+L\+::geom\+\_\+nn\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGeomSTL_aa042c614009a5473c8bd34bf6cda0561}\label{classGeomSTL_aa042c614009a5473c8bd34bf6cda0561}} 
+\index{Geom\+S\+TL@{Geom\+S\+TL}!geom\+\_\+xyz@{geom\+\_\+xyz}}
+\index{geom\+\_\+xyz@{geom\+\_\+xyz}!Geom\+S\+TL@{Geom\+S\+TL}}
+\subsubsection{\texorpdfstring{geom\+\_\+xyz}{geom\_xyz}}
+{\footnotesize\ttfamily \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}}$\ast$ Geom\+S\+T\+L\+::geom\+\_\+xyz\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGeomSTL_a090ec3d4d4a5be7eb0a0874ce91b07a3}\label{classGeomSTL_a090ec3d4d4a5be7eb0a0874ce91b07a3}} 
+\index{Geom\+S\+TL@{Geom\+S\+TL}!triangle\+\_\+center@{triangle\+\_\+center}}
+\index{triangle\+\_\+center@{triangle\+\_\+center}!Geom\+S\+TL@{Geom\+S\+TL}}
+\subsubsection{\texorpdfstring{triangle\+\_\+center}{triangle\_center}}
+{\footnotesize\ttfamily \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}}$\ast$ \+\_\+\+\_\+restrict\+\_\+\+\_\+ Geom\+S\+T\+L\+::triangle\+\_\+center\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGeomSTL_a38716d8c3db44ebc059e020d2ce926b2}\label{classGeomSTL_a38716d8c3db44ebc059e020d2ce926b2}} 
+\index{Geom\+S\+TL@{Geom\+S\+TL}!xyz@{xyz}}
+\index{xyz@{xyz}!Geom\+S\+TL@{Geom\+S\+TL}}
+\subsubsection{\texorpdfstring{xyz}{xyz}}
+{\footnotesize\ttfamily \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} Geom\+S\+T\+L\+::xyz\mbox{[}6\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/\mbox{\hyperlink{geomSTL_8h}{geom\+S\+T\+L.\+h}}\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/\mbox{\hyperlink{geomSTL_8cpp}{geom\+S\+T\+L.\+cpp}}\end{DoxyCompactItemize}

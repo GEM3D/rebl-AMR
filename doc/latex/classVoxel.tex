@@ -1,0 +1,174 @@
+\hypertarget{classVoxel}{}\section{Voxel$<$ N, value $>$ Class Template Reference}
+\label{classVoxel}\index{Voxel$<$ N, value $>$@{Voxel$<$ N, value $>$}}
+
+
+This Class Generates an unbalancerd \mbox{\hyperlink{classVoxel}{Voxel}} to improve search by geometry partitioning.  
+
+
+
+
+{\ttfamily \#include $<$tree.\+h$>$}
+
+Inheritance diagram for Voxel$<$ N, value $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classVoxel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVoxel_a2de5f4a796b6232664726a75cc727873}{Voxel}} (\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$length, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$coords)
+\item 
+void \mbox{\hyperlink{classVoxel_af363467297ff56e7f67c8b8e433fba04}{set\+Level}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$l)
+\item 
+void \mbox{\hyperlink{classVoxel_acf4017ddfe4ecfb418cd4c8828eec71d}{generate\+Search\+Tree}} (\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$geom\+\_\+xyz, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} n)
+\item 
+void \mbox{\hyperlink{classVoxel_a97154e50e16297f2f9e81cac91271aee}{distribute\+Geom\+To\+Leaves}} (\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$geom\+\_\+xyz, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} n)
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classVoxel_a3f219470ab58fc5da5431566fd093378}{check\+Sibling\+Status}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key, \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ $\ast$sibkey)
+\item 
+void \mbox{\hyperlink{classVoxel_ad34c50e8ed627e20dba6188a1c074854}{derefine\+Geom\+Tree}} ()
+\item 
+bool \mbox{\hyperlink{classVoxel_af2e7050a3c6d74c62c929d6b08f123b3}{Is\+Inside\+Segment}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ key, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$xyz)
+\item 
+\mbox{\hyperlink{classVoxel_a4e96d3d825885a1728f478bba74cd3c9}{$\sim$\+Voxel}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classVoxel_addc02aaaef2f93ffcae1ded7a2184518}{maxlevel}}
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classVoxel_addfa7b07b7173c6727fd8cf0c38c61d8}{num\+Max}}
+\item 
+\mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$ N, value $>$ \mbox{\hyperlink{classVoxel_a3d53e01604350cc00c9bef098c7e23e5}{mesh}}
+\item 
+\mbox{\hyperlink{definitions_8h_a55821d7929f3f16aaf1466129c209492}{bitvector}}$<$ N $>$ \mbox{\hyperlink{classVoxel_a4e8a1661e9468250e10aa861d61f861e}{lookup}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$size\+\_\+t N1, typename value1 $>$ }\\class \mbox{\hyperlink{classVoxel_a7f84a23096bb6840efa341b4cde72d9d}{Hdf5\+XmfV}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$size\+\_\+t N, typename value$>$\newline
+class Voxel$<$ N, value $>$}
+
+This Class Generates an unbalancerd \mbox{\hyperlink{classVoxel}{Voxel}} to improve search by geometry partitioning. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVoxel_a2de5f4a796b6232664726a75cc727873}\label{classVoxel_a2de5f4a796b6232664726a75cc727873}} 
+\index{Voxel@{Voxel}!Voxel@{Voxel}}
+\index{Voxel@{Voxel}!Voxel@{Voxel}}
+\subsubsection{\texorpdfstring{Voxel()}{Voxel()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{classVoxel}{Voxel}}$<$ N, value $>$\+::\mbox{\hyperlink{classVoxel}{Voxel}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{length,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{coords }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classVoxel_a4e96d3d825885a1728f478bba74cd3c9}\label{classVoxel_a4e96d3d825885a1728f478bba74cd3c9}} 
+\index{Voxel@{Voxel}!````~Voxel@{$\sim$\+Voxel}}
+\index{````~Voxel@{$\sim$\+Voxel}!Voxel@{Voxel}}
+\subsubsection{\texorpdfstring{$\sim$\+Voxel()}{~Voxel()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{classVoxel}{Voxel}}$<$ N, value $>$\+::$\sim$\mbox{\hyperlink{classVoxel}{Voxel}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor of this class 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classVoxel_a3f219470ab58fc5da5431566fd093378}\label{classVoxel_a3f219470ab58fc5da5431566fd093378}} 
+\index{Voxel@{Voxel}!check\+Sibling\+Status@{check\+Sibling\+Status}}
+\index{check\+Sibling\+Status@{check\+Sibling\+Status}!Voxel@{Voxel}}
+\subsubsection{\texorpdfstring{check\+Sibling\+Status()}{checkSiblingStatus()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classVoxel}{Voxel}}$<$ N, value $>$\+::check\+Sibling\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ $\ast$}]{sibkey }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sibkey} & checks to see if siblings include any points and whether they have the same level \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVoxel_ad34c50e8ed627e20dba6188a1c074854}\label{classVoxel_ad34c50e8ed627e20dba6188a1c074854}} 
+\index{Voxel@{Voxel}!derefine\+Geom\+Tree@{derefine\+Geom\+Tree}}
+\index{derefine\+Geom\+Tree@{derefine\+Geom\+Tree}!Voxel@{Voxel}}
+\subsubsection{\texorpdfstring{derefine\+Geom\+Tree()}{derefineGeomTree()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classVoxel}{Voxel}}$<$ N, value $>$\+::derefine\+Geom\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+checks to see if siblings include any points and whether they have the same level derefines the tree based on geometry \mbox{\Hypertarget{classVoxel_a97154e50e16297f2f9e81cac91271aee}\label{classVoxel_a97154e50e16297f2f9e81cac91271aee}} 
+\index{Voxel@{Voxel}!distribute\+Geom\+To\+Leaves@{distribute\+Geom\+To\+Leaves}}
+\index{distribute\+Geom\+To\+Leaves@{distribute\+Geom\+To\+Leaves}!Voxel@{Voxel}}
+\subsubsection{\texorpdfstring{distribute\+Geom\+To\+Leaves()}{distributeGeomToLeaves()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classVoxel}{Voxel}}$<$ N, value $>$\+::distribute\+Geom\+To\+Leaves (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{geom\+\_\+xyz,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{n }\end{DoxyParamCaption})}
+
+distributes geometry to different cells (leaves) \mbox{\Hypertarget{classVoxel_acf4017ddfe4ecfb418cd4c8828eec71d}\label{classVoxel_acf4017ddfe4ecfb418cd4c8828eec71d}} 
+\index{Voxel@{Voxel}!generate\+Search\+Tree@{generate\+Search\+Tree}}
+\index{generate\+Search\+Tree@{generate\+Search\+Tree}!Voxel@{Voxel}}
+\subsubsection{\texorpdfstring{generate\+Search\+Tree()}{generateSearchTree()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classVoxel}{Voxel}}$<$ N, value $>$\+::generate\+Search\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{geom\+\_\+xyz,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{n }\end{DoxyParamCaption})}
+
+generates an initial tree \mbox{\Hypertarget{classVoxel_af2e7050a3c6d74c62c929d6b08f123b3}\label{classVoxel_af2e7050a3c6d74c62c929d6b08f123b3}} 
+\index{Voxel@{Voxel}!Is\+Inside\+Segment@{Is\+Inside\+Segment}}
+\index{Is\+Inside\+Segment@{Is\+Inside\+Segment}!Voxel@{Voxel}}
+\subsubsection{\texorpdfstring{Is\+Inside\+Segment()}{IsInsideSegment()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+bool \mbox{\hyperlink{classVoxel}{Voxel}}$<$ N, value $>$\+::Is\+Inside\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{xyz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classVoxel_af363467297ff56e7f67c8b8e433fba04}\label{classVoxel_af363467297ff56e7f67c8b8e433fba04}} 
+\index{Voxel@{Voxel}!set\+Level@{set\+Level}}
+\index{set\+Level@{set\+Level}!Voxel@{Voxel}}
+\subsubsection{\texorpdfstring{set\+Level()}{setLevel()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+void \mbox{\hyperlink{classVoxel}{Voxel}}$<$ N, value $>$\+::set\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{l }\end{DoxyParamCaption})}
+
+constructor sets the maximum level for refinement 
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classVoxel_a7f84a23096bb6840efa341b4cde72d9d}\label{classVoxel_a7f84a23096bb6840efa341b4cde72d9d}} 
+\index{Voxel@{Voxel}!Hdf5\+XmfV@{Hdf5\+XmfV}}
+\index{Hdf5\+XmfV@{Hdf5\+XmfV}!Voxel@{Voxel}}
+\subsubsection{\texorpdfstring{Hdf5\+XmfV}{Hdf5XmfV}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+template$<$size\+\_\+t N1, typename value1 $>$ \\
+friend class Hdf5\+XmfV\hspace{0.3cm}{\ttfamily [friend]}}
+
+this is a friend class to write out in hdf5 format 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classVoxel_a4e8a1661e9468250e10aa861d61f861e}\label{classVoxel_a4e8a1661e9468250e10aa861d61f861e}} 
+\index{Voxel@{Voxel}!lookup@{lookup}}
+\index{lookup@{lookup}!Voxel@{Voxel}}
+\subsubsection{\texorpdfstring{lookup}{lookup}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_a55821d7929f3f16aaf1466129c209492}{bitvector}}$<$N$>$ \mbox{\hyperlink{classVoxel}{Voxel}}$<$ N, value $>$\+::lookup\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classVoxel_addc02aaaef2f93ffcae1ded7a2184518}\label{classVoxel_addc02aaaef2f93ffcae1ded7a2184518}} 
+\index{Voxel@{Voxel}!maxlevel@{maxlevel}}
+\index{maxlevel@{maxlevel}!Voxel@{Voxel}}
+\subsubsection{\texorpdfstring{maxlevel}{maxlevel}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classVoxel}{Voxel}}$<$ N, value $>$\+::maxlevel\hspace{0.3cm}{\ttfamily [private]}}
+
+maximum level of refinement \mbox{\Hypertarget{classVoxel_a3d53e01604350cc00c9bef098c7e23e5}\label{classVoxel_a3d53e01604350cc00c9bef098c7e23e5}} 
+\index{Voxel@{Voxel}!mesh@{mesh}}
+\index{mesh@{mesh}!Voxel@{Voxel}}
+\subsubsection{\texorpdfstring{mesh}{mesh}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_acf2396ef4de9eb8a6324b9f1a624ea85}{bitmap}}$<$N, value$>$ \mbox{\hyperlink{classVoxel}{Voxel}}$<$ N, value $>$\+::mesh\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classVoxel_addfa7b07b7173c6727fd8cf0c38c61d8}\label{classVoxel_addfa7b07b7173c6727fd8cf0c38c61d8}} 
+\index{Voxel@{Voxel}!num\+Max@{num\+Max}}
+\index{num\+Max@{num\+Max}!Voxel@{Voxel}}
+\subsubsection{\texorpdfstring{num\+Max}{numMax}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value$>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classVoxel}{Voxel}}$<$ N, value $>$\+::num\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+number of elements having the highest level 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/\mbox{\hyperlink{tree_8h}{tree.\+h}}\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/\mbox{\hyperlink{voxel_8cpp}{voxel.\+cpp}}\end{DoxyCompactItemize}

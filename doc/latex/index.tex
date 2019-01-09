@@ -1,0 +1,40 @@
+{\bfseries  \char`\"{}rebl-\/\+A\+M\+R\+: An Open-\/\+Source Software for Binarized-\/\+Octree Mesh Generation around Immersed Geometries\char`\"{} }
+
+This software generates forest of octrees for an immersed geometry. ~\newline
+ reble-\/\+A\+MR uses red-\/black tree data strcture to store the nodes in a Z-\/curve compliant fashion. ~\newline
+ This project is part of the {\bfseries N\+S\+F-\/\+G\+E\+M3D }Award No. 1440638. ~\newline
+ \begin{DoxyVerb} Required Libraries:
+
+ (1)  CMAKE
+ (2)  MPI (MPI 3.0 standard compliant version)
+ (3)  Zoltan
+ (4)  ParMetis
+ (5)  HDF5
+
+ Usage:
+ mpirun -np <number of processes> progName input/myGeometry.stl <params.txt
+\end{DoxyVerb}
+
+
+\begin{DoxyAuthor}{Authors}
+Jaber J. Hasbestan and Inanc Senocak (PI) ~\newline
+
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Feb 2018
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+(c) Department of Mechanical Engineering and Materials Science ~\newline
+ University of Pittsburgh, Pittsburgh, PA ~\newline
+ ~\newline
+
+\end{DoxyCopyright}
+Please refere to either of the J\+CP papers {\bfseries [Hasbestan2018]} and {\bfseries [Hasbestan2017]} listed below if you are using this code
+
+\char`\"{}\mbox{[}1\mbox{]} Jaber J. Hasbestan and Inanc Senocak. Binarized-\/octree generation for cartesian adaptive mesh refinement around immersed geometries. Journal of Computational Physics, 368\+:179–195, sep 2018\char`\"{}
+
+\char`\"{}\mbox{[}2\mbox{]} Jaber J. Hasbestan and Inanc Senocak. A short note on the use of the red textendash black tree in cartesian adaptive mesh refinement algorithms. Journal of Computational Physics, 351\+:473–477, dec 2017\char`\"{}
+
+
+
+{\bfseries  Subject to G\+PL 3.\+0 license } 

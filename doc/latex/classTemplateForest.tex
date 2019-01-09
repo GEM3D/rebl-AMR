@@ -1,0 +1,715 @@
+\hypertarget{classTemplateForest}{}\section{Template\+Forest$<$ N, Nvalue, M, Mvalue, T $>$ Class Template Reference}
+\label{classTemplateForest}\index{Template\+Forest$<$ N, Nvalue, M, Mvalue, T $>$@{Template\+Forest$<$ N, Nvalue, M, Mvalue, T $>$}}
+
+
+Template Class designed to unify tree and full\+\_\+tree topologies.  
+
+
+
+
+{\ttfamily \#include $<$template\+Forest.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTemplateForest_a48ebaf92fb390fd229a2438f99145881}{Template\+Forest}} ()
+\item 
+\mbox{\hyperlink{classTemplateForest_ab842720aca5e202357e399ba835565b7}{Template\+Forest}} (int argcs, char $\ast$p\+Args\mbox{[}$\,$\mbox{]}, T \&proc, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$length, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$coords, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nx, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} ny, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nz)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a6173898510ccf3f57a6b930a31f971dd}{construct}} (int argcs, char $\ast$p\+Args\mbox{[}$\,$\mbox{]}, T \&proc, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$length, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$coords, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nx, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} ny, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nz)
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest_a43dbd821af1ed816be9ef782b6982c24}{get\+Total\+Size}} ()
+\item 
+void \mbox{\hyperlink{classTemplateForest_ae2a665238333df093bece9ec5b40d1f1}{assign\+Seeds}} (\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$length, T \&proc)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a81eba445f5dd75c651ec4477128e38ba}{assign\+Geom}} (T \&proc, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$geom\+\_\+xyz, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} geom\+\_\+nn)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a918118ff88c9f738de633c0e83a8b69b}{encode\+Geometry}} ()
+\item 
+void \mbox{\hyperlink{classTemplateForest_a011af6d1e352dfb90e3e74daa2d34e36}{refine\+Each\+Tree}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nlevel)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a312fad17dc4021537c54119ab91fea87}{move\+Geom}} (T \&proc, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$geom\+\_\+xyz, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} n, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} x\mbox{[}3\mbox{]})
+\item 
+void \mbox{\hyperlink{classTemplateForest_abbc3d31a30cf34aa9e511c98ac677627}{get\+List\+Each\+Tree}} ()
+\item 
+bool \mbox{\hyperlink{classTemplateForest_aacf86db7e5c6a83890d0ae8c03c8ea84}{is\+In\+Seed}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ M $>$ \&key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$counter)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a65bc67d5decd8895c6d397d506ba19c3}{flip\+All}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$mylevel, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$direction)
+\item 
+void \mbox{\hyperlink{classTemplateForest_abcdbb8b1c48c6e94ad86df60e80f36b3}{get\+Directions}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} combinedlevel, vector$<$ \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \&directions)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a92e50d5845a52e4bcf19d54b56e1ccf9}{recover\+All\+Zero\+Singularity}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&key, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&combinedlevel)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a3f0c01310e4f1b71e7d88c0f9e859b4d}{combined\+Level}} (const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$level)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a1d06e6ec854bd4490c116d95f8612bea}{find\+Seed\+Level\+For\+Rcvd\+Message}} (const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$mylevel, \mbox{\hyperlink{classTree}{Tree}}$<$ M, Mvalue $>$ \&proc)
+\item 
+void \mbox{\hyperlink{classTemplateForest_aad29cb335e971d8441e13f04d6c16af8}{find\+Seed\+Level\+For\+Rcvd\+Message}} (const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$mylevel, \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ M, Mvalue $>$ \&proc)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a6418c12f88e909d8fb69736e320f92b7}{construct\+Seed\+Key\+For\+Rcvd\+Message}} (const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&key, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&seedlevel, \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ M $>$ \&seedkey)
+\item 
+void \mbox{\hyperlink{classTemplateForest_ab6f0a6f80253a0253ed7882dfdf052ad}{construct\+Element\+Key\+For\+Rcvd\+Message}} (const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&key, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&seedlevel, \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&elementkey)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a5c2bf9dfe92ff1cb400fdbdba4bedf78}{remove\+All\+Zero\+Singularity}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&key, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&combinedlevel)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a71631fc657f72080f48dee632e706f2d}{get\+Max\+Seeds\+Level}} (T \&proc)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a555d9f60caf33b715ab58fa808170ebe}{find\+Flip\+Level}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$mylevel, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$changedirectionlevel, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$direction)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a59f1842488667c16b27c29618790d7c3}{flip\+For\+Nbr}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&key, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$mylevel, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$changedirectionlevel, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$direction)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a77c9dba6818f98a45bcb10db4f8c7455}{get\+Total\+Mesh\+Size}} ()
+\item 
+void \mbox{\hyperlink{classTemplateForest_a6ce3bbf28ceb4e78324aaf8706fedc92}{get\+Nbr\+Seed\+Level}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&combinedkey, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} topologylevel, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$nbrseedleve, \mbox{\hyperlink{classTree}{Tree}}$<$ M, Mvalue $>$ \&proc)
+\item 
+void \mbox{\hyperlink{classTemplateForest_afe03a79ad5dbcbce96df1f7bdcac7e66}{get\+Nbr\+Seed\+Level}} (\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&combinedkey, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} topologylevel, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$nbrseedleve, \mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ M, Mvalue $>$ \&proc)
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest_a832fb663d114e9fc75ac8bc965a77d66}{forestsize}} ()
+\item 
+void \mbox{\hyperlink{classTemplateForest_af8b358bae287aa4d0536988f56c6e07f}{get\+Elem\+Nbrs}} (\mbox{\hyperlink{classTree}{Tree}}$<$ M, Mvalue $>$ \&proc, const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ M $>$ key, \mbox{\hyperlink{definitions_8h_a55821d7929f3f16aaf1466129c209492}{bitvector}}$<$ M $>$ \&nbr)
+\item 
+void \mbox{\hyperlink{classTemplateForest_aa8695400b06ec321a3378ea68dafe4a9}{com\+Pattern\+Construct}} (\mbox{\hyperlink{classTree}{Tree}}$<$ M, Mvalue $>$ \&proc)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a797a20798c773480c74f6a4c410d6de3}{com\+Pattern\+Construct}} (\mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ M, Mvalue $>$ \&proc, vector$<$ \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \&Nbrs)
+\item 
+void \mbox{\hyperlink{classTemplateForest_abba9b72e8699f78570c73bec1b4396d1}{four\+To\+One\+Balance}} (T \&proc)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a9d7144f8471d28d1412ab85363566a56}{refine\+Forest\+Balanced}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nlevel, T \&proc)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a67af26aae3ccfcca14be70be3d9553ee}{non\+Collective\+Nbr\+Comm}} ()
+\item 
+void \mbox{\hyperlink{classTemplateForest_a2d6eaf33be1cc4cc461c269e1d2c88dd}{push\+To\+Derefine\+Each\+Tree}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nlevel, \mbox{\hyperlink{classTree}{Tree}}$<$ M, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \&proc)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a070fad5f90490ac39ae703c080dc989d}{retain\+Four\+To\+One\+Balance}} (\mbox{\hyperlink{classTree}{Tree}}$<$ M, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \&proc)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a6081a7e6c224459b4f6e695a25c04d14}{check\+Zoltan\+Part\+Consistency}} (\mbox{\hyperlink{classTree}{Tree}}$<$ M, Mvalue $>$ \&proc)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a5816e439571082d5a109ff626730159d}{create\+Comm\+Graph}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} Nnbr)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a0f899811a6c9edda8c8aa807393dd0bf}{create\+Nbrs\+Of\+Nbrs}} ()
+\item 
+void \mbox{\hyperlink{classTemplateForest_a3d2daa1c271c51f027b114fe56e9322e}{check\+Graph\+Consistency}} ()
+\item 
+void \mbox{\hyperlink{classTemplateForest_a76986ce40169fb0e9f517ebd538c98cf}{filter\+Refine\+List}} ()
+\item 
+void \mbox{\hyperlink{classTemplateForest_aca233428d2484e70653d21ddfd8bc790}{set\+Max\+Proc\+Level}} (const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} refinelevel)
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest_a94408f59c9721a96092d96b273c5d6b7}{find\+Index\+In\+Seed}} (T \&proc, \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ M $>$ \&seedkey)
+\item 
+void \mbox{\hyperlink{classTemplateForest_a14f94cdb193a07e4488e3463c73f99e9}{append\+To\+Message}} (T \&proc, \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ M $>$ \&seednbrkey, \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ M+N $>$ \&combinedkey, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} combinedlevel)
+\item 
+void \mbox{\hyperlink{classTemplateForest_aec26a86ef4768ba448de15c612faf40d}{M\+P\+I\+Start\+Up}} ()
+\item 
+void \mbox{\hyperlink{classTemplateForest_aae43950b8b41ac3cc1568f7966f84d15}{check\+Input\+Params}} (int argcs, char $\ast$p\+Args\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{classTemplateForest_a6894f2a77f8eba8e06bbbdf77ff39b61}{run\+Info}} ()
+\item 
+void \mbox{\hyperlink{classTemplateForest_a46d583a9f00ec3b0caf2067589a0ef8a}{current\+Date\+Time}} ()
+\item 
+\mbox{\hyperlink{classTemplateForest_a65c47765d20e839f0cb08b2119b628da}{$\sim$\+Template\+Forest}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} \mbox{\hyperlink{classTemplateForest_a0a371d168c81cf8be77b681c27c06409}{ancestorlength}} \mbox{[}3\mbox{]}
+\item 
+\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} \mbox{\hyperlink{classTemplateForest_aa4644b5dd646be3d9e3d71107a33803a}{ancestorcoords}} \mbox{[}3\mbox{]}
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest_ac16738374c9880720dbb28de832a15f2}{npx}}
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest_afe37cbd294cd78c9f19cda314b21809e}{npy}}
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest_a8854c681d680f83d4a16a89f72b60b43}{npz}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structMpiCom}{Mpi\+Com}} \mbox{\hyperlink{classTemplateForest_a98136f14aec33e243ff65b68b89c5fdc}{Com}}
+\item 
+int \mbox{\hyperlink{classTemplateForest_a97bc83d3ecc6492e272230f00fb0b9f5}{duplicated}} =0
+\item 
+\mbox{\hyperlink{templateForest_8h_a7d5792f6e45225030ac74c936ce3b700}{tree\+List}}$<$ \mbox{\hyperlink{classTree}{Tree}}$<$ N, Nvalue $>$ $>$ \mbox{\hyperlink{classTemplateForest_a0399f34c2a5a887fc994657d128860bb}{trees}}
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest_ae3282ab0b3800e3f4c8b1fcfb9a6246e}{max\+Proc\+Level}}
+\item 
+\mbox{\hyperlink{definitions_8h_ad1cc49840e065ce2a93cd243916d310c}{bitlist}}$<$ M $>$ \mbox{\hyperlink{classTemplateForest_a00983bdc218abbf105f872e3d2187e8a}{seeds}}
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest_acde2c3f1395094ba171138b58b6eb335}{maxseedlevel}}
+\item 
+\mbox{\hyperlink{classTree}{Tree}}$<$ M, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $>$ \mbox{\hyperlink{classTemplateForest_a63125f7155297d70f8f189ffb17c9822}{geom}}
+\item 
+vector$<$ \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \mbox{\hyperlink{classTemplateForest_a31344621cbe88d961bdb70174ce8bbc9}{destination}}
+\item 
+vector$<$ \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \mbox{\hyperlink{classTemplateForest_ae38bc6bd6cce20a9e93c5d854bca2a18}{sendtag}}
+\item 
+vector$<$ \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \mbox{\hyperlink{classTemplateForest_ab3c00d6a664a6194e6ce9c2f962feb56}{recvtag}}
+\item 
+vector$<$ \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \mbox{\hyperlink{classTemplateForest_a36aededebe33b6c43e713b9fa93e9a14}{nbrs\+Of\+Nbrs}}
+\item 
+vector$<$ bitset$<$ M+N $>$ $>$ $\ast$ \mbox{\hyperlink{classTemplateForest_a5ecc1b5d7c94ff6c9164a2c63bfa6101}{message}} =nullptr
+\item 
+struct Zoltan\+\_\+\+Struct $\ast$ \mbox{\hyperlink{classTemplateForest_ad2dcf7d131f6fa9c68e3dba5229b85d6}{zz}} =nullptr
+\item 
+\mbox{\hyperlink{structZoltan__Out}{Zoltan\+\_\+\+Out}} \mbox{\hyperlink{classTemplateForest_a81d2200ebbc1e3a2ae557e6b6db3c442}{zoltan\+\_\+out}}
+\item 
+M\+P\+I\+\_\+\+Comm \mbox{\hyperlink{classTemplateForest_a55864067b34cf9807be0f42abb211b68}{graph\+Comm}}
+\item 
+M\+P\+I\+\_\+\+Request $\ast$ \mbox{\hyperlink{classTemplateForest_a0c51898863ad5472a890988d5645e2af}{request}} =nullptr
+\item 
+M\+P\+I\+\_\+\+Request $\ast$ \mbox{\hyperlink{classTemplateForest_a657e34ecc155063ccced9ca4ef3ef47e}{request1}} =nullptr
+\item 
+char \mbox{\hyperlink{classTemplateForest_a30c73b4c9e35b167e920dfe00af66b15}{name\+Appendix}} \mbox{[}80\mbox{]}
+\item 
+unsigned long long \mbox{\hyperlink{classTemplateForest_a421f9554610485547148a476d2e67147}{mesh\+Size}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$size\+\_\+t N1, typename Nvalue1 , size\+\_\+t M1, typename Mvalue1 , class T1 $>$ }\\class \mbox{\hyperlink{classTemplateForest_a53f8d71ce667f14931aef7832c1b6c95}{template\+Phdf5}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$\newline
+class Template\+Forest$<$ N, Nvalue, M, Mvalue, T $>$}
+
+Template Class designed to unify tree and full\+\_\+tree topologies. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTemplateForest_a48ebaf92fb390fd229a2438f99145881}\label{classTemplateForest_a48ebaf92fb390fd229a2438f99145881}} 
+\index{Template\+Forest@{Template\+Forest}!Template\+Forest@{Template\+Forest}}
+\index{Template\+Forest@{Template\+Forest}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{Template\+Forest()}{TemplateForest()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+\mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::\mbox{\hyperlink{classTemplateForest}{Template\+Forest}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTemplateForest_ab842720aca5e202357e399ba835565b7}\label{classTemplateForest_ab842720aca5e202357e399ba835565b7}} 
+\index{Template\+Forest@{Template\+Forest}!Template\+Forest@{Template\+Forest}}
+\index{Template\+Forest@{Template\+Forest}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{Template\+Forest()}{TemplateForest()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T$>$ \\
+\mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::\mbox{\hyperlink{classTemplateForest}{Template\+Forest}} (\begin{DoxyParamCaption}\item[{int}]{argcs,  }\item[{char $\ast$}]{p\+Args\mbox{[}$\,$\mbox{]},  }\item[{T \&}]{proc,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{length,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{coords,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nx,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{ny,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nz }\end{DoxyParamCaption})}
+
+constructor constructor $<$part I, initialize the ancestor coords and length, just like we did for class tree \mbox{\Hypertarget{classTemplateForest_a65c47765d20e839f0cb08b2119b628da}\label{classTemplateForest_a65c47765d20e839f0cb08b2119b628da}} 
+\index{Template\+Forest@{Template\+Forest}!````~Template\+Forest@{$\sim$\+Template\+Forest}}
+\index{````~Template\+Forest@{$\sim$\+Template\+Forest}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{$\sim$\+Template\+Forest()}{~TemplateForest()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+\mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::$\sim$\mbox{\hyperlink{classTemplateForest}{Template\+Forest}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor of the object 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTemplateForest_a14f94cdb193a07e4488e3463c73f99e9}\label{classTemplateForest_a14f94cdb193a07e4488e3463c73f99e9}} 
+\index{Template\+Forest@{Template\+Forest}!append\+To\+Message@{append\+To\+Message}}
+\index{append\+To\+Message@{append\+To\+Message}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{append\+To\+Message()}{appendToMessage()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T$>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::append\+To\+Message (\begin{DoxyParamCaption}\item[{T \&}]{proc,  }\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ M $>$ \&}]{seednbrkey,  }\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ M+N $>$ \&}]{combinedkey,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{combinedlevel }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a81eba445f5dd75c651ec4477128e38ba}\label{classTemplateForest_a81eba445f5dd75c651ec4477128e38ba}} 
+\index{Template\+Forest@{Template\+Forest}!assign\+Geom@{assign\+Geom}}
+\index{assign\+Geom@{assign\+Geom}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{assign\+Geom()}{assignGeom()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T$>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::assign\+Geom (\begin{DoxyParamCaption}\item[{T \&}]{proc,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{geom\+\_\+xyz,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{geom\+\_\+nn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_ae2a665238333df093bece9ec5b40d1f1}\label{classTemplateForest_ae2a665238333df093bece9ec5b40d1f1}} 
+\index{Template\+Forest@{Template\+Forest}!assign\+Seeds@{assign\+Seeds}}
+\index{assign\+Seeds@{assign\+Seeds}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{assign\+Seeds()}{assignSeeds()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T$>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::assign\+Seeds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{length,  }\item[{T \&}]{proc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a3d2daa1c271c51f027b114fe56e9322e}\label{classTemplateForest_a3d2daa1c271c51f027b114fe56e9322e}} 
+\index{Template\+Forest@{Template\+Forest}!check\+Graph\+Consistency@{check\+Graph\+Consistency}}
+\index{check\+Graph\+Consistency@{check\+Graph\+Consistency}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{check\+Graph\+Consistency()}{checkGraphConsistency()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::check\+Graph\+Consistency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_aae43950b8b41ac3cc1568f7966f84d15}\label{classTemplateForest_aae43950b8b41ac3cc1568f7966f84d15}} 
+\index{Template\+Forest@{Template\+Forest}!check\+Input\+Params@{check\+Input\+Params}}
+\index{check\+Input\+Params@{check\+Input\+Params}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{check\+Input\+Params()}{checkInputParams()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::check\+Input\+Params (\begin{DoxyParamCaption}\item[{int}]{argcs,  }\item[{char $\ast$}]{p\+Args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Checks input parameters for consistency \mbox{\Hypertarget{classTemplateForest_a6081a7e6c224459b4f6e695a25c04d14}\label{classTemplateForest_a6081a7e6c224459b4f6e695a25c04d14}} 
+\index{Template\+Forest@{Template\+Forest}!check\+Zoltan\+Part\+Consistency@{check\+Zoltan\+Part\+Consistency}}
+\index{check\+Zoltan\+Part\+Consistency@{check\+Zoltan\+Part\+Consistency}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{check\+Zoltan\+Part\+Consistency()}{checkZoltanPartConsistency()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue, class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::check\+Zoltan\+Part\+Consistency (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTree}{Tree}}$<$ M, Mvalue $>$ \&}]{proc }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em proc} & creates distributed (acalable) graph for communication \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTemplateForest_a3f0c01310e4f1b71e7d88c0f9e859b4d}\label{classTemplateForest_a3f0c01310e4f1b71e7d88c0f9e859b4d}} 
+\index{Template\+Forest@{Template\+Forest}!combined\+Level@{combined\+Level}}
+\index{combined\+Level@{combined\+Level}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{combined\+Level()}{combinedLevel()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::combined\+Level (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{level }\end{DoxyParamCaption})}
+
+to prevent unnecesary bit operation, the morton code is placed from starting from left hand side \mbox{\Hypertarget{classTemplateForest_aa8695400b06ec321a3378ea68dafe4a9}\label{classTemplateForest_aa8695400b06ec321a3378ea68dafe4a9}} 
+\index{Template\+Forest@{Template\+Forest}!com\+Pattern\+Construct@{com\+Pattern\+Construct}}
+\index{com\+Pattern\+Construct@{com\+Pattern\+Construct}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{com\+Pattern\+Construct()}{comPatternConstruct()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue, class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::com\+Pattern\+Construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTree}{Tree}}$<$ M, Mvalue $>$ \&}]{proc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a797a20798c773480c74f6a4c410d6de3}\label{classTemplateForest_a797a20798c773480c74f6a4c410d6de3}} 
+\index{Template\+Forest@{Template\+Forest}!com\+Pattern\+Construct@{com\+Pattern\+Construct}}
+\index{com\+Pattern\+Construct@{com\+Pattern\+Construct}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{com\+Pattern\+Construct()}{comPatternConstruct()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue, class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::com\+Pattern\+Construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ M, Mvalue $>$ \&}]{proc,  }\item[{vector$<$ \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \&}]{Nbrs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a6173898510ccf3f57a6b930a31f971dd}\label{classTemplateForest_a6173898510ccf3f57a6b930a31f971dd}} 
+\index{Template\+Forest@{Template\+Forest}!construct@{construct}}
+\index{construct@{construct}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{construct()}{construct()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T$>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::construct (\begin{DoxyParamCaption}\item[{int}]{argcs,  }\item[{char $\ast$}]{p\+Args\mbox{[}$\,$\mbox{]},  }\item[{T \&}]{proc,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{length,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{coords,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nx,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{ny,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nz }\end{DoxyParamCaption})}
+
+$<$part I, initialize the ancestor coords and length, just like we did for class tree \mbox{\Hypertarget{classTemplateForest_ab6f0a6f80253a0253ed7882dfdf052ad}\label{classTemplateForest_ab6f0a6f80253a0253ed7882dfdf052ad}} 
+\index{Template\+Forest@{Template\+Forest}!construct\+Element\+Key\+For\+Rcvd\+Message@{construct\+Element\+Key\+For\+Rcvd\+Message}}
+\index{construct\+Element\+Key\+For\+Rcvd\+Message@{construct\+Element\+Key\+For\+Rcvd\+Message}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{construct\+Element\+Key\+For\+Rcvd\+Message()}{constructElementKeyForRcvdMessage()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::construct\+Element\+Key\+For\+Rcvd\+Message (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&}]{key,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&}]{seedlevel,  }\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&}]{elementkey }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a6418c12f88e909d8fb69736e320f92b7}\label{classTemplateForest_a6418c12f88e909d8fb69736e320f92b7}} 
+\index{Template\+Forest@{Template\+Forest}!construct\+Seed\+Key\+For\+Rcvd\+Message@{construct\+Seed\+Key\+For\+Rcvd\+Message}}
+\index{construct\+Seed\+Key\+For\+Rcvd\+Message@{construct\+Seed\+Key\+For\+Rcvd\+Message}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{construct\+Seed\+Key\+For\+Rcvd\+Message()}{constructSeedKeyForRcvdMessage()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::construct\+Seed\+Key\+For\+Rcvd\+Message (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&}]{key,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&}]{seedlevel,  }\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ M $>$ \&}]{seedkey }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a5816e439571082d5a109ff626730159d}\label{classTemplateForest_a5816e439571082d5a109ff626730159d}} 
+\index{Template\+Forest@{Template\+Forest}!create\+Comm\+Graph@{create\+Comm\+Graph}}
+\index{create\+Comm\+Graph@{create\+Comm\+Graph}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{create\+Comm\+Graph()}{createCommGraph()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::create\+Comm\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{Lnbr }\end{DoxyParamCaption})}
+
+Zoltan might give zero elements to a processor, this function checks to see each element has at least one element assigned to it and that the number of elements before and after partitioning is the same level of neighbors 
+\begin{DoxyParams}{Parameters}
+{\em Lnbr} & creates distributed (scalable) graph for communication \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTemplateForest_a0f899811a6c9edda8c8aa807393dd0bf}\label{classTemplateForest_a0f899811a6c9edda8c8aa807393dd0bf}} 
+\index{Template\+Forest@{Template\+Forest}!create\+Nbrs\+Of\+Nbrs@{create\+Nbrs\+Of\+Nbrs}}
+\index{create\+Nbrs\+Of\+Nbrs@{create\+Nbrs\+Of\+Nbrs}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{create\+Nbrs\+Of\+Nbrs()}{createNbrsOfNbrs()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::create\+Nbrs\+Of\+Nbrs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a46d583a9f00ec3b0caf2067589a0ef8a}\label{classTemplateForest_a46d583a9f00ec3b0caf2067589a0ef8a}} 
+\index{Template\+Forest@{Template\+Forest}!current\+Date\+Time@{current\+Date\+Time}}
+\index{current\+Date\+Time@{current\+Date\+Time}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{current\+Date\+Time()}{currentDateTime()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::current\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a918118ff88c9f738de633c0e83a8b69b}\label{classTemplateForest_a918118ff88c9f738de633c0e83a8b69b}} 
+\index{Template\+Forest@{Template\+Forest}!encode\+Geometry@{encode\+Geometry}}
+\index{encode\+Geometry@{encode\+Geometry}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{encode\+Geometry()}{encodeGeometry()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::encode\+Geometry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+encode the geometry once to the deepest level \mbox{\Hypertarget{classTemplateForest_a76986ce40169fb0e9f517ebd538c98cf}\label{classTemplateForest_a76986ce40169fb0e9f517ebd538c98cf}} 
+\index{Template\+Forest@{Template\+Forest}!filter\+Refine\+List@{filter\+Refine\+List}}
+\index{filter\+Refine\+List@{filter\+Refine\+List}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{filter\+Refine\+List()}{filterRefineList()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::filter\+Refine\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sanity check for the graph, it checks he fact that if element \char`\"{}\+A\char`\"{} is a neighbor of element \char`\"{}\+B\char`\"{}, element \char`\"{}\+B\char`\"{} should be a neighbor of element \char`\"{}\+A\char`\"{} as well \mbox{\Hypertarget{classTemplateForest_a555d9f60caf33b715ab58fa808170ebe}\label{classTemplateForest_a555d9f60caf33b715ab58fa808170ebe}} 
+\index{Template\+Forest@{Template\+Forest}!find\+Flip\+Level@{find\+Flip\+Level}}
+\index{find\+Flip\+Level@{find\+Flip\+Level}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{find\+Flip\+Level()}{findFlipLevel()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::find\+Flip\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{mylevel,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{changedirectionlevel,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{direction }\end{DoxyParamCaption})}
+
+same as the function defined in class three except that it workd on (M+N) bits \mbox{\Hypertarget{classTemplateForest_a94408f59c9721a96092d96b273c5d6b7}\label{classTemplateForest_a94408f59c9721a96092d96b273c5d6b7}} 
+\index{Template\+Forest@{Template\+Forest}!find\+Index\+In\+Seed@{find\+Index\+In\+Seed}}
+\index{find\+Index\+In\+Seed@{find\+Index\+In\+Seed}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{find\+Index\+In\+Seed()}{findIndexInSeed()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T$>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::find\+Index\+In\+Seed (\begin{DoxyParamCaption}\item[{T \&}]{proc,  }\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ M $>$ \&}]{seedkey }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a1d06e6ec854bd4490c116d95f8612bea}\label{classTemplateForest_a1d06e6ec854bd4490c116d95f8612bea}} 
+\index{Template\+Forest@{Template\+Forest}!find\+Seed\+Level\+For\+Rcvd\+Message@{find\+Seed\+Level\+For\+Rcvd\+Message}}
+\index{find\+Seed\+Level\+For\+Rcvd\+Message@{find\+Seed\+Level\+For\+Rcvd\+Message}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{find\+Seed\+Level\+For\+Rcvd\+Message()}{findSeedLevelForRcvdMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue, class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::find\+Seed\+Level\+For\+Rcvd\+Message (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{mylevel,  }\item[{\mbox{\hyperlink{classTree}{Tree}}$<$ M, Mvalue $>$ \&}]{proc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_aad29cb335e971d8441e13f04d6c16af8}\label{classTemplateForest_aad29cb335e971d8441e13f04d6c16af8}} 
+\index{Template\+Forest@{Template\+Forest}!find\+Seed\+Level\+For\+Rcvd\+Message@{find\+Seed\+Level\+For\+Rcvd\+Message}}
+\index{find\+Seed\+Level\+For\+Rcvd\+Message@{find\+Seed\+Level\+For\+Rcvd\+Message}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{find\+Seed\+Level\+For\+Rcvd\+Message()}{findSeedLevelForRcvdMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue, class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::find\+Seed\+Level\+For\+Rcvd\+Message (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{mylevel,  }\item[{\mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ M, Mvalue $>$ \&}]{proc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a65bc67d5decd8895c6d397d506ba19c3}\label{classTemplateForest_a65bc67d5decd8895c6d397d506ba19c3}} 
+\index{Template\+Forest@{Template\+Forest}!flip\+All@{flip\+All}}
+\index{flip\+All@{flip\+All}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{flip\+All()}{flipAll()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::flip\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N $>$ \&}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{mylevel,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{direction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a59f1842488667c16b27c29618790d7c3}\label{classTemplateForest_a59f1842488667c16b27c29618790d7c3}} 
+\index{Template\+Forest@{Template\+Forest}!flip\+For\+Nbr@{flip\+For\+Nbr}}
+\index{flip\+For\+Nbr@{flip\+For\+Nbr}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{flip\+For\+Nbr()}{flipForNbr()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::flip\+For\+Nbr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{mylevel,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{changedirectionlevel,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{direction }\end{DoxyParamCaption})}
+
+same as the function defined in class three except that it workd on (M+N) bits \mbox{\Hypertarget{classTemplateForest_a832fb663d114e9fc75ac8bc965a77d66}\label{classTemplateForest_a832fb663d114e9fc75ac8bc965a77d66}} 
+\index{Template\+Forest@{Template\+Forest}!forestsize@{forestsize}}
+\index{forestsize@{forestsize}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{forestsize()}{forestsize()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::forestsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_abba9b72e8699f78570c73bec1b4396d1}\label{classTemplateForest_abba9b72e8699f78570c73bec1b4396d1}} 
+\index{Template\+Forest@{Template\+Forest}!four\+To\+One\+Balance@{four\+To\+One\+Balance}}
+\index{four\+To\+One\+Balance@{four\+To\+One\+Balance}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{four\+To\+One\+Balance()}{fourToOneBalance()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T$>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::four\+To\+One\+Balance (\begin{DoxyParamCaption}\item[{T \&}]{proc }\end{DoxyParamCaption})}
+
+4\+:1 balance enforced at forest including the other processors \mbox{\Hypertarget{classTemplateForest_abcdbb8b1c48c6e94ad86df60e80f36b3}\label{classTemplateForest_abcdbb8b1c48c6e94ad86df60e80f36b3}} 
+\index{Template\+Forest@{Template\+Forest}!get\+Directions@{get\+Directions}}
+\index{get\+Directions@{get\+Directions}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{get\+Directions()}{getDirections()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::get\+Directions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{combinedlevel,  }\item[{vector$<$ \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \&}]{directions }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_af8b358bae287aa4d0536988f56c6e07f}\label{classTemplateForest_af8b358bae287aa4d0536988f56c6e07f}} 
+\index{Template\+Forest@{Template\+Forest}!get\+Elem\+Nbrs@{get\+Elem\+Nbrs}}
+\index{get\+Elem\+Nbrs@{get\+Elem\+Nbrs}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{get\+Elem\+Nbrs()}{getElemNbrs()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue, class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::get\+Elem\+Nbrs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTree}{Tree}}$<$ M, Mvalue $>$ \&}]{proc,  }\item[{const \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ M $>$}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a55821d7929f3f16aaf1466129c209492}{bitvector}}$<$ M $>$ \&}]{nbr }\end{DoxyParamCaption})}
+
+collects the neghbors of a given element \mbox{\Hypertarget{classTemplateForest_abbc3d31a30cf34aa9e511c98ac677627}\label{classTemplateForest_abbc3d31a30cf34aa9e511c98ac677627}} 
+\index{Template\+Forest@{Template\+Forest}!get\+List\+Each\+Tree@{get\+List\+Each\+Tree}}
+\index{get\+List\+Each\+Tree@{get\+List\+Each\+Tree}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{get\+List\+Each\+Tree()}{getListEachTree()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::get\+List\+Each\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a71631fc657f72080f48dee632e706f2d}\label{classTemplateForest_a71631fc657f72080f48dee632e706f2d}} 
+\index{Template\+Forest@{Template\+Forest}!get\+Max\+Seeds\+Level@{get\+Max\+Seeds\+Level}}
+\index{get\+Max\+Seeds\+Level@{get\+Max\+Seeds\+Level}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{get\+Max\+Seeds\+Level()}{getMaxSeedsLevel()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T$>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::get\+Max\+Seeds\+Level (\begin{DoxyParamCaption}\item[{T \&}]{proc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a6ce3bbf28ceb4e78324aaf8706fedc92}\label{classTemplateForest_a6ce3bbf28ceb4e78324aaf8706fedc92}} 
+\index{Template\+Forest@{Template\+Forest}!get\+Nbr\+Seed\+Level@{get\+Nbr\+Seed\+Level}}
+\index{get\+Nbr\+Seed\+Level@{get\+Nbr\+Seed\+Level}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{get\+Nbr\+Seed\+Level()}{getNbrSeedLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue, class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::get\+Nbr\+Seed\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&}]{combinedkey,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{topologylevel,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{nbrseedleve,  }\item[{\mbox{\hyperlink{classTree}{Tree}}$<$ M, Mvalue $>$ \&}]{proc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_afe03a79ad5dbcbce96df1f7bdcac7e66}\label{classTemplateForest_afe03a79ad5dbcbce96df1f7bdcac7e66}} 
+\index{Template\+Forest@{Template\+Forest}!get\+Nbr\+Seed\+Level@{get\+Nbr\+Seed\+Level}}
+\index{get\+Nbr\+Seed\+Level@{get\+Nbr\+Seed\+Level}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{get\+Nbr\+Seed\+Level()}{getNbrSeedLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue, class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::get\+Nbr\+Seed\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&}]{combinedkey,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{topologylevel,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{nbrseedleve,  }\item[{\mbox{\hyperlink{classFullTree}{Full\+Tree}}$<$ M, Mvalue $>$ \&}]{proc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a77c9dba6818f98a45bcb10db4f8c7455}\label{classTemplateForest_a77c9dba6818f98a45bcb10db4f8c7455}} 
+\index{Template\+Forest@{Template\+Forest}!get\+Total\+Mesh\+Size@{get\+Total\+Mesh\+Size}}
+\index{get\+Total\+Mesh\+Size@{get\+Total\+Mesh\+Size}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{get\+Total\+Mesh\+Size()}{getTotalMeshSize()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::get\+Total\+Mesh\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+calculates the final number of the mesh generated with all processes \mbox{\Hypertarget{classTemplateForest_a43dbd821af1ed816be9ef782b6982c24}\label{classTemplateForest_a43dbd821af1ed816be9ef782b6982c24}} 
+\index{Template\+Forest@{Template\+Forest}!get\+Total\+Size@{get\+Total\+Size}}
+\index{get\+Total\+Size@{get\+Total\+Size}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{get\+Total\+Size()}{getTotalSize()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::get\+Total\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_aacf86db7e5c6a83890d0ae8c03c8ea84}\label{classTemplateForest_aacf86db7e5c6a83890d0ae8c03c8ea84}} 
+\index{Template\+Forest@{Template\+Forest}!is\+In\+Seed@{is\+In\+Seed}}
+\index{is\+In\+Seed@{is\+In\+Seed}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{is\+In\+Seed()}{isInSeed()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+bool \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::is\+In\+Seed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ M $>$ \&}]{key,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$}]{counter }\end{DoxyParamCaption})}
+
+check and see if the forest incldues the particluar seed \mbox{\Hypertarget{classTemplateForest_a312fad17dc4021537c54119ab91fea87}\label{classTemplateForest_a312fad17dc4021537c54119ab91fea87}} 
+\index{Template\+Forest@{Template\+Forest}!move\+Geom@{move\+Geom}}
+\index{move\+Geom@{move\+Geom}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{move\+Geom()}{moveGeom()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T$>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::move\+Geom (\begin{DoxyParamCaption}\item[{T \&}]{proc,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{geom\+\_\+xyz,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{n,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}}}]{x\mbox{[}3\mbox{]} }\end{DoxyParamCaption})}
+
+moves the geomerty with displacements specified in x\mbox{[}3\mbox{]} in x,y and z directions \mbox{\Hypertarget{classTemplateForest_aec26a86ef4768ba448de15c612faf40d}\label{classTemplateForest_aec26a86ef4768ba448de15c612faf40d}} 
+\index{Template\+Forest@{Template\+Forest}!M\+P\+I\+Start\+Up@{M\+P\+I\+Start\+Up}}
+\index{M\+P\+I\+Start\+Up@{M\+P\+I\+Start\+Up}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{M\+P\+I\+Start\+Up()}{MPIStartUp()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::M\+P\+I\+Start\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates an M\+PI communicator for \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}} and assigns ranks \mbox{\Hypertarget{classTemplateForest_a67af26aae3ccfcca14be70be3d9553ee}\label{classTemplateForest_a67af26aae3ccfcca14be70be3d9553ee}} 
+\index{Template\+Forest@{Template\+Forest}!non\+Collective\+Nbr\+Comm@{non\+Collective\+Nbr\+Comm}}
+\index{non\+Collective\+Nbr\+Comm@{non\+Collective\+Nbr\+Comm}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{non\+Collective\+Nbr\+Comm()}{nonCollectiveNbrComm()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::non\+Collective\+Nbr\+Comm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a2d6eaf33be1cc4cc461c269e1d2c88dd}\label{classTemplateForest_a2d6eaf33be1cc4cc461c269e1d2c88dd}} 
+\index{Template\+Forest@{Template\+Forest}!push\+To\+Derefine\+Each\+Tree@{push\+To\+Derefine\+Each\+Tree}}
+\index{push\+To\+Derefine\+Each\+Tree@{push\+To\+Derefine\+Each\+Tree}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{push\+To\+Derefine\+Each\+Tree()}{pushToDerefineEachTree()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::push\+To\+Derefine\+Each\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nlevel,  }\item[{\mbox{\hyperlink{classTree}{Tree}}$<$ M, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \&}]{proc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a92e50d5845a52e4bcf19d54b56e1ccf9}\label{classTemplateForest_a92e50d5845a52e4bcf19d54b56e1ccf9}} 
+\index{Template\+Forest@{Template\+Forest}!recover\+All\+Zero\+Singularity@{recover\+All\+Zero\+Singularity}}
+\index{recover\+All\+Zero\+Singularity@{recover\+All\+Zero\+Singularity}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{recover\+All\+Zero\+Singularity()}{recoverAllZeroSingularity()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::recover\+All\+Zero\+Singularity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&}]{key,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&}]{combinedlevel }\end{DoxyParamCaption})}
+
+note that this function operates on the element key, this is done to remove redundant calc \mbox{\Hypertarget{classTemplateForest_a011af6d1e352dfb90e3e74daa2d34e36}\label{classTemplateForest_a011af6d1e352dfb90e3e74daa2d34e36}} 
+\index{Template\+Forest@{Template\+Forest}!refine\+Each\+Tree@{refine\+Each\+Tree}}
+\index{refine\+Each\+Tree@{refine\+Each\+Tree}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{refine\+Each\+Tree()}{refineEachTree()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::refine\+Each\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nlevel }\end{DoxyParamCaption})}
+
+Refines every \mbox{\hyperlink{classTree}{Tree}} in the list, nlevels, balance is satisfired for each tree but not in the global scope \mbox{\Hypertarget{classTemplateForest_a9d7144f8471d28d1412ab85363566a56}\label{classTemplateForest_a9d7144f8471d28d1412ab85363566a56}} 
+\index{Template\+Forest@{Template\+Forest}!refine\+Forest\+Balanced@{refine\+Forest\+Balanced}}
+\index{refine\+Forest\+Balanced@{refine\+Forest\+Balanced}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{refine\+Forest\+Balanced()}{refineForestBalanced()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T$>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::refine\+Forest\+Balanced (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nlevel,  }\item[{T \&}]{proc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_a5c2bf9dfe92ff1cb400fdbdba4bedf78}\label{classTemplateForest_a5c2bf9dfe92ff1cb400fdbdba4bedf78}} 
+\index{Template\+Forest@{Template\+Forest}!remove\+All\+Zero\+Singularity@{remove\+All\+Zero\+Singularity}}
+\index{remove\+All\+Zero\+Singularity@{remove\+All\+Zero\+Singularity}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{remove\+All\+Zero\+Singularity()}{removeAllZeroSingularity()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::remove\+All\+Zero\+Singularity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ N+M $>$ \&}]{key,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \&}]{combinedlevel }\end{DoxyParamCaption})}
+
+we use one bit to communicate the level of the element ending in zero at element level \mbox{\Hypertarget{classTemplateForest_a070fad5f90490ac39ae703c080dc989d}\label{classTemplateForest_a070fad5f90490ac39ae703c080dc989d}} 
+\index{Template\+Forest@{Template\+Forest}!retain\+Four\+To\+One\+Balance@{retain\+Four\+To\+One\+Balance}}
+\index{retain\+Four\+To\+One\+Balance@{retain\+Four\+To\+One\+Balance}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{retain\+Four\+To\+One\+Balance()}{retainFourToOneBalance()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::retain\+Four\+To\+One\+Balance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTree}{Tree}}$<$ M, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \&}]{proc }\end{DoxyParamCaption})}
+
+Eliminates the elements that their removal would destroy the 2\+:1 balance \mbox{\Hypertarget{classTemplateForest_a6894f2a77f8eba8e06bbbdf77ff39b61}\label{classTemplateForest_a6894f2a77f8eba8e06bbbdf77ff39b61}} 
+\index{Template\+Forest@{Template\+Forest}!run\+Info@{run\+Info}}
+\index{run\+Info@{run\+Info}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{run\+Info()}{runInfo()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::run\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemplateForest_aca233428d2484e70653d21ddfd8bc790}\label{classTemplateForest_aca233428d2484e70653d21ddfd8bc790}} 
+\index{Template\+Forest@{Template\+Forest}!set\+Max\+Proc\+Level@{set\+Max\+Proc\+Level}}
+\index{set\+Max\+Proc\+Level@{set\+Max\+Proc\+Level}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{set\+Max\+Proc\+Level()}{setMaxProcLevel()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue , class T $>$ \\
+void \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::set\+Max\+Proc\+Level (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{refinelevel }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classTemplateForest_a53f8d71ce667f14931aef7832c1b6c95}\label{classTemplateForest_a53f8d71ce667f14931aef7832c1b6c95}} 
+\index{Template\+Forest@{Template\+Forest}!template\+Phdf5@{template\+Phdf5}}
+\index{template\+Phdf5@{template\+Phdf5}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{template\+Phdf5}{templatePhdf5}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+template$<$size\+\_\+t N1, typename Nvalue1 , size\+\_\+t M1, typename Mvalue1 , class T1 $>$ \\
+friend class \mbox{\hyperlink{classtemplatePhdf5}{template\+Phdf5}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classTemplateForest_aa4644b5dd646be3d9e3d71107a33803a}\label{classTemplateForest_aa4644b5dd646be3d9e3d71107a33803a}} 
+\index{Template\+Forest@{Template\+Forest}!ancestorcoords@{ancestorcoords}}
+\index{ancestorcoords@{ancestorcoords}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{ancestorcoords}{ancestorcoords}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::ancestorcoords\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+centeroid of the of the first generation (root) element \mbox{\Hypertarget{classTemplateForest_a0a371d168c81cf8be77b681c27c06409}\label{classTemplateForest_a0a371d168c81cf8be77b681c27c06409}} 
+\index{Template\+Forest@{Template\+Forest}!ancestorlength@{ancestorlength}}
+\index{ancestorlength@{ancestorlength}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{ancestorlength}{ancestorlength}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::ancestorlength\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+original length of the first generation (root) element \mbox{\Hypertarget{classTemplateForest_a98136f14aec33e243ff65b68b89c5fdc}\label{classTemplateForest_a98136f14aec33e243ff65b68b89c5fdc}} 
+\index{Template\+Forest@{Template\+Forest}!Com@{Com}}
+\index{Com@{Com}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{Com}{Com}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+\mbox{\hyperlink{structMpiCom}{Mpi\+Com}} \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::Com\hspace{0.3cm}{\ttfamily [private]}}
+
+Object to hold communicator data such as rank, size, etc \mbox{\Hypertarget{classTemplateForest_a31344621cbe88d961bdb70174ce8bbc9}\label{classTemplateForest_a31344621cbe88d961bdb70174ce8bbc9}} 
+\index{Template\+Forest@{Template\+Forest}!destination@{destination}}
+\index{destination@{destination}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{destination}{destination}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+vector$<$\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}$>$ \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::destination\hspace{0.3cm}{\ttfamily [private]}}
+
+neighbor processes to communicate messages \mbox{\Hypertarget{classTemplateForest_a97bc83d3ecc6492e272230f00fb0b9f5}\label{classTemplateForest_a97bc83d3ecc6492e272230f00fb0b9f5}} 
+\index{Template\+Forest@{Template\+Forest}!duplicated@{duplicated}}
+\index{duplicated@{duplicated}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{duplicated}{duplicated}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+int \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::duplicated =0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemplateForest_a63125f7155297d70f8f189ffb17c9822}\label{classTemplateForest_a63125f7155297d70f8f189ffb17c9822}} 
+\index{Template\+Forest@{Template\+Forest}!geom@{geom}}
+\index{geom@{geom}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{geom}{geom}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+\mbox{\hyperlink{classTree}{Tree}}$<$M, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}}$>$ \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::geom\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemplateForest_a55864067b34cf9807be0f42abb211b68}\label{classTemplateForest_a55864067b34cf9807be0f42abb211b68}} 
+\index{Template\+Forest@{Template\+Forest}!graph\+Comm@{graph\+Comm}}
+\index{graph\+Comm@{graph\+Comm}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{graph\+Comm}{graphComm}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+M\+P\+I\+\_\+\+Comm \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::graph\+Comm\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemplateForest_ae3282ab0b3800e3f4c8b1fcfb9a6246e}\label{classTemplateForest_ae3282ab0b3800e3f4c8b1fcfb9a6246e}} 
+\index{Template\+Forest@{Template\+Forest}!max\+Proc\+Level@{max\+Proc\+Level}}
+\index{max\+Proc\+Level@{max\+Proc\+Level}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{max\+Proc\+Level}{maxProcLevel}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::max\+Proc\+Level\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemplateForest_acde2c3f1395094ba171138b58b6eb335}\label{classTemplateForest_acde2c3f1395094ba171138b58b6eb335}} 
+\index{Template\+Forest@{Template\+Forest}!maxseedlevel@{maxseedlevel}}
+\index{maxseedlevel@{maxseedlevel}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{maxseedlevel}{maxseedlevel}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::maxseedlevel\hspace{0.3cm}{\ttfamily [private]}}
+
+finds tha maximum level of the seeds \mbox{\Hypertarget{classTemplateForest_a421f9554610485547148a476d2e67147}\label{classTemplateForest_a421f9554610485547148a476d2e67147}} 
+\index{Template\+Forest@{Template\+Forest}!mesh\+Size@{mesh\+Size}}
+\index{mesh\+Size@{mesh\+Size}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{mesh\+Size}{meshSize}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+unsigned long long \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::mesh\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+Each seed will contain its own geometry points to search, this assumption implicitly coincides processor topology with geometry voxelization this way tree\textquotesingle{}s root will be morton code used in geometry voxelization and no extra operation is necessary \mbox{\Hypertarget{classTemplateForest_a5ecc1b5d7c94ff6c9164a2c63bfa6101}\label{classTemplateForest_a5ecc1b5d7c94ff6c9164a2c63bfa6101}} 
+\index{Template\+Forest@{Template\+Forest}!message@{message}}
+\index{message@{message}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+vector$<$bitset$<$M + N$>$ $>$$\ast$ \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::message =nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemplateForest_a30c73b4c9e35b167e920dfe00af66b15}\label{classTemplateForest_a30c73b4c9e35b167e920dfe00af66b15}} 
+\index{Template\+Forest@{Template\+Forest}!name\+Appendix@{name\+Appendix}}
+\index{name\+Appendix@{name\+Appendix}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{name\+Appendix}{nameAppendix}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+char \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::name\+Appendix\mbox{[}80\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemplateForest_a36aededebe33b6c43e713b9fa93e9a14}\label{classTemplateForest_a36aededebe33b6c43e713b9fa93e9a14}} 
+\index{Template\+Forest@{Template\+Forest}!nbrs\+Of\+Nbrs@{nbrs\+Of\+Nbrs}}
+\index{nbrs\+Of\+Nbrs@{nbrs\+Of\+Nbrs}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{nbrs\+Of\+Nbrs}{nbrsOfNbrs}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+vector$<$\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}$>$ \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::nbrs\+Of\+Nbrs\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemplateForest_ac16738374c9880720dbb28de832a15f2}\label{classTemplateForest_ac16738374c9880720dbb28de832a15f2}} 
+\index{Template\+Forest@{Template\+Forest}!npx@{npx}}
+\index{npx@{npx}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{npx}{npx}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::npx\hspace{0.3cm}{\ttfamily [protected]}}
+
+discritization in x direction, this value for proc tree is 2, therefore forest needs its own value of npx \mbox{\Hypertarget{classTemplateForest_afe37cbd294cd78c9f19cda314b21809e}\label{classTemplateForest_afe37cbd294cd78c9f19cda314b21809e}} 
+\index{Template\+Forest@{Template\+Forest}!npy@{npy}}
+\index{npy@{npy}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{npy}{npy}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::npy\hspace{0.3cm}{\ttfamily [protected]}}
+
+discretization in y direction \mbox{\Hypertarget{classTemplateForest_a8854c681d680f83d4a16a89f72b60b43}\label{classTemplateForest_a8854c681d680f83d4a16a89f72b60b43}} 
+\index{Template\+Forest@{Template\+Forest}!npz@{npz}}
+\index{npz@{npz}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{npz}{npz}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::npz\hspace{0.3cm}{\ttfamily [protected]}}
+
+discretization in z direction \mbox{\Hypertarget{classTemplateForest_ab3c00d6a664a6194e6ce9c2f962feb56}\label{classTemplateForest_ab3c00d6a664a6194e6ce9c2f962feb56}} 
+\index{Template\+Forest@{Template\+Forest}!recvtag@{recvtag}}
+\index{recvtag@{recvtag}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{recvtag}{recvtag}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+vector$<$\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}$>$ \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::recvtag\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemplateForest_a0c51898863ad5472a890988d5645e2af}\label{classTemplateForest_a0c51898863ad5472a890988d5645e2af}} 
+\index{Template\+Forest@{Template\+Forest}!request@{request}}
+\index{request@{request}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{request}{request}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+M\+P\+I\+\_\+\+Request$\ast$ \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::request =nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemplateForest_a657e34ecc155063ccced9ca4ef3ef47e}\label{classTemplateForest_a657e34ecc155063ccced9ca4ef3ef47e}} 
+\index{Template\+Forest@{Template\+Forest}!request1@{request1}}
+\index{request1@{request1}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{request1}{request1}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+M\+P\+I\+\_\+\+Request$\ast$ \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::request1 =nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemplateForest_a00983bdc218abbf105f872e3d2187e8a}\label{classTemplateForest_a00983bdc218abbf105f872e3d2187e8a}} 
+\index{Template\+Forest@{Template\+Forest}!seeds@{seeds}}
+\index{seeds@{seeds}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{seeds}{seeds}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+\mbox{\hyperlink{definitions_8h_ad1cc49840e065ce2a93cd243916d310c}{bitlist}}$<$M$>$ \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::seeds\hspace{0.3cm}{\ttfamily [private]}}
+
+$<$ Maximum level in processor topology. i.\+e. tree seeds\+: morton code for boxes to grow tree \mbox{\Hypertarget{classTemplateForest_ae38bc6bd6cce20a9e93c5d854bca2a18}\label{classTemplateForest_ae38bc6bd6cce20a9e93c5d854bca2a18}} 
+\index{Template\+Forest@{Template\+Forest}!sendtag@{sendtag}}
+\index{sendtag@{sendtag}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{sendtag}{sendtag}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+vector$<$\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}$>$ \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::sendtag\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemplateForest_a0399f34c2a5a887fc994657d128860bb}\label{classTemplateForest_a0399f34c2a5a887fc994657d128860bb}} 
+\index{Template\+Forest@{Template\+Forest}!trees@{trees}}
+\index{trees@{trees}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{trees}{trees}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+\mbox{\hyperlink{templateForest_8h_a7d5792f6e45225030ac74c936ce3b700}{tree\+List}}$<$\mbox{\hyperlink{classTree}{Tree}}$<$N,Nvalue$>$ $>$ \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::trees\hspace{0.3cm}{\ttfamily [private]}}
+
+list of trees that each processor includes \mbox{\Hypertarget{classTemplateForest_a81d2200ebbc1e3a2ae557e6b6db3c442}\label{classTemplateForest_a81d2200ebbc1e3a2ae557e6b6db3c442}} 
+\index{Template\+Forest@{Template\+Forest}!zoltan\+\_\+out@{zoltan\+\_\+out}}
+\index{zoltan\+\_\+out@{zoltan\+\_\+out}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{zoltan\+\_\+out}{zoltan\_out}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+\mbox{\hyperlink{structZoltan__Out}{Zoltan\+\_\+\+Out}} \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::zoltan\+\_\+out\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemplateForest_ad2dcf7d131f6fa9c68e3dba5229b85d6}\label{classTemplateForest_ad2dcf7d131f6fa9c68e3dba5229b85d6}} 
+\index{Template\+Forest@{Template\+Forest}!zz@{zz}}
+\index{zz@{zz}!Template\+Forest@{Template\+Forest}}
+\subsubsection{\texorpdfstring{zz}{zz}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue, class T$>$ \\
+struct Zoltan\+\_\+\+Struct$\ast$ \mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, T $>$\+::zz =nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/\mbox{\hyperlink{templateForest_8h}{template\+Forest.\+h}}\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/\mbox{\hyperlink{templateForest_8cpp}{template\+Forest.\+cpp}}\end{DoxyCompactItemize}

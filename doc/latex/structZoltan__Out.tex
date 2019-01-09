@@ -1,0 +1,137 @@
+\hypertarget{structZoltan__Out}{}\section{Zoltan\+\_\+\+Out Struct Reference}
+\label{structZoltan__Out}\index{Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}}
+
+
+This structure is an interface to store the output from Zoltan.  
+
+
+
+
+{\ttfamily \#include $<$typedefs.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structZoltan__Out_a4a16fd4f8cc9d38d47810055e8b7b97b}{changes}}
+\item 
+int \mbox{\hyperlink{structZoltan__Out_a9ec8c391f2218e927b8e9f31fd49ee72}{num\+Gid\+Entries}}
+\item 
+int \mbox{\hyperlink{structZoltan__Out_a1de4e895402c6a3ceb3735c70ec88c23}{num\+Lid\+Entries}}
+\item 
+int \mbox{\hyperlink{structZoltan__Out_a3ec6846e956ee5337cb94c69b8bef4ce}{num\+Import}}
+\item 
+int \mbox{\hyperlink{structZoltan__Out_ae3c782bd4b01650d2ec6f970ec0df24b}{num\+Export}}
+\item 
+unsigned int $\ast$ \mbox{\hyperlink{structZoltan__Out_a2c70ebf8c353ba745560459779090703}{import\+Global\+Gids}}
+\item 
+unsigned int $\ast$ \mbox{\hyperlink{structZoltan__Out_aaabd5873a7bd360c3d02499c13455bc2}{import\+Local\+Gids}}
+\item 
+unsigned int $\ast$ \mbox{\hyperlink{structZoltan__Out_a41a465f7840cecafd959c81c56d57e9d}{export\+Global\+Gids}}
+\item 
+unsigned int $\ast$ \mbox{\hyperlink{structZoltan__Out_a7a5c47580bc0a77cd51f0179b0b9d92b}{export\+Local\+Gids}}
+\item 
+int $\ast$ \mbox{\hyperlink{structZoltan__Out_a6421b3c6ccec98151928ef6461be97e2}{import\+Procs}}
+\item 
+int $\ast$ \mbox{\hyperlink{structZoltan__Out_ac8fcf42b3806fe7b52f5455d67814098}{import\+To\+Part}}
+\item 
+int $\ast$ \mbox{\hyperlink{structZoltan__Out_a934d6621722a687a3d8b7bf43c259816}{export\+Procs}}
+\item 
+int $\ast$ \mbox{\hyperlink{structZoltan__Out_ab2a81da9a9d6ac69b69f5db89e97c6bf}{export\+To\+Part}}
+\item 
+int $\ast$ \mbox{\hyperlink{structZoltan__Out_addc3ad3c22e6fb8e7073de71425d4ead}{parts}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure is an interface to store the output from Zoltan. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structZoltan__Out_a4a16fd4f8cc9d38d47810055e8b7b97b}\label{structZoltan__Out_a4a16fd4f8cc9d38d47810055e8b7b97b}} 
+\index{Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}!changes@{changes}}
+\index{changes@{changes}!Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}}
+\subsubsection{\texorpdfstring{changes}{changes}}
+{\footnotesize\ttfamily int Zoltan\+\_\+\+Out\+::changes}
+
+\mbox{\Hypertarget{structZoltan__Out_a41a465f7840cecafd959c81c56d57e9d}\label{structZoltan__Out_a41a465f7840cecafd959c81c56d57e9d}} 
+\index{Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}!export\+Global\+Gids@{export\+Global\+Gids}}
+\index{export\+Global\+Gids@{export\+Global\+Gids}!Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}}
+\subsubsection{\texorpdfstring{export\+Global\+Gids}{exportGlobalGids}}
+{\footnotesize\ttfamily unsigned int$\ast$ Zoltan\+\_\+\+Out\+::export\+Global\+Gids}
+
+\mbox{\Hypertarget{structZoltan__Out_a7a5c47580bc0a77cd51f0179b0b9d92b}\label{structZoltan__Out_a7a5c47580bc0a77cd51f0179b0b9d92b}} 
+\index{Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}!export\+Local\+Gids@{export\+Local\+Gids}}
+\index{export\+Local\+Gids@{export\+Local\+Gids}!Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}}
+\subsubsection{\texorpdfstring{export\+Local\+Gids}{exportLocalGids}}
+{\footnotesize\ttfamily unsigned int$\ast$ Zoltan\+\_\+\+Out\+::export\+Local\+Gids}
+
+\mbox{\Hypertarget{structZoltan__Out_a934d6621722a687a3d8b7bf43c259816}\label{structZoltan__Out_a934d6621722a687a3d8b7bf43c259816}} 
+\index{Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}!export\+Procs@{export\+Procs}}
+\index{export\+Procs@{export\+Procs}!Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}}
+\subsubsection{\texorpdfstring{export\+Procs}{exportProcs}}
+{\footnotesize\ttfamily int$\ast$ Zoltan\+\_\+\+Out\+::export\+Procs}
+
+\mbox{\Hypertarget{structZoltan__Out_ab2a81da9a9d6ac69b69f5db89e97c6bf}\label{structZoltan__Out_ab2a81da9a9d6ac69b69f5db89e97c6bf}} 
+\index{Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}!export\+To\+Part@{export\+To\+Part}}
+\index{export\+To\+Part@{export\+To\+Part}!Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}}
+\subsubsection{\texorpdfstring{export\+To\+Part}{exportToPart}}
+{\footnotesize\ttfamily int$\ast$ Zoltan\+\_\+\+Out\+::export\+To\+Part}
+
+\mbox{\Hypertarget{structZoltan__Out_a2c70ebf8c353ba745560459779090703}\label{structZoltan__Out_a2c70ebf8c353ba745560459779090703}} 
+\index{Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}!import\+Global\+Gids@{import\+Global\+Gids}}
+\index{import\+Global\+Gids@{import\+Global\+Gids}!Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}}
+\subsubsection{\texorpdfstring{import\+Global\+Gids}{importGlobalGids}}
+{\footnotesize\ttfamily unsigned int$\ast$ Zoltan\+\_\+\+Out\+::import\+Global\+Gids}
+
+\mbox{\Hypertarget{structZoltan__Out_aaabd5873a7bd360c3d02499c13455bc2}\label{structZoltan__Out_aaabd5873a7bd360c3d02499c13455bc2}} 
+\index{Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}!import\+Local\+Gids@{import\+Local\+Gids}}
+\index{import\+Local\+Gids@{import\+Local\+Gids}!Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}}
+\subsubsection{\texorpdfstring{import\+Local\+Gids}{importLocalGids}}
+{\footnotesize\ttfamily unsigned int$\ast$ Zoltan\+\_\+\+Out\+::import\+Local\+Gids}
+
+\mbox{\Hypertarget{structZoltan__Out_a6421b3c6ccec98151928ef6461be97e2}\label{structZoltan__Out_a6421b3c6ccec98151928ef6461be97e2}} 
+\index{Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}!import\+Procs@{import\+Procs}}
+\index{import\+Procs@{import\+Procs}!Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}}
+\subsubsection{\texorpdfstring{import\+Procs}{importProcs}}
+{\footnotesize\ttfamily int$\ast$ Zoltan\+\_\+\+Out\+::import\+Procs}
+
+\mbox{\Hypertarget{structZoltan__Out_ac8fcf42b3806fe7b52f5455d67814098}\label{structZoltan__Out_ac8fcf42b3806fe7b52f5455d67814098}} 
+\index{Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}!import\+To\+Part@{import\+To\+Part}}
+\index{import\+To\+Part@{import\+To\+Part}!Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}}
+\subsubsection{\texorpdfstring{import\+To\+Part}{importToPart}}
+{\footnotesize\ttfamily int$\ast$ Zoltan\+\_\+\+Out\+::import\+To\+Part}
+
+\mbox{\Hypertarget{structZoltan__Out_ae3c782bd4b01650d2ec6f970ec0df24b}\label{structZoltan__Out_ae3c782bd4b01650d2ec6f970ec0df24b}} 
+\index{Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}!num\+Export@{num\+Export}}
+\index{num\+Export@{num\+Export}!Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}}
+\subsubsection{\texorpdfstring{num\+Export}{numExport}}
+{\footnotesize\ttfamily int Zoltan\+\_\+\+Out\+::num\+Export}
+
+\mbox{\Hypertarget{structZoltan__Out_a9ec8c391f2218e927b8e9f31fd49ee72}\label{structZoltan__Out_a9ec8c391f2218e927b8e9f31fd49ee72}} 
+\index{Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}!num\+Gid\+Entries@{num\+Gid\+Entries}}
+\index{num\+Gid\+Entries@{num\+Gid\+Entries}!Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}}
+\subsubsection{\texorpdfstring{num\+Gid\+Entries}{numGidEntries}}
+{\footnotesize\ttfamily int Zoltan\+\_\+\+Out\+::num\+Gid\+Entries}
+
+\mbox{\Hypertarget{structZoltan__Out_a3ec6846e956ee5337cb94c69b8bef4ce}\label{structZoltan__Out_a3ec6846e956ee5337cb94c69b8bef4ce}} 
+\index{Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}!num\+Import@{num\+Import}}
+\index{num\+Import@{num\+Import}!Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}}
+\subsubsection{\texorpdfstring{num\+Import}{numImport}}
+{\footnotesize\ttfamily int Zoltan\+\_\+\+Out\+::num\+Import}
+
+\mbox{\Hypertarget{structZoltan__Out_a1de4e895402c6a3ceb3735c70ec88c23}\label{structZoltan__Out_a1de4e895402c6a3ceb3735c70ec88c23}} 
+\index{Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}!num\+Lid\+Entries@{num\+Lid\+Entries}}
+\index{num\+Lid\+Entries@{num\+Lid\+Entries}!Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}}
+\subsubsection{\texorpdfstring{num\+Lid\+Entries}{numLidEntries}}
+{\footnotesize\ttfamily int Zoltan\+\_\+\+Out\+::num\+Lid\+Entries}
+
+\mbox{\Hypertarget{structZoltan__Out_addc3ad3c22e6fb8e7073de71425d4ead}\label{structZoltan__Out_addc3ad3c22e6fb8e7073de71425d4ead}} 
+\index{Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}!parts@{parts}}
+\index{parts@{parts}!Zoltan\+\_\+\+Out@{Zoltan\+\_\+\+Out}}
+\subsubsection{\texorpdfstring{parts}{parts}}
+{\footnotesize\ttfamily int$\ast$ Zoltan\+\_\+\+Out\+::parts}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/\mbox{\hyperlink{typedefs_8h}{typedefs.\+h}}\end{DoxyCompactItemize}

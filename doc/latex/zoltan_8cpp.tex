@@ -1,0 +1,80 @@
+\hypertarget{zoltan_8cpp}{}\section{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/zoltan.cpp File Reference}
+\label{zoltan_8cpp}\index{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/zoltan.\+cpp@{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/zoltan.\+cpp}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}typedefs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tree.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structMeshData}{Mesh\+Data}}
+\begin{DoxyCompactList}\small\item\em struct to supply information required by zoltan for geometric partitioners \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structGraphData}{Graph\+Data}}
+\begin{DoxyCompactList}\small\item\em struct to supply information required by zoltan for geometric partitioners \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{zoltan_8cpp_a156b862ebf6d213f5da19b9e3ccb779e}{T\+OL}}~\char`\"{}1.\+1\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{zoltan_8cpp_a6ad2871ad3f64c732b17fa7eee57cec0}{get\+\_\+number\+\_\+of\+\_\+objects}} (void $\ast$data, int $\ast$ierr)
+\item 
+static int \mbox{\hyperlink{zoltan_8cpp_a3f7803e55e2f26d86aafeb3e5512571d}{get\+\_\+num\+\_\+geometry}} (void $\ast$data, int $\ast$ierr)
+\item 
+static void \mbox{\hyperlink{zoltan_8cpp_ac2693675e55942058ee52f02d909b568}{get\+\_\+object\+\_\+list}} (void $\ast$data, int size\+G\+ID, int size\+L\+ID, Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR global\+ID, Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR local\+ID, int wgt\+\_\+dim, float $\ast$obj\+\_\+wgts, int $\ast$ierr)
+\item 
+static void \mbox{\hyperlink{zoltan_8cpp_a1527ba0550f8457693bb832a66395b56}{get\+\_\+geometry\+\_\+list}} (void $\ast$data, int size\+G\+ID, int size\+L\+ID, int num\+\_\+obj, Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR global\+ID, Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR local\+ID, int num\+\_\+dim, double $\ast$geom\+\_\+vec, int $\ast$ierr)
+\item 
+bool \mbox{\hyperlink{zoltan_8cpp_ace541fbdd611ae09846bbe0e8b54b64f}{zoltan\+Geometric\+Partitioner}} (const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} size, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} ncube\+\_\+total, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} offset, const int method, struct Zoltan\+\_\+\+Struct $\ast$zz, const \mbox{\hyperlink{typedefs_8h_a3ad6a5c3a7054ba718206a93e3af25b7}{Center\+\_\+coords}} \&X\+YZ, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$weight, \mbox{\hyperlink{structZoltan__Out}{Zoltan\+\_\+\+Out}} $\ast$zoltan\+\_\+out)
+\item 
+bool \mbox{\hyperlink{zoltan_8cpp_a7a93189a86c3e901a8fe171685158107}{zoltan\+Geometric\+Partitioner\+Serial}} (const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} size, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} ncube\+\_\+total, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} offset, const int method, struct Zoltan\+\_\+\+Struct $\ast$zz, const \mbox{\hyperlink{typedefs_8h_a3ad6a5c3a7054ba718206a93e3af25b7}{Center\+\_\+coords}} \&X\+YZ, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$weight, \mbox{\hyperlink{structZoltan__Out}{Zoltan\+\_\+\+Out}} $\ast$zoltan\+\_\+out, int comsize)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{zoltan_8cpp_a156b862ebf6d213f5da19b9e3ccb779e}\label{zoltan_8cpp_a156b862ebf6d213f5da19b9e3ccb779e}} 
+\index{zoltan.\+cpp@{zoltan.\+cpp}!T\+OL@{T\+OL}}
+\index{T\+OL@{T\+OL}!zoltan.\+cpp@{zoltan.\+cpp}}
+\subsubsection{\texorpdfstring{T\+OL}{TOL}}
+{\footnotesize\ttfamily \#define T\+OL~\char`\"{}1.\+1\char`\"{}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{zoltan_8cpp_a1527ba0550f8457693bb832a66395b56}\label{zoltan_8cpp_a1527ba0550f8457693bb832a66395b56}} 
+\index{zoltan.\+cpp@{zoltan.\+cpp}!get\+\_\+geometry\+\_\+list@{get\+\_\+geometry\+\_\+list}}
+\index{get\+\_\+geometry\+\_\+list@{get\+\_\+geometry\+\_\+list}!zoltan.\+cpp@{zoltan.\+cpp}}
+\subsubsection{\texorpdfstring{get\+\_\+geometry\+\_\+list()}{get\_geometry\_list()}}
+{\footnotesize\ttfamily static void get\+\_\+geometry\+\_\+list (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{int}]{size\+G\+ID,  }\item[{int}]{size\+L\+ID,  }\item[{int}]{num\+\_\+obj,  }\item[{Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR}]{global\+ID,  }\item[{Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR}]{local\+ID,  }\item[{int}]{num\+\_\+dim,  }\item[{double $\ast$}]{geom\+\_\+vec,  }\item[{int $\ast$}]{ierr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{zoltan_8cpp_a3f7803e55e2f26d86aafeb3e5512571d}\label{zoltan_8cpp_a3f7803e55e2f26d86aafeb3e5512571d}} 
+\index{zoltan.\+cpp@{zoltan.\+cpp}!get\+\_\+num\+\_\+geometry@{get\+\_\+num\+\_\+geometry}}
+\index{get\+\_\+num\+\_\+geometry@{get\+\_\+num\+\_\+geometry}!zoltan.\+cpp@{zoltan.\+cpp}}
+\subsubsection{\texorpdfstring{get\+\_\+num\+\_\+geometry()}{get\_num\_geometry()}}
+{\footnotesize\ttfamily static int get\+\_\+num\+\_\+geometry (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{int $\ast$}]{ierr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{zoltan_8cpp_a6ad2871ad3f64c732b17fa7eee57cec0}\label{zoltan_8cpp_a6ad2871ad3f64c732b17fa7eee57cec0}} 
+\index{zoltan.\+cpp@{zoltan.\+cpp}!get\+\_\+number\+\_\+of\+\_\+objects@{get\+\_\+number\+\_\+of\+\_\+objects}}
+\index{get\+\_\+number\+\_\+of\+\_\+objects@{get\+\_\+number\+\_\+of\+\_\+objects}!zoltan.\+cpp@{zoltan.\+cpp}}
+\subsubsection{\texorpdfstring{get\+\_\+number\+\_\+of\+\_\+objects()}{get\_number\_of\_objects()}}
+{\footnotesize\ttfamily static int get\+\_\+number\+\_\+of\+\_\+objects (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{int $\ast$}]{ierr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{zoltan_8cpp_ac2693675e55942058ee52f02d909b568}\label{zoltan_8cpp_ac2693675e55942058ee52f02d909b568}} 
+\index{zoltan.\+cpp@{zoltan.\+cpp}!get\+\_\+object\+\_\+list@{get\+\_\+object\+\_\+list}}
+\index{get\+\_\+object\+\_\+list@{get\+\_\+object\+\_\+list}!zoltan.\+cpp@{zoltan.\+cpp}}
+\subsubsection{\texorpdfstring{get\+\_\+object\+\_\+list()}{get\_object\_list()}}
+{\footnotesize\ttfamily static void get\+\_\+object\+\_\+list (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{int}]{size\+G\+ID,  }\item[{int}]{size\+L\+ID,  }\item[{Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR}]{global\+ID,  }\item[{Z\+O\+L\+T\+A\+N\+\_\+\+I\+D\+\_\+\+P\+TR}]{local\+ID,  }\item[{int}]{wgt\+\_\+dim,  }\item[{float $\ast$}]{obj\+\_\+wgts,  }\item[{int $\ast$}]{ierr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{zoltan_8cpp_ace541fbdd611ae09846bbe0e8b54b64f}\label{zoltan_8cpp_ace541fbdd611ae09846bbe0e8b54b64f}} 
+\index{zoltan.\+cpp@{zoltan.\+cpp}!zoltan\+Geometric\+Partitioner@{zoltan\+Geometric\+Partitioner}}
+\index{zoltan\+Geometric\+Partitioner@{zoltan\+Geometric\+Partitioner}!zoltan.\+cpp@{zoltan.\+cpp}}
+\subsubsection{\texorpdfstring{zoltan\+Geometric\+Partitioner()}{zoltanGeometricPartitioner()}}
+{\footnotesize\ttfamily bool zoltan\+Geometric\+Partitioner (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{size,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{ncube\+\_\+total,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{offset,  }\item[{const int}]{method,  }\item[{struct Zoltan\+\_\+\+Struct $\ast$}]{zz,  }\item[{const \mbox{\hyperlink{typedefs_8h_a3ad6a5c3a7054ba718206a93e3af25b7}{Center\+\_\+coords}} \&}]{X\+YZ,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{weight,  }\item[{\mbox{\hyperlink{structZoltan__Out}{Zoltan\+\_\+\+Out}} $\ast$}]{zoltan\+\_\+out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{zoltan_8cpp_a7a93189a86c3e901a8fe171685158107}\label{zoltan_8cpp_a7a93189a86c3e901a8fe171685158107}} 
+\index{zoltan.\+cpp@{zoltan.\+cpp}!zoltan\+Geometric\+Partitioner\+Serial@{zoltan\+Geometric\+Partitioner\+Serial}}
+\index{zoltan\+Geometric\+Partitioner\+Serial@{zoltan\+Geometric\+Partitioner\+Serial}!zoltan.\+cpp@{zoltan.\+cpp}}
+\subsubsection{\texorpdfstring{zoltan\+Geometric\+Partitioner\+Serial()}{zoltanGeometricPartitionerSerial()}}
+{\footnotesize\ttfamily bool zoltan\+Geometric\+Partitioner\+Serial (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{size,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{ncube\+\_\+total,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{offset,  }\item[{const int}]{method,  }\item[{struct Zoltan\+\_\+\+Struct $\ast$}]{zz,  }\item[{const \mbox{\hyperlink{typedefs_8h_a3ad6a5c3a7054ba718206a93e3af25b7}{Center\+\_\+coords}} \&}]{X\+YZ,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{weight,  }\item[{\mbox{\hyperlink{structZoltan__Out}{Zoltan\+\_\+\+Out}} $\ast$}]{zoltan\+\_\+out,  }\item[{int}]{comsize }\end{DoxyParamCaption})}
+

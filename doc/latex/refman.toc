@@ -1,0 +1,423 @@
+\contentsline {chapter}{\numberline {1}Main Page}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Directory Hierarchy}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Directories}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Namespace Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Namespace List}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Class Index}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Class Hierarchy}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}Class Index}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}Class List}{9}{section.5.1}
+\contentsline {chapter}{\numberline {6}File Index}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}File List}{11}{section.6.1}
+\contentsline {chapter}{\numberline {7}Directory Documentation}{13}{chapter.7}
+\contentsline {section}{\numberline {7.1}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/include/ Directory Reference}{13}{section.7.1}
+\contentsline {section}{\numberline {7.2}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/ Directory Reference}{14}{section.7.2}
+\contentsline {chapter}{\numberline {8}Namespace Documentation}{15}{chapter.8}
+\contentsline {section}{\numberline {8.1}Abstraction Namespace Reference}{15}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Enumeration Type Documentation}{15}{subsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.1.1}DataType}{15}{subsubsection.8.1.1.1}
+\contentsline {section}{\numberline {8.2}stl Namespace Reference}{16}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Function Documentation}{16}{subsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.1.1}operator$<$$<$}{16}{subsubsection.8.2.1.1}
+\contentsline {subsubsection}{\numberline {8.2.1.2}operator$<$$<$}{16}{subsubsection.8.2.1.2}
+\contentsline {subsubsection}{\numberline {8.2.1.3}parse\_\discretionary {-}{}{}float}{16}{subsubsection.8.2.1.3}
+\contentsline {subsubsection}{\numberline {8.2.1.4}parse\_\discretionary {-}{}{}point}{16}{subsubsection.8.2.1.4}
+\contentsline {subsubsection}{\numberline {8.2.1.5}parse\_\discretionary {-}{}{}stl}{16}{subsubsection.8.2.1.5}
+\contentsline {chapter}{\numberline {9}Class Documentation}{17}{chapter.9}
+\contentsline {section}{\numberline {9.1}CenterCoords Struct Reference}{17}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}Detailed Description}{17}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}Member Data Documentation}{17}{subsection.9.1.2}
+\contentsline {subsubsection}{\numberline {9.1.2.1}x}{17}{subsubsection.9.1.2.1}
+\contentsline {subsubsection}{\numberline {9.1.2.2}y}{17}{subsubsection.9.1.2.2}
+\contentsline {subsubsection}{\numberline {9.1.2.3}z}{17}{subsubsection.9.1.2.3}
+\contentsline {section}{\numberline {9.2}CommCollective$<$ Type $>$ Class Template Reference}{18}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}Detailed Description}{18}{subsection.9.2.1}
+\contentsline {subsection}{\numberline {9.2.2}Constructor \& Destructor Documentation}{18}{subsection.9.2.2}
+\contentsline {subsubsection}{\numberline {9.2.2.1}CommCollective}{18}{subsubsection.9.2.2.1}
+\contentsline {subsubsection}{\numberline {9.2.2.2}CommCollective}{18}{subsubsection.9.2.2.2}
+\contentsline {subsubsection}{\numberline {9.2.2.3}$\sim $CommCollective}{19}{subsubsection.9.2.2.3}
+\contentsline {subsection}{\numberline {9.2.3}Member Function Documentation}{19}{subsection.9.2.3}
+\contentsline {subsubsection}{\numberline {9.2.3.1}bcast}{19}{subsubsection.9.2.3.1}
+\contentsline {subsubsection}{\numberline {9.2.3.2}getTotalNumber}{19}{subsubsection.9.2.3.2}
+\contentsline {subsubsection}{\numberline {9.2.3.3}getTotalNumber}{19}{subsubsection.9.2.3.3}
+\contentsline {subsubsection}{\numberline {9.2.3.4}Ibcast}{19}{subsubsection.9.2.3.4}
+\contentsline {subsubsection}{\numberline {9.2.3.5}IgetTotalNumber}{19}{subsubsection.9.2.3.5}
+\contentsline {subsubsection}{\numberline {9.2.3.6}IgetTotalNumber}{19}{subsubsection.9.2.3.6}
+\contentsline {subsubsection}{\numberline {9.2.3.7}waitOnRequest}{19}{subsubsection.9.2.3.7}
+\contentsline {subsection}{\numberline {9.2.4}Member Data Documentation}{19}{subsection.9.2.4}
+\contentsline {subsubsection}{\numberline {9.2.4.1}Com}{19}{subsubsection.9.2.4.1}
+\contentsline {subsubsection}{\numberline {9.2.4.2}Msg}{19}{subsubsection.9.2.4.2}
+\contentsline {section}{\numberline {9.3}CommPoint2Point$<$ Type $>$ Class Template Reference}{21}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Detailed Description}{21}{subsection.9.3.1}
+\contentsline {subsection}{\numberline {9.3.2}Constructor \& Destructor Documentation}{21}{subsection.9.3.2}
+\contentsline {subsubsection}{\numberline {9.3.2.1}CommPoint2Point}{21}{subsubsection.9.3.2.1}
+\contentsline {subsubsection}{\numberline {9.3.2.2}CommPoint2Point}{22}{subsubsection.9.3.2.2}
+\contentsline {subsubsection}{\numberline {9.3.2.3}CommPoint2Point}{22}{subsubsection.9.3.2.3}
+\contentsline {subsubsection}{\numberline {9.3.2.4}$\sim $CommPoint2Point}{22}{subsubsection.9.3.2.4}
+\contentsline {subsection}{\numberline {9.3.3}Member Function Documentation}{22}{subsection.9.3.3}
+\contentsline {subsubsection}{\numberline {9.3.3.1}assignReciever}{22}{subsubsection.9.3.3.1}
+\contentsline {subsubsection}{\numberline {9.3.3.2}assignSender}{22}{subsubsection.9.3.3.2}
+\contentsline {subsubsection}{\numberline {9.3.3.3}getOffset}{22}{subsubsection.9.3.3.3}
+\contentsline {subsubsection}{\numberline {9.3.3.4}Irecv}{22}{subsubsection.9.3.3.4}
+\contentsline {subsubsection}{\numberline {9.3.3.5}Isend}{22}{subsubsection.9.3.3.5}
+\contentsline {subsubsection}{\numberline {9.3.3.6}myRank}{23}{subsubsection.9.3.3.6}
+\contentsline {subsubsection}{\numberline {9.3.3.7}mySize}{23}{subsubsection.9.3.3.7}
+\contentsline {subsubsection}{\numberline {9.3.3.8}recv}{23}{subsubsection.9.3.3.8}
+\contentsline {subsubsection}{\numberline {9.3.3.9}send}{23}{subsubsection.9.3.3.9}
+\contentsline {subsection}{\numberline {9.3.4}Member Data Documentation}{23}{subsection.9.3.4}
+\contentsline {subsubsection}{\numberline {9.3.4.1}Com}{23}{subsubsection.9.3.4.1}
+\contentsline {subsubsection}{\numberline {9.3.4.2}Msg}{23}{subsubsection.9.3.4.2}
+\contentsline {section}{\numberline {9.4}DataType Class Reference}{24}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Detailed Description}{24}{subsection.9.4.1}
+\contentsline {section}{\numberline {9.5}Forest$<$ N, Nvalue, M, Mvalue $>$ Class Template Reference}{25}{section.9.5}
+\contentsline {subsection}{\numberline {9.5.1}Detailed Description}{26}{subsection.9.5.1}
+\contentsline {subsection}{\numberline {9.5.2}Constructor \& Destructor Documentation}{26}{subsection.9.5.2}
+\contentsline {subsubsection}{\numberline {9.5.2.1}Forest}{26}{subsubsection.9.5.2.1}
+\contentsline {subsubsection}{\numberline {9.5.2.2}$\sim $Forest}{27}{subsubsection.9.5.2.2}
+\contentsline {subsection}{\numberline {9.5.3}Member Function Documentation}{27}{subsection.9.5.3}
+\contentsline {subsubsection}{\numberline {9.5.3.1}assignGeom}{27}{subsubsection.9.5.3.1}
+\contentsline {subsubsection}{\numberline {9.5.3.2}checkGraphConsistency}{27}{subsubsection.9.5.3.2}
+\contentsline {subsubsection}{\numberline {9.5.3.3}checkNbrsOfNbrsConsistency}{27}{subsubsection.9.5.3.3}
+\contentsline {subsubsection}{\numberline {9.5.3.4}checkWithNbrs}{27}{subsubsection.9.5.3.4}
+\contentsline {subsubsection}{\numberline {9.5.3.5}combine}{27}{subsubsection.9.5.3.5}
+\contentsline {subsubsection}{\numberline {9.5.3.6}combinedLevel}{27}{subsubsection.9.5.3.6}
+\contentsline {subsubsection}{\numberline {9.5.3.7}comPatternConstruct}{28}{subsubsection.9.5.3.7}
+\contentsline {subsubsection}{\numberline {9.5.3.8}constructElementKeyForRcvdMessage}{28}{subsubsection.9.5.3.8}
+\contentsline {subsubsection}{\numberline {9.5.3.9}constructSeedKeyForRcvdMessage}{28}{subsubsection.9.5.3.9}
+\contentsline {subsubsection}{\numberline {9.5.3.10}convertBitsToDouble}{28}{subsubsection.9.5.3.10}
+\contentsline {subsubsection}{\numberline {9.5.3.11}convertDoubleToBits}{28}{subsubsection.9.5.3.11}
+\contentsline {subsubsection}{\numberline {9.5.3.12}createCommGraph}{28}{subsubsection.9.5.3.12}
+\contentsline {subsubsection}{\numberline {9.5.3.13}createNbrsOfNbrs}{28}{subsubsection.9.5.3.13}
+\contentsline {subsubsection}{\numberline {9.5.3.14}debug}{28}{subsubsection.9.5.3.14}
+\contentsline {subsubsection}{\numberline {9.5.3.15}debugDerefine}{28}{subsubsection.9.5.3.15}
+\contentsline {subsubsection}{\numberline {9.5.3.16}encodeGeometry}{28}{subsubsection.9.5.3.16}
+\contentsline {subsubsection}{\numberline {9.5.3.17}findFlipLevel}{28}{subsubsection.9.5.3.17}
+\contentsline {subsubsection}{\numberline {9.5.3.18}findSeedLevelForRcvdMessage}{29}{subsubsection.9.5.3.18}
+\contentsline {subsubsection}{\numberline {9.5.3.19}flipAll}{29}{subsubsection.9.5.3.19}
+\contentsline {subsubsection}{\numberline {9.5.3.20}flipForNbr}{29}{subsubsection.9.5.3.20}
+\contentsline {subsubsection}{\numberline {9.5.3.21}forestsize}{29}{subsubsection.9.5.3.21}
+\contentsline {subsubsection}{\numberline {9.5.3.22}fourToOneBalance}{29}{subsubsection.9.5.3.22}
+\contentsline {subsubsection}{\numberline {9.5.3.23}getDirections}{29}{subsubsection.9.5.3.23}
+\contentsline {subsubsection}{\numberline {9.5.3.24}getElemNbrs}{29}{subsubsection.9.5.3.24}
+\contentsline {subsubsection}{\numberline {9.5.3.25}getListEachTree}{29}{subsubsection.9.5.3.25}
+\contentsline {subsubsection}{\numberline {9.5.3.26}getMaxSeedsLevel}{29}{subsubsection.9.5.3.26}
+\contentsline {subsubsection}{\numberline {9.5.3.27}getNbrSeedLevel}{29}{subsubsection.9.5.3.27}
+\contentsline {subsubsection}{\numberline {9.5.3.28}getTotalSize}{29}{subsubsection.9.5.3.28}
+\contentsline {subsubsection}{\numberline {9.5.3.29}isInSeed}{29}{subsubsection.9.5.3.29}
+\contentsline {subsubsection}{\numberline {9.5.3.30}moveGeom}{30}{subsubsection.9.5.3.30}
+\contentsline {subsubsection}{\numberline {9.5.3.31}pushToDerefineEachTree}{30}{subsubsection.9.5.3.31}
+\contentsline {subsubsection}{\numberline {9.5.3.32}recoverAllZeroSingularity}{30}{subsubsection.9.5.3.32}
+\contentsline {subsubsection}{\numberline {9.5.3.33}refineEachTree}{30}{subsubsection.9.5.3.33}
+\contentsline {subsubsection}{\numberline {9.5.3.34}refineEachTreeVoxel}{30}{subsubsection.9.5.3.34}
+\contentsline {subsubsection}{\numberline {9.5.3.35}refineForestBalanced}{31}{subsubsection.9.5.3.35}
+\contentsline {subsubsection}{\numberline {9.5.3.36}removeAllZeroSingularity}{31}{subsubsection.9.5.3.36}
+\contentsline {subsubsection}{\numberline {9.5.3.37}retainFourToOneBalance}{31}{subsubsection.9.5.3.37}
+\contentsline {subsubsection}{\numberline {9.5.3.38}zoltanGeomrepart}{31}{subsubsection.9.5.3.38}
+\contentsline {subsection}{\numberline {9.5.4}Friends And Related Function Documentation}{31}{subsection.9.5.4}
+\contentsline {subsubsection}{\numberline {9.5.4.1}Phdf5}{31}{subsubsection.9.5.4.1}
+\contentsline {subsection}{\numberline {9.5.5}Member Data Documentation}{31}{subsection.9.5.5}
+\contentsline {subsubsection}{\numberline {9.5.5.1}ancestorcoords}{31}{subsubsection.9.5.5.1}
+\contentsline {subsubsection}{\numberline {9.5.5.2}ancestorlength}{31}{subsubsection.9.5.5.2}
+\contentsline {subsubsection}{\numberline {9.5.5.3}Com}{31}{subsubsection.9.5.5.3}
+\contentsline {subsubsection}{\numberline {9.5.5.4}destination}{31}{subsubsection.9.5.5.4}
+\contentsline {subsubsection}{\numberline {9.5.5.5}geom}{31}{subsubsection.9.5.5.5}
+\contentsline {subsubsection}{\numberline {9.5.5.6}graphComm}{31}{subsubsection.9.5.5.6}
+\contentsline {subsubsection}{\numberline {9.5.5.7}maxseedlevel}{32}{subsubsection.9.5.5.7}
+\contentsline {subsubsection}{\numberline {9.5.5.8}nbrsOfNbrs}{32}{subsubsection.9.5.5.8}
+\contentsline {subsubsection}{\numberline {9.5.5.9}npx}{32}{subsubsection.9.5.5.9}
+\contentsline {subsubsection}{\numberline {9.5.5.10}npy}{32}{subsubsection.9.5.5.10}
+\contentsline {subsubsection}{\numberline {9.5.5.11}npz}{32}{subsubsection.9.5.5.11}
+\contentsline {subsubsection}{\numberline {9.5.5.12}seeds}{32}{subsubsection.9.5.5.12}
+\contentsline {subsubsection}{\numberline {9.5.5.13}trees}{32}{subsubsection.9.5.5.13}
+\contentsline {subsubsection}{\numberline {9.5.5.14}zoltan\_\discretionary {-}{}{}out}{32}{subsubsection.9.5.5.14}
+\contentsline {subsubsection}{\numberline {9.5.5.15}zz}{32}{subsubsection.9.5.5.15}
+\contentsline {section}{\numberline {9.6}GraphData Struct Reference}{33}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}Detailed Description}{33}{subsection.9.6.1}
+\contentsline {subsection}{\numberline {9.6.2}Member Data Documentation}{33}{subsection.9.6.2}
+\contentsline {subsubsection}{\numberline {9.6.2.1}c}{33}{subsubsection.9.6.2.1}
+\contentsline {subsubsection}{\numberline {9.6.2.2}nbrGID}{33}{subsubsection.9.6.2.2}
+\contentsline {subsubsection}{\numberline {9.6.2.3}nbrIndex}{33}{subsubsection.9.6.2.3}
+\contentsline {subsubsection}{\numberline {9.6.2.4}nbrProc}{33}{subsubsection.9.6.2.4}
+\contentsline {subsubsection}{\numberline {9.6.2.5}numMyVertices}{33}{subsubsection.9.6.2.5}
+\contentsline {subsubsection}{\numberline {9.6.2.6}vertexGID}{33}{subsubsection.9.6.2.6}
+\contentsline {section}{\numberline {9.7}MeshData Struct Reference}{34}{section.9.7}
+\contentsline {subsection}{\numberline {9.7.1}Detailed Description}{34}{subsection.9.7.1}
+\contentsline {subsection}{\numberline {9.7.2}Member Data Documentation}{34}{subsection.9.7.2}
+\contentsline {subsubsection}{\numberline {9.7.2.1}c}{34}{subsubsection.9.7.2.1}
+\contentsline {subsubsection}{\numberline {9.7.2.2}myGlobalIDs}{34}{subsubsection.9.7.2.2}
+\contentsline {subsubsection}{\numberline {9.7.2.3}numGlobalPoints}{34}{subsubsection.9.7.2.3}
+\contentsline {subsubsection}{\numberline {9.7.2.4}numMyPoints}{34}{subsubsection.9.7.2.4}
+\contentsline {subsubsection}{\numberline {9.7.2.5}w}{34}{subsubsection.9.7.2.5}
+\contentsline {section}{\numberline {9.8}Message Struct Reference}{35}{section.9.8}
+\contentsline {subsection}{\numberline {9.8.1}Detailed Description}{35}{subsection.9.8.1}
+\contentsline {subsection}{\numberline {9.8.2}Member Function Documentation}{35}{subsection.9.8.2}
+\contentsline {subsubsection}{\numberline {9.8.2.1}print}{35}{subsubsection.9.8.2.1}
+\contentsline {subsection}{\numberline {9.8.3}Member Data Documentation}{35}{subsection.9.8.3}
+\contentsline {subsubsection}{\numberline {9.8.3.1}buf}{35}{subsubsection.9.8.3.1}
+\contentsline {subsubsection}{\numberline {9.8.3.2}count}{35}{subsubsection.9.8.3.2}
+\contentsline {subsubsection}{\numberline {9.8.3.3}datatype}{35}{subsubsection.9.8.3.3}
+\contentsline {subsubsection}{\numberline {9.8.3.4}reciever}{35}{subsubsection.9.8.3.4}
+\contentsline {subsubsection}{\numberline {9.8.3.5}request}{36}{subsubsection.9.8.3.5}
+\contentsline {subsubsection}{\numberline {9.8.3.6}sender}{36}{subsubsection.9.8.3.6}
+\contentsline {subsubsection}{\numberline {9.8.3.7}status}{36}{subsubsection.9.8.3.7}
+\contentsline {subsubsection}{\numberline {9.8.3.8}tag}{36}{subsubsection.9.8.3.8}
+\contentsline {section}{\numberline {9.9}MpiCom Struct Reference}{37}{section.9.9}
+\contentsline {subsection}{\numberline {9.9.1}Detailed Description}{37}{subsection.9.9.1}
+\contentsline {subsection}{\numberline {9.9.2}Constructor \& Destructor Documentation}{37}{subsection.9.9.2}
+\contentsline {subsubsection}{\numberline {9.9.2.1}MpiCom}{37}{subsubsection.9.9.2.1}
+\contentsline {subsubsection}{\numberline {9.9.2.2}MpiCom}{37}{subsubsection.9.9.2.2}
+\contentsline {subsection}{\numberline {9.9.3}Member Data Documentation}{37}{subsection.9.9.3}
+\contentsline {subsubsection}{\numberline {9.9.3.1}comsize}{37}{subsubsection.9.9.3.1}
+\contentsline {subsubsection}{\numberline {9.9.3.2}mpicom}{37}{subsubsection.9.9.3.2}
+\contentsline {subsubsection}{\numberline {9.9.3.3}myrank}{37}{subsubsection.9.9.3.3}
+\contentsline {section}{\numberline {9.10}Phdf5$<$ N, Nvalue, M, Mvalue $>$ Class Template Reference}{38}{section.9.10}
+\contentsline {subsection}{\numberline {9.10.1}Detailed Description}{38}{subsection.9.10.1}
+\contentsline {subsection}{\numberline {9.10.2}Constructor \& Destructor Documentation}{38}{subsection.9.10.2}
+\contentsline {subsubsection}{\numberline {9.10.2.1}Phdf5}{38}{subsubsection.9.10.2.1}
+\contentsline {subsubsection}{\numberline {9.10.2.2}$\sim $Phdf5}{38}{subsubsection.9.10.2.2}
+\contentsline {subsection}{\numberline {9.10.3}Member Function Documentation}{38}{subsection.9.10.3}
+\contentsline {subsubsection}{\numberline {9.10.3.1}writeMultiBlock}{38}{subsubsection.9.10.3.1}
+\contentsline {subsubsection}{\numberline {9.10.3.2}writePolyvertex}{39}{subsubsection.9.10.3.2}
+\contentsline {subsubsection}{\numberline {9.10.3.3}xdmfMultiBlock}{39}{subsubsection.9.10.3.3}
+\contentsline {subsubsection}{\numberline {9.10.3.4}xdmfPolyvertex}{39}{subsubsection.9.10.3.4}
+\contentsline {subsection}{\numberline {9.10.4}Member Data Documentation}{39}{subsection.9.10.4}
+\contentsline {subsubsection}{\numberline {9.10.4.1}totalnumber}{39}{subsubsection.9.10.4.1}
+\contentsline {section}{\numberline {9.11}stl::point Struct Reference}{40}{section.9.11}
+\contentsline {subsection}{\numberline {9.11.1}Detailed Description}{40}{subsection.9.11.1}
+\contentsline {subsection}{\numberline {9.11.2}Constructor \& Destructor Documentation}{40}{subsection.9.11.2}
+\contentsline {subsubsection}{\numberline {9.11.2.1}point}{40}{subsubsection.9.11.2.1}
+\contentsline {subsubsection}{\numberline {9.11.2.2}point}{40}{subsubsection.9.11.2.2}
+\contentsline {subsection}{\numberline {9.11.3}Member Data Documentation}{40}{subsection.9.11.3}
+\contentsline {subsubsection}{\numberline {9.11.3.1}x}{40}{subsubsection.9.11.3.1}
+\contentsline {subsubsection}{\numberline {9.11.3.2}y}{40}{subsubsection.9.11.3.2}
+\contentsline {subsubsection}{\numberline {9.11.3.3}z}{40}{subsubsection.9.11.3.3}
+\contentsline {section}{\numberline {9.12}stl::stl\_\discretionary {-}{}{}data Struct Reference}{41}{section.9.12}
+\contentsline {subsection}{\numberline {9.12.1}Detailed Description}{41}{subsection.9.12.1}
+\contentsline {subsection}{\numberline {9.12.2}Constructor \& Destructor Documentation}{41}{subsection.9.12.2}
+\contentsline {subsubsection}{\numberline {9.12.2.1}stl\_\discretionary {-}{}{}data}{41}{subsubsection.9.12.2.1}
+\contentsline {subsection}{\numberline {9.12.3}Member Data Documentation}{41}{subsection.9.12.3}
+\contentsline {subsubsection}{\numberline {9.12.3.1}name}{41}{subsubsection.9.12.3.1}
+\contentsline {subsubsection}{\numberline {9.12.3.2}triangles}{41}{subsubsection.9.12.3.2}
+\contentsline {section}{\numberline {9.13}Tree$<$ N, value $>$ Class Template Reference}{42}{section.9.13}
+\contentsline {subsection}{\numberline {9.13.1}Detailed Description}{44}{subsection.9.13.1}
+\contentsline {subsection}{\numberline {9.13.2}Constructor \& Destructor Documentation}{44}{subsection.9.13.2}
+\contentsline {subsubsection}{\numberline {9.13.2.1}Tree}{44}{subsubsection.9.13.2.1}
+\contentsline {subsubsection}{\numberline {9.13.2.2}Tree}{44}{subsubsection.9.13.2.2}
+\contentsline {subsubsection}{\numberline {9.13.2.3}$\sim $Tree}{44}{subsubsection.9.13.2.3}
+\contentsline {subsection}{\numberline {9.13.3}Member Function Documentation}{44}{subsection.9.13.3}
+\contentsline {subsubsection}{\numberline {9.13.3.1}addToDerefineList}{44}{subsubsection.9.13.3.1}
+\contentsline {subsubsection}{\numberline {9.13.3.2}addToList}{44}{subsubsection.9.13.3.2}
+\contentsline {subsubsection}{\numberline {9.13.3.3}begin}{44}{subsubsection.9.13.3.3}
+\contentsline {subsubsection}{\numberline {9.13.3.4}centroid}{44}{subsubsection.9.13.3.4}
+\contentsline {subsubsection}{\numberline {9.13.3.5}clearMesh}{45}{subsubsection.9.13.3.5}
+\contentsline {subsubsection}{\numberline {9.13.3.6}clearMortonSTL}{45}{subsubsection.9.13.3.6}
+\contentsline {subsubsection}{\numberline {9.13.3.7}clearRefineList}{45}{subsubsection.9.13.3.7}
+\contentsline {subsubsection}{\numberline {9.13.3.8}construct}{45}{subsubsection.9.13.3.8}
+\contentsline {subsubsection}{\numberline {9.13.3.9}constructHigherLevelNbrs}{45}{subsubsection.9.13.3.9}
+\contentsline {subsubsection}{\numberline {9.13.3.10}constructNonlocalHigherLevelNbrs}{45}{subsubsection.9.13.3.10}
+\contentsline {subsubsection}{\numberline {9.13.3.11}convertCoordToMorton}{45}{subsubsection.9.13.3.11}
+\contentsline {subsubsection}{\numberline {9.13.3.12}convertStl2Morton}{45}{subsubsection.9.13.3.12}
+\contentsline {subsubsection}{\numberline {9.13.3.13}count}{45}{subsubsection.9.13.3.13}
+\contentsline {subsubsection}{\numberline {9.13.3.14}Dbegin}{45}{subsubsection.9.13.3.14}
+\contentsline {subsubsection}{\numberline {9.13.3.15}Dend}{45}{subsubsection.9.13.3.15}
+\contentsline {subsubsection}{\numberline {9.13.3.16}derefine}{45}{subsubsection.9.13.3.16}
+\contentsline {subsubsection}{\numberline {9.13.3.17}derefineDerefineList}{46}{subsubsection.9.13.3.17}
+\contentsline {subsubsection}{\numberline {9.13.3.18}derefineDerefineList}{46}{subsubsection.9.13.3.18}
+\contentsline {subsubsection}{\numberline {9.13.3.19}enclosingBox}{46}{subsubsection.9.13.3.19}
+\contentsline {subsubsection}{\numberline {9.13.3.20}end}{46}{subsubsection.9.13.3.20}
+\contentsline {subsubsection}{\numberline {9.13.3.21}extractBoundary}{46}{subsubsection.9.13.3.21}
+\contentsline {subsubsection}{\numberline {9.13.3.22}extractBoundaryP}{46}{subsubsection.9.13.3.22}
+\contentsline {subsubsection}{\numberline {9.13.3.23}find}{46}{subsubsection.9.13.3.23}
+\contentsline {subsubsection}{\numberline {9.13.3.24}findFlipLevel}{46}{subsubsection.9.13.3.24}
+\contentsline {subsubsection}{\numberline {9.13.3.25}findInDerefine}{46}{subsubsection.9.13.3.25}
+\contentsline {subsubsection}{\numberline {9.13.3.26}flipForNbr}{47}{subsubsection.9.13.3.26}
+\contentsline {subsubsection}{\numberline {9.13.3.27}flipRefineElemTag}{47}{subsubsection.9.13.3.27}
+\contentsline {subsubsection}{\numberline {9.13.3.28}fourToOne}{47}{subsubsection.9.13.3.28}
+\contentsline {subsubsection}{\numberline {9.13.3.29}fourToOneP}{47}{subsubsection.9.13.3.29}
+\contentsline {subsubsection}{\numberline {9.13.3.30}getDirections}{47}{subsubsection.9.13.3.30}
+\contentsline {subsubsection}{\numberline {9.13.3.31}getKey}{47}{subsubsection.9.13.3.31}
+\contentsline {subsubsection}{\numberline {9.13.3.32}insertKey}{47}{subsubsection.9.13.3.32}
+\contentsline {subsubsection}{\numberline {9.13.3.33}isBoundary}{47}{subsubsection.9.13.3.33}
+\contentsline {subsubsection}{\numberline {9.13.3.34}isBoundary}{47}{subsubsection.9.13.3.34}
+\contentsline {subsubsection}{\numberline {9.13.3.35}isInMeshList}{47}{subsubsection.9.13.3.35}
+\contentsline {subsubsection}{\numberline {9.13.3.36}isInRefineList}{47}{subsubsection.9.13.3.36}
+\contentsline {subsubsection}{\numberline {9.13.3.37}isInsideSolid}{47}{subsubsection.9.13.3.37}
+\contentsline {subsubsection}{\numberline {9.13.3.38}IsInVectorList}{48}{subsubsection.9.13.3.38}
+\contentsline {subsubsection}{\numberline {9.13.3.39}level}{48}{subsubsection.9.13.3.39}
+\contentsline {subsubsection}{\numberline {9.13.3.40}mortonSTLclear}{48}{subsubsection.9.13.3.40}
+\contentsline {subsubsection}{\numberline {9.13.3.41}printMesh}{48}{subsubsection.9.13.3.41}
+\contentsline {subsubsection}{\numberline {9.13.3.42}pushToDerefinelist}{48}{subsubsection.9.13.3.42}
+\contentsline {subsubsection}{\numberline {9.13.3.43}pushToRefinelist}{48}{subsubsection.9.13.3.43}
+\contentsline {subsubsection}{\numberline {9.13.3.44}Rbegin}{48}{subsubsection.9.13.3.44}
+\contentsline {subsubsection}{\numberline {9.13.3.45}readDerefineList}{48}{subsubsection.9.13.3.45}
+\contentsline {subsubsection}{\numberline {9.13.3.46}readRefineList}{48}{subsubsection.9.13.3.46}
+\contentsline {subsubsection}{\numberline {9.13.3.47}refine}{48}{subsubsection.9.13.3.47}
+\contentsline {subsubsection}{\numberline {9.13.3.48}refinelistReset}{49}{subsubsection.9.13.3.48}
+\contentsline {subsubsection}{\numberline {9.13.3.49}refineListSize}{49}{subsubsection.9.13.3.49}
+\contentsline {subsubsection}{\numberline {9.13.3.50}refineRefineList}{49}{subsubsection.9.13.3.50}
+\contentsline {subsubsection}{\numberline {9.13.3.51}refineRefineList}{49}{subsubsection.9.13.3.51}
+\contentsline {subsubsection}{\numberline {9.13.3.52}removeFromDerefineList}{49}{subsubsection.9.13.3.52}
+\contentsline {subsubsection}{\numberline {9.13.3.53}Rend}{49}{subsubsection.9.13.3.53}
+\contentsline {subsubsection}{\numberline {9.13.3.54}reserve}{49}{subsubsection.9.13.3.54}
+\contentsline {subsubsection}{\numberline {9.13.3.55}retainFourToOne}{49}{subsubsection.9.13.3.55}
+\contentsline {subsubsection}{\numberline {9.13.3.56}siblings}{49}{subsubsection.9.13.3.56}
+\contentsline {subsubsection}{\numberline {9.13.3.57}size}{49}{subsubsection.9.13.3.57}
+\contentsline {subsection}{\numberline {9.13.4}Friends And Related Function Documentation}{49}{subsection.9.13.4}
+\contentsline {subsubsection}{\numberline {9.13.4.1}Hdf5Xmf}{49}{subsubsection.9.13.4.1}
+\contentsline {subsection}{\numberline {9.13.5}Member Data Documentation}{50}{subsection.9.13.5}
+\contentsline {subsubsection}{\numberline {9.13.5.1}ancestorcoords}{50}{subsubsection.9.13.5.1}
+\contentsline {subsubsection}{\numberline {9.13.5.2}ancestorkey}{50}{subsubsection.9.13.5.2}
+\contentsline {subsubsection}{\numberline {9.13.5.3}ancestorlength}{50}{subsubsection.9.13.5.3}
+\contentsline {subsubsection}{\numberline {9.13.5.4}boundarylist}{50}{subsubsection.9.13.5.4}
+\contentsline {subsubsection}{\numberline {9.13.5.5}derefinelist}{50}{subsubsection.9.13.5.5}
+\contentsline {subsubsection}{\numberline {9.13.5.6}mesh}{50}{subsubsection.9.13.5.6}
+\contentsline {subsubsection}{\numberline {9.13.5.7}mortonSTL}{50}{subsubsection.9.13.5.7}
+\contentsline {subsubsection}{\numberline {9.13.5.8}npx}{50}{subsubsection.9.13.5.8}
+\contentsline {subsubsection}{\numberline {9.13.5.9}npy}{50}{subsubsection.9.13.5.9}
+\contentsline {subsubsection}{\numberline {9.13.5.10}npz}{51}{subsubsection.9.13.5.10}
+\contentsline {subsubsection}{\numberline {9.13.5.11}refinelist}{51}{subsubsection.9.13.5.11}
+\contentsline {section}{\numberline {9.14}stl::triangle Struct Reference}{52}{section.9.14}
+\contentsline {subsection}{\numberline {9.14.1}Detailed Description}{52}{subsection.9.14.1}
+\contentsline {subsection}{\numberline {9.14.2}Constructor \& Destructor Documentation}{52}{subsection.9.14.2}
+\contentsline {subsubsection}{\numberline {9.14.2.1}triangle}{52}{subsubsection.9.14.2.1}
+\contentsline {subsection}{\numberline {9.14.3}Member Data Documentation}{52}{subsection.9.14.3}
+\contentsline {subsubsection}{\numberline {9.14.3.1}normal}{52}{subsubsection.9.14.3.1}
+\contentsline {subsubsection}{\numberline {9.14.3.2}v1}{52}{subsubsection.9.14.3.2}
+\contentsline {subsubsection}{\numberline {9.14.3.3}v2}{52}{subsubsection.9.14.3.3}
+\contentsline {subsubsection}{\numberline {9.14.3.4}v3}{52}{subsubsection.9.14.3.4}
+\contentsline {section}{\numberline {9.15}Vector3 Class Reference}{53}{section.9.15}
+\contentsline {subsection}{\numberline {9.15.1}Constructor \& Destructor Documentation}{53}{subsection.9.15.1}
+\contentsline {subsubsection}{\numberline {9.15.1.1}Vector3}{53}{subsubsection.9.15.1.1}
+\contentsline {subsubsection}{\numberline {9.15.1.2}Vector3}{53}{subsubsection.9.15.1.2}
+\contentsline {subsubsection}{\numberline {9.15.1.3}$\sim $Vector3}{53}{subsubsection.9.15.1.3}
+\contentsline {subsection}{\numberline {9.15.2}Member Function Documentation}{53}{subsection.9.15.2}
+\contentsline {subsubsection}{\numberline {9.15.2.1}Length}{53}{subsubsection.9.15.2.1}
+\contentsline {subsubsection}{\numberline {9.15.2.2}Normalize}{53}{subsubsection.9.15.2.2}
+\contentsline {subsubsection}{\numberline {9.15.2.3}Vectors}{53}{subsubsection.9.15.2.3}
+\contentsline {subsection}{\numberline {9.15.3}Member Data Documentation}{53}{subsection.9.15.3}
+\contentsline {subsubsection}{\numberline {9.15.3.1}X}{53}{subsubsection.9.15.3.1}
+\contentsline {subsubsection}{\numberline {9.15.3.2}Y}{53}{subsubsection.9.15.3.2}
+\contentsline {subsubsection}{\numberline {9.15.3.3}Z}{53}{subsubsection.9.15.3.3}
+\contentsline {section}{\numberline {9.16}Voxel$<$ N, value $>$ Class Template Reference}{54}{section.9.16}
+\contentsline {subsection}{\numberline {9.16.1}Detailed Description}{54}{subsection.9.16.1}
+\contentsline {subsection}{\numberline {9.16.2}Constructor \& Destructor Documentation}{54}{subsection.9.16.2}
+\contentsline {subsubsection}{\numberline {9.16.2.1}Voxel}{54}{subsubsection.9.16.2.1}
+\contentsline {subsubsection}{\numberline {9.16.2.2}$\sim $Voxel}{54}{subsubsection.9.16.2.2}
+\contentsline {subsection}{\numberline {9.16.3}Member Function Documentation}{55}{subsection.9.16.3}
+\contentsline {subsubsection}{\numberline {9.16.3.1}checkSiblingStatus}{55}{subsubsection.9.16.3.1}
+\contentsline {subsubsection}{\numberline {9.16.3.2}derefineGeomTree}{55}{subsubsection.9.16.3.2}
+\contentsline {subsubsection}{\numberline {9.16.3.3}distributeGeomToLeaves}{55}{subsubsection.9.16.3.3}
+\contentsline {subsubsection}{\numberline {9.16.3.4}generateSearchTree}{55}{subsubsection.9.16.3.4}
+\contentsline {subsubsection}{\numberline {9.16.3.5}IsInsideSegment}{55}{subsubsection.9.16.3.5}
+\contentsline {subsubsection}{\numberline {9.16.3.6}setLevel}{55}{subsubsection.9.16.3.6}
+\contentsline {subsection}{\numberline {9.16.4}Friends And Related Function Documentation}{55}{subsection.9.16.4}
+\contentsline {subsubsection}{\numberline {9.16.4.1}Hdf5XmfV}{55}{subsubsection.9.16.4.1}
+\contentsline {subsection}{\numberline {9.16.5}Member Data Documentation}{55}{subsection.9.16.5}
+\contentsline {subsubsection}{\numberline {9.16.5.1}lookup}{55}{subsubsection.9.16.5.1}
+\contentsline {subsubsection}{\numberline {9.16.5.2}maxlevel}{55}{subsubsection.9.16.5.2}
+\contentsline {subsubsection}{\numberline {9.16.5.3}mesh}{56}{subsubsection.9.16.5.3}
+\contentsline {subsubsection}{\numberline {9.16.5.4}numMax}{56}{subsubsection.9.16.5.4}
+\contentsline {section}{\numberline {9.17}Zoltan\_\discretionary {-}{}{}Out Struct Reference}{57}{section.9.17}
+\contentsline {subsection}{\numberline {9.17.1}Detailed Description}{57}{subsection.9.17.1}
+\contentsline {subsection}{\numberline {9.17.2}Member Data Documentation}{58}{subsection.9.17.2}
+\contentsline {subsubsection}{\numberline {9.17.2.1}changes}{58}{subsubsection.9.17.2.1}
+\contentsline {subsubsection}{\numberline {9.17.2.2}exportGlobalGids}{58}{subsubsection.9.17.2.2}
+\contentsline {subsubsection}{\numberline {9.17.2.3}exportLocalGids}{58}{subsubsection.9.17.2.3}
+\contentsline {subsubsection}{\numberline {9.17.2.4}exportProcs}{58}{subsubsection.9.17.2.4}
+\contentsline {subsubsection}{\numberline {9.17.2.5}exportToPart}{58}{subsubsection.9.17.2.5}
+\contentsline {subsubsection}{\numberline {9.17.2.6}importGlobalGids}{58}{subsubsection.9.17.2.6}
+\contentsline {subsubsection}{\numberline {9.17.2.7}importLocalGids}{58}{subsubsection.9.17.2.7}
+\contentsline {subsubsection}{\numberline {9.17.2.8}importProcs}{58}{subsubsection.9.17.2.8}
+\contentsline {subsubsection}{\numberline {9.17.2.9}importToPart}{58}{subsubsection.9.17.2.9}
+\contentsline {subsubsection}{\numberline {9.17.2.10}numExport}{58}{subsubsection.9.17.2.10}
+\contentsline {subsubsection}{\numberline {9.17.2.11}numGidEntries}{58}{subsubsection.9.17.2.11}
+\contentsline {subsubsection}{\numberline {9.17.2.12}numImport}{58}{subsubsection.9.17.2.12}
+\contentsline {subsubsection}{\numberline {9.17.2.13}numLidEntries}{58}{subsubsection.9.17.2.13}
+\contentsline {subsubsection}{\numberline {9.17.2.14}parts}{58}{subsubsection.9.17.2.14}
+\contentsline {chapter}{\numberline {10}File Documentation}{59}{chapter.10}
+\contentsline {section}{\numberline {10.1}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/communicate.cpp File Reference}{59}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Function Documentation}{59}{subsection.10.1.1}
+\contentsline {subsubsection}{\numberline {10.1.1.1}ConvertType}{59}{subsubsection.10.1.1.1}
+\contentsline {section}{\numberline {10.2}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/forest.cpp File Reference}{60}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}Define Documentation}{60}{subsection.10.2.1}
+\contentsline {subsubsection}{\numberline {10.2.1.1}CHARACTER}{60}{subsubsection.10.2.1.1}
+\contentsline {subsubsection}{\numberline {10.2.1.2}REORDER}{60}{subsubsection.10.2.1.2}
+\contentsline {subsubsection}{\numberline {10.2.1.3}SENDBOOL}{60}{subsubsection.10.2.1.3}
+\contentsline {section}{\numberline {10.3}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/include/communicate.h File Reference}{61}{section.10.3}
+\contentsline {section}{\numberline {10.4}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/include/datatype.h File Reference}{62}{section.10.4}
+\contentsline {subsection}{\numberline {10.4.1}Function Documentation}{63}{subsection.10.4.1}
+\contentsline {subsubsection}{\numberline {10.4.1.1}getAbstractionDataType}{63}{subsubsection.10.4.1.1}
+\contentsline {subsubsection}{\numberline {10.4.1.2}getAbstractionDataType$<$ char $>$}{63}{subsubsection.10.4.1.2}
+\contentsline {subsubsection}{\numberline {10.4.1.3}getAbstractionDataType$<$ double $>$}{63}{subsubsection.10.4.1.3}
+\contentsline {subsubsection}{\numberline {10.4.1.4}getAbstractionDataType$<$ float $>$}{63}{subsubsection.10.4.1.4}
+\contentsline {subsubsection}{\numberline {10.4.1.5}getAbstractionDataType$<$ int $>$}{63}{subsubsection.10.4.1.5}
+\contentsline {subsubsection}{\numberline {10.4.1.6}getAbstractionDataType$<$ long $>$}{63}{subsubsection.10.4.1.6}
+\contentsline {subsubsection}{\numberline {10.4.1.7}getAbstractionDataType$<$ nullptr\_\discretionary {-}{}{}t $>$}{63}{subsubsection.10.4.1.7}
+\contentsline {subsubsection}{\numberline {10.4.1.8}getAbstractionDataType$<$ short $>$}{63}{subsubsection.10.4.1.8}
+\contentsline {subsubsection}{\numberline {10.4.1.9}getAbstractionDataType$<$ unsigned char $>$}{63}{subsubsection.10.4.1.9}
+\contentsline {subsubsection}{\numberline {10.4.1.10}getAbstractionDataType$<$ unsigned int $>$}{63}{subsubsection.10.4.1.10}
+\contentsline {subsubsection}{\numberline {10.4.1.11}getAbstractionDataType$<$ unsigned long $>$}{63}{subsubsection.10.4.1.11}
+\contentsline {subsubsection}{\numberline {10.4.1.12}getAbstractionDataType$<$ unsigned short $>$}{63}{subsubsection.10.4.1.12}
+\contentsline {section}{\numberline {10.5}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/include/definitions.h File Reference}{64}{section.10.5}
+\contentsline {subsection}{\numberline {10.5.1}Define Documentation}{65}{subsection.10.5.1}
+\contentsline {subsubsection}{\numberline {10.5.1.1}BLUE}{65}{subsubsection.10.5.1.1}
+\contentsline {subsubsection}{\numberline {10.5.1.2}CYAN}{65}{subsubsection.10.5.1.2}
+\contentsline {subsubsection}{\numberline {10.5.1.3}GREEN}{65}{subsubsection.10.5.1.3}
+\contentsline {subsubsection}{\numberline {10.5.1.4}hash}{65}{subsubsection.10.5.1.4}
+\contentsline {subsubsection}{\numberline {10.5.1.5}MAGENTA}{65}{subsubsection.10.5.1.5}
+\contentsline {subsubsection}{\numberline {10.5.1.6}nonnative}{65}{subsubsection.10.5.1.6}
+\contentsline {subsubsection}{\numberline {10.5.1.7}RED}{65}{subsubsection.10.5.1.7}
+\contentsline {subsubsection}{\numberline {10.5.1.8}RESET}{65}{subsubsection.10.5.1.8}
+\contentsline {subsubsection}{\numberline {10.5.1.9}YELLOW}{65}{subsubsection.10.5.1.9}
+\contentsline {section}{\numberline {10.6}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/include/forest.h File Reference}{66}{section.10.6}
+\contentsline {section}{\numberline {10.7}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/include/parse\_\discretionary {-}{}{}stl.h File Reference}{67}{section.10.7}
+\contentsline {subsection}{\numberline {10.7.1}Function Documentation}{67}{subsection.10.7.1}
+\contentsline {subsubsection}{\numberline {10.7.1.1}checkMesh}{67}{subsubsection.10.7.1.1}
+\contentsline {section}{\numberline {10.8}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/include/phdf5.h File Reference}{68}{section.10.8}
+\contentsline {section}{\numberline {10.9}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/include/tree.h File Reference}{69}{section.10.9}
+\contentsline {section}{\numberline {10.10}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/include/typedefs.h File Reference}{70}{section.10.10}
+\contentsline {subsection}{\numberline {10.10.1}Define Documentation}{71}{subsection.10.10.1}
+\contentsline {subsubsection}{\numberline {10.10.1.1}DEBUG}{71}{subsubsection.10.10.1.1}
+\contentsline {subsubsection}{\numberline {10.10.1.2}Rma}{71}{subsubsection.10.10.1.2}
+\contentsline {subsection}{\numberline {10.10.2}Typedef Documentation}{71}{subsection.10.10.2}
+\contentsline {subsubsection}{\numberline {10.10.2.1}Center\_\discretionary {-}{}{}coords}{71}{subsubsection.10.10.2.1}
+\contentsline {subsection}{\numberline {10.10.3}Function Documentation}{71}{subsection.10.10.3}
+\contentsline {subsubsection}{\numberline {10.10.3.1}readSTLGeom}{71}{subsubsection.10.10.3.1}
+\contentsline {subsubsection}{\numberline {10.10.3.2}TwoPowN}{71}{subsubsection.10.10.3.2}
+\contentsline {subsubsection}{\numberline {10.10.3.3}zoltanGeometricPartitioner}{71}{subsubsection.10.10.3.3}
+\contentsline {section}{\numberline {10.11}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/main.cpp File Reference}{72}{section.10.11}
+\contentsline {subsection}{\numberline {10.11.1}Define Documentation}{72}{subsection.10.11.1}
+\contentsline {subsubsection}{\numberline {10.11.1.1}PROCSIZE}{72}{subsubsection.10.11.1.1}
+\contentsline {subsubsection}{\numberline {10.11.1.2}TREESIZE}{72}{subsubsection.10.11.1.2}
+\contentsline {subsubsection}{\numberline {10.11.1.3}WEIGHT}{72}{subsubsection.10.11.1.3}
+\contentsline {subsubsection}{\numberline {10.11.1.4}ZOLTAN\_\discretionary {-}{}{}GEOMETRIC\_\discretionary {-}{}{}PARTITION}{72}{subsubsection.10.11.1.4}
+\contentsline {subsubsection}{\numberline {10.11.1.5}ZOLTAN\_\discretionary {-}{}{}ON}{72}{subsubsection.10.11.1.5}
+\contentsline {subsection}{\numberline {10.11.2}Function Documentation}{72}{subsection.10.11.2}
+\contentsline {subsubsection}{\numberline {10.11.2.1}main}{72}{subsubsection.10.11.2.1}
+\contentsline {section}{\numberline {10.12}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/parse\_\discretionary {-}{}{}stl.cpp File Reference}{73}{section.10.12}
+\contentsline {subsection}{\numberline {10.12.1}Define Documentation}{73}{subsection.10.12.1}
+\contentsline {subsubsection}{\numberline {10.12.1.1}CHECK\_\discretionary {-}{}{}MESH}{73}{subsubsection.10.12.1.1}
+\contentsline {subsubsection}{\numberline {10.12.1.2}MYSCALE}{73}{subsubsection.10.12.1.2}
+\contentsline {subsection}{\numberline {10.12.2}Function Documentation}{73}{subsection.10.12.2}
+\contentsline {subsubsection}{\numberline {10.12.2.1}checkMesh}{73}{subsubsection.10.12.2.1}
+\contentsline {subsubsection}{\numberline {10.12.2.2}readSTLGeom}{73}{subsubsection.10.12.2.2}
+\contentsline {section}{\numberline {10.13}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/phdf5.cpp File Reference}{74}{section.10.13}
+\contentsline {subsection}{\numberline {10.13.1}Define Documentation}{74}{subsection.10.13.1}
+\contentsline {subsubsection}{\numberline {10.13.1.1}H5FILE}{74}{subsubsection.10.13.1.1}
+\contentsline {subsubsection}{\numberline {10.13.1.2}H5FILE\_\discretionary {-}{}{}NAME}{74}{subsubsection.10.13.1.2}
+\contentsline {subsubsection}{\numberline {10.13.1.3}offset0}{74}{subsubsection.10.13.1.3}
+\contentsline {subsubsection}{\numberline {10.13.1.4}offset1}{74}{subsubsection.10.13.1.4}
+\contentsline {subsubsection}{\numberline {10.13.1.5}XDMF\_\discretionary {-}{}{}NAME}{74}{subsubsection.10.13.1.5}
+\contentsline {subsection}{\numberline {10.13.2}Function Documentation}{74}{subsection.10.13.2}
+\contentsline {subsubsection}{\numberline {10.13.2.1}integer\_\discretionary {-}{}{}string}{74}{subsubsection.10.13.2.1}
+\contentsline {section}{\numberline {10.14}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/tree.cpp File Reference}{75}{section.10.14}
+\contentsline {section}{\numberline {10.15}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/voxel.cpp File Reference}{76}{section.10.15}
+\contentsline {section}{\numberline {10.16}/home/jhasbestan/Morton\_\discretionary {-}{}{}Parallel\_\discretionary {-}{}{}v0/src/zoltan.cpp File Reference}{77}{section.10.16}
+\contentsline {subsection}{\numberline {10.16.1}Define Documentation}{78}{subsection.10.16.1}
+\contentsline {subsubsection}{\numberline {10.16.1.1}TOL}{78}{subsubsection.10.16.1.1}
+\contentsline {subsection}{\numberline {10.16.2}Function Documentation}{78}{subsection.10.16.2}
+\contentsline {subsubsection}{\numberline {10.16.2.1}get\_\discretionary {-}{}{}geometry\_\discretionary {-}{}{}list}{78}{subsubsection.10.16.2.1}
+\contentsline {subsubsection}{\numberline {10.16.2.2}get\_\discretionary {-}{}{}num\_\discretionary {-}{}{}geometry}{78}{subsubsection.10.16.2.2}
+\contentsline {subsubsection}{\numberline {10.16.2.3}get\_\discretionary {-}{}{}number\_\discretionary {-}{}{}of\_\discretionary {-}{}{}objects}{78}{subsubsection.10.16.2.3}
+\contentsline {subsubsection}{\numberline {10.16.2.4}get\_\discretionary {-}{}{}object\_\discretionary {-}{}{}list}{78}{subsubsection.10.16.2.4}
+\contentsline {subsubsection}{\numberline {10.16.2.5}zoltanGeometricPartitioner}{78}{subsubsection.10.16.2.5}

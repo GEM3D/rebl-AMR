@@ -1,0 +1,35 @@
+\hypertarget{forest_8h}{}\section{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/forest.h File Reference}
+\label{forest_8h}\index{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/forest.\+h@{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/forest.\+h}}
+{\ttfamily \#include \char`\"{}communicate.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}definitions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tree.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}typedefs.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classForest}{Forest$<$ N, Nvalue, M, Mvalue $>$}}
+\begin{DoxyCompactList}\small\item\em template class that is a forest of octrees with semi-\/structured process topology \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$size\+\_\+t N, typename value $>$ }\\using \mbox{\hyperlink{forest_8h_af5ed6d1f9068fb44be5133afda14c2ac}{treelist}} = std\+::list$<$ \mbox{\hyperlink{classTree}{Tree}}$<$ N, value $>$ $>$
+\item 
+{\footnotesize template$<$size\+\_\+t M$>$ }\\using \mbox{\hyperlink{forest_8h_a4e31d150d0a7a955787a5deeba9361e8}{seed}} = std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$ M $>$, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{forest_8h_a4e31d150d0a7a955787a5deeba9361e8}\label{forest_8h_a4e31d150d0a7a955787a5deeba9361e8}} 
+\index{forest.\+h@{forest.\+h}!seed@{seed}}
+\index{seed@{seed}!forest.\+h@{forest.\+h}}
+\subsubsection{\texorpdfstring{seed}{seed}}
+{\footnotesize\ttfamily template$<$size\+\_\+t M$>$ \\
+using \mbox{\hyperlink{forest_8h_a4e31d150d0a7a955787a5deeba9361e8}{seed}} =  std\+::unordered\+\_\+map$<$\mbox{\hyperlink{definitions_8h_af8682350bd8bb38ee9023f7a0a310add}{morton}}$<$M$>$, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}$>$}
+
+\mbox{\Hypertarget{forest_8h_af5ed6d1f9068fb44be5133afda14c2ac}\label{forest_8h_af5ed6d1f9068fb44be5133afda14c2ac}} 
+\index{forest.\+h@{forest.\+h}!treelist@{treelist}}
+\index{treelist@{treelist}!forest.\+h@{forest.\+h}}
+\subsubsection{\texorpdfstring{treelist}{treelist}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename value $>$ \\
+using \mbox{\hyperlink{forest_8h_af5ed6d1f9068fb44be5133afda14c2ac}{treelist}} =  std\+::list$<$\mbox{\hyperlink{classTree}{Tree}}$<$N, value$>$ $>$}
+

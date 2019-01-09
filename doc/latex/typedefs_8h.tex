@@ -1,0 +1,79 @@
+\hypertarget{typedefs_8h}{}\section{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/typedefs.h File Reference}
+\label{typedefs_8h}\index{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/typedefs.\+h@{/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/typedefs.\+h}}
+{\ttfamily \#include \char`\"{}definitions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}zoltan.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structCenterCoords}{Center\+Coords}}
+\begin{DoxyCompactList}\small\item\em Stores the coordinate of the centroid of the elments. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structZoltan__Out}{Zoltan\+\_\+\+Out}}
+\begin{DoxyCompactList}\small\item\em This structure is an interface to store the output from Zoltan. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{structCenterCoords}{Center\+Coords}} $>$ \mbox{\hyperlink{typedefs_8h_a3ad6a5c3a7054ba718206a93e3af25b7}{Center\+\_\+coords}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{typedefs_8h_ace541fbdd611ae09846bbe0e8b54b64f}{zoltan\+Geometric\+Partitioner}} (const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} size, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} ncube\+\_\+total, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} offset, const int method, struct Zoltan\+\_\+\+Struct $\ast$zz, const \mbox{\hyperlink{typedefs_8h_a3ad6a5c3a7054ba718206a93e3af25b7}{Center\+\_\+coords}} \&X\+YZ, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$weight, \mbox{\hyperlink{structZoltan__Out}{Zoltan\+\_\+\+Out}} $\ast$zoltan\+\_\+out)
+\item 
+bool \mbox{\hyperlink{typedefs_8h_a7a93189a86c3e901a8fe171685158107}{zoltan\+Geometric\+Partitioner\+Serial}} (const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} size, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} ncube\+\_\+total, const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} offset, const int method, struct Zoltan\+\_\+\+Struct $\ast$zz, const \mbox{\hyperlink{typedefs_8h_a3ad6a5c3a7054ba718206a93e3af25b7}{Center\+\_\+coords}} \&X\+YZ, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$weight, \mbox{\hyperlink{structZoltan__Out}{Zoltan\+\_\+\+Out}} $\ast$zoltan\+\_\+out, int comsize)
+\item 
+void \mbox{\hyperlink{typedefs_8h_a92a3eab095a9ab05b1c07517e96c8abc}{tree\+Processor\+Topology}} (int argcs, char $\ast$p\+Args\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{typedefs_8h_a47250886fb81877a9da2712d465556a7}{read\+S\+T\+L\+Geom}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$$\ast$triangle\+\_\+center, int $\ast$nn, const \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$xyz)
+\item 
+void \mbox{\hyperlink{typedefs_8h_aab7dae82908895b1c10afff055e59ddd}{delete\+\_\+ship}} (\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$geom\+\_\+xyz, int $\ast$geom\+\_\+nn)
+\item 
+void \mbox{\hyperlink{typedefs_8h_a4426cdbd6cdcd155d8b6e94319f3f860}{Two\+PowN}} (\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} b, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$result)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{typedefs_8h_a3ad6a5c3a7054ba718206a93e3af25b7}\label{typedefs_8h_a3ad6a5c3a7054ba718206a93e3af25b7}} 
+\index{typedefs.\+h@{typedefs.\+h}!Center\+\_\+coords@{Center\+\_\+coords}}
+\index{Center\+\_\+coords@{Center\+\_\+coords}!typedefs.\+h@{typedefs.\+h}}
+\subsubsection{\texorpdfstring{Center\+\_\+coords}{Center\_coords}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{structCenterCoords}{Center\+Coords}}$>$ \mbox{\hyperlink{typedefs_8h_a3ad6a5c3a7054ba718206a93e3af25b7}{Center\+\_\+coords}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{typedefs_8h_aab7dae82908895b1c10afff055e59ddd}\label{typedefs_8h_aab7dae82908895b1c10afff055e59ddd}} 
+\index{typedefs.\+h@{typedefs.\+h}!delete\+\_\+ship@{delete\+\_\+ship}}
+\index{delete\+\_\+ship@{delete\+\_\+ship}!typedefs.\+h@{typedefs.\+h}}
+\subsubsection{\texorpdfstring{delete\+\_\+ship()}{delete\_ship()}}
+{\footnotesize\ttfamily void delete\+\_\+ship (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{geom\+\_\+xyz,  }\item[{int $\ast$}]{geom\+\_\+nn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{typedefs_8h_a47250886fb81877a9da2712d465556a7}\label{typedefs_8h_a47250886fb81877a9da2712d465556a7}} 
+\index{typedefs.\+h@{typedefs.\+h}!read\+S\+T\+L\+Geom@{read\+S\+T\+L\+Geom}}
+\index{read\+S\+T\+L\+Geom@{read\+S\+T\+L\+Geom}!typedefs.\+h@{typedefs.\+h}}
+\subsubsection{\texorpdfstring{read\+S\+T\+L\+Geom()}{readSTLGeom()}}
+{\footnotesize\ttfamily void read\+S\+T\+L\+Geom (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$$\ast$}]{triangle\+\_\+center,  }\item[{int $\ast$}]{nn,  }\item[{const \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{xyz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{typedefs_8h_a92a3eab095a9ab05b1c07517e96c8abc}\label{typedefs_8h_a92a3eab095a9ab05b1c07517e96c8abc}} 
+\index{typedefs.\+h@{typedefs.\+h}!tree\+Processor\+Topology@{tree\+Processor\+Topology}}
+\index{tree\+Processor\+Topology@{tree\+Processor\+Topology}!typedefs.\+h@{typedefs.\+h}}
+\subsubsection{\texorpdfstring{tree\+Processor\+Topology()}{treeProcessorTopology()}}
+{\footnotesize\ttfamily void tree\+Processor\+Topology (\begin{DoxyParamCaption}\item[{int}]{argcs,  }\item[{char $\ast$}]{p\+Args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{typedefs_8h_a4426cdbd6cdcd155d8b6e94319f3f860}\label{typedefs_8h_a4426cdbd6cdcd155d8b6e94319f3f860}} 
+\index{typedefs.\+h@{typedefs.\+h}!Two\+PowN@{Two\+PowN}}
+\index{Two\+PowN@{Two\+PowN}!typedefs.\+h@{typedefs.\+h}}
+\subsubsection{\texorpdfstring{Two\+Pow\+N()}{TwoPowN()}}
+{\footnotesize\ttfamily void Two\+PowN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{b,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{typedefs_8h_ace541fbdd611ae09846bbe0e8b54b64f}\label{typedefs_8h_ace541fbdd611ae09846bbe0e8b54b64f}} 
+\index{typedefs.\+h@{typedefs.\+h}!zoltan\+Geometric\+Partitioner@{zoltan\+Geometric\+Partitioner}}
+\index{zoltan\+Geometric\+Partitioner@{zoltan\+Geometric\+Partitioner}!typedefs.\+h@{typedefs.\+h}}
+\subsubsection{\texorpdfstring{zoltan\+Geometric\+Partitioner()}{zoltanGeometricPartitioner()}}
+{\footnotesize\ttfamily bool zoltan\+Geometric\+Partitioner (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{size,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{ncube\+\_\+total,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{offset,  }\item[{const int}]{method,  }\item[{struct Zoltan\+\_\+\+Struct $\ast$}]{zz,  }\item[{const \mbox{\hyperlink{typedefs_8h_a3ad6a5c3a7054ba718206a93e3af25b7}{Center\+\_\+coords}} \&}]{X\+YZ,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{weight,  }\item[{\mbox{\hyperlink{structZoltan__Out}{Zoltan\+\_\+\+Out}} $\ast$}]{zoltan\+\_\+out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{typedefs_8h_a7a93189a86c3e901a8fe171685158107}\label{typedefs_8h_a7a93189a86c3e901a8fe171685158107}} 
+\index{typedefs.\+h@{typedefs.\+h}!zoltan\+Geometric\+Partitioner\+Serial@{zoltan\+Geometric\+Partitioner\+Serial}}
+\index{zoltan\+Geometric\+Partitioner\+Serial@{zoltan\+Geometric\+Partitioner\+Serial}!typedefs.\+h@{typedefs.\+h}}
+\subsubsection{\texorpdfstring{zoltan\+Geometric\+Partitioner\+Serial()}{zoltanGeometricPartitionerSerial()}}
+{\footnotesize\ttfamily bool zoltan\+Geometric\+Partitioner\+Serial (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{size,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{ncube\+\_\+total,  }\item[{const \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{offset,  }\item[{const int}]{method,  }\item[{struct Zoltan\+\_\+\+Struct $\ast$}]{zz,  }\item[{const \mbox{\hyperlink{typedefs_8h_a3ad6a5c3a7054ba718206a93e3af25b7}{Center\+\_\+coords}} \&}]{X\+YZ,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{weight,  }\item[{\mbox{\hyperlink{structZoltan__Out}{Zoltan\+\_\+\+Out}} $\ast$}]{zoltan\+\_\+out,  }\item[{int}]{comsize }\end{DoxyParamCaption})}
+

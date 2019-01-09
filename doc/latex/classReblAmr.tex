@@ -1,0 +1,252 @@
+\hypertarget{classReblAmr}{}\section{Rebl\+Amr$<$ N, Nvalue, M, Mvalue $>$ Class Template Reference}
+\label{classReblAmr}\index{Rebl\+Amr$<$ N, Nvalue, M, Mvalue $>$@{Rebl\+Amr$<$ N, Nvalue, M, Mvalue $>$}}
+
+
+{\ttfamily \#include $<$Rebl\+Amr.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classReblAmr_a488d8ddc17e846da861a675599542106}{Rebl\+Amr}} (int argcs, char $\ast$p\+Args\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$length, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$coords, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nx, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} ny, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nz)
+\item 
+void \mbox{\hyperlink{classReblAmr_a907b8f289b180b19c23a50ad63a2cfde}{generate\+Proc\+Topology}} ()
+\item 
+void \mbox{\hyperlink{classReblAmr_ace3c175fbab25b21c8a7174a7d90b16c}{count\+Pointsin\+Box}} ()
+\item 
+void \mbox{\hyperlink{classReblAmr_a1d870bec577ca1e6a0a649a820984fee}{asign\+Weights\+For\+Part}} ()
+\item 
+void \mbox{\hyperlink{classReblAmr_a5669456094f8fe106dd52af705ca9697}{assign\+Part\+To\+Proc}} ()
+\item 
+void \mbox{\hyperlink{classReblAmr_ac1be40e71c4df40ba3d4fb0086a710bf}{distribute\+Topology}} ()
+\item 
+void \mbox{\hyperlink{classReblAmr_a432a0fbbe5961e5bc972360c3bc28dce}{M\+P\+I\+Start\+Up}} ()
+\item 
+void \mbox{\hyperlink{classReblAmr_afd423ffee7cd189fc1f2c78236e66bac}{forest\+Construct}} (int argcs, char $\ast$p\+Args\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$length, \mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$coords, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nx, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} ny, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} nz)
+\item 
+void \mbox{\hyperlink{classReblAmr_ad6f63b60c46c82769a9d865f44a329dd}{set\+Forest\+Params}} ()
+\item 
+void \mbox{\hyperlink{classReblAmr_a664f6f7959bec8b2f38b9ee0a1747298}{create\+Com\+Pattern}} ()
+\item 
+void \mbox{\hyperlink{classReblAmr_ab35c58d7ff40251f6021688172eda329}{move\+Geometry}} (double $\ast$xx)
+\item 
+void \mbox{\hyperlink{classReblAmr_aaa3c7e59843ba6603e848c2406385fc9}{refine\+Forest}} ()
+\item 
+void \mbox{\hyperlink{classReblAmr_acd82ccef4a03c7c8c75e1cd4923d9eaa}{get\+Total\+Mesh\+Size}} ()
+\item 
+void \mbox{\hyperlink{classReblAmr_ae457adbea6445bc3a407b3e4ee1aa06b}{write\+Mesh}} ()
+\item 
+void \mbox{\hyperlink{classReblAmr_a1a5f144fa6c749227315f0098bc9ac7f}{write\+Run\+Info}} ()
+\item 
+\mbox{\hyperlink{classReblAmr_af52059b5251847e324784367498930a7}{$\sim$\+Rebl\+Amr}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} \mbox{\hyperlink{classReblAmr_abadf47bfc4c8453e3f9633df36e81ada}{xyz1}} \mbox{[}6\mbox{]}
+\item 
+\mbox{\hyperlink{classTree}{Tree}}$<$ \mbox{\hyperlink{params_8h_a869e77c8856c40dc7369197ee4ee8059ab3d1097d7132ac8b8c33439eb2e7c02f}{P\+R\+O\+C\+S\+I\+ZE}}, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $>$ \mbox{\hyperlink{classReblAmr_af59560765779ccba3b9722e2edfb0ae5}{Proc}}
+\item 
+\mbox{\hyperlink{classGeomSTL}{Geom\+S\+TL}} \mbox{\hyperlink{classReblAmr_a578fdac81e33fdc2098a77aa284a419c}{G\+MT}}
+\item 
+int \mbox{\hyperlink{classReblAmr_a5297343e897b4590989cec2d14895586}{proclevel}}
+\item 
+int \mbox{\hyperlink{classReblAmr_ac79b3649d10d28063e96be4144c4560a}{meshlevel}}
+\item 
+\mbox{\hyperlink{classPartition}{Partition}} \mbox{\hyperlink{classReblAmr_a26e32330b066f45fe5e12f65d92e3fc3}{Part}}
+\item 
+\mbox{\hyperlink{structMpiCom}{Mpi\+Com}} \mbox{\hyperlink{classReblAmr_adf0b8e77455c3078cd6fb3049d9cbf95}{Com}}
+\item 
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}} $\ast$ \mbox{\hyperlink{classReblAmr_a89c3a7a5caa752d480fddeab19696eb3}{ID}} =nullptr
+\item 
+\mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$ N, Nvalue, M, Mvalue, \mbox{\hyperlink{classTree}{Tree}}$<$ M, Mvalue $>$ $>$ \mbox{\hyperlink{classReblAmr_a7f5abdc0afc3fcd2c62ae7e52f61a2fa}{Forest}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classReblAmr_a488d8ddc17e846da861a675599542106}\label{classReblAmr_a488d8ddc17e846da861a675599542106}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!Rebl\+Amr@{Rebl\+Amr}}
+\index{Rebl\+Amr@{Rebl\+Amr}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{Rebl\+Amr()}{ReblAmr()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+\mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::\mbox{\hyperlink{classReblAmr}{Rebl\+Amr}} (\begin{DoxyParamCaption}\item[{int}]{argcs,  }\item[{char $\ast$}]{p\+Args\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{length,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{coords,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nx,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{ny,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nz }\end{DoxyParamCaption})}
+
+class constructor \mbox{\Hypertarget{classReblAmr_af52059b5251847e324784367498930a7}\label{classReblAmr_af52059b5251847e324784367498930a7}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!````~Rebl\+Amr@{$\sim$\+Rebl\+Amr}}
+\index{````~Rebl\+Amr@{$\sim$\+Rebl\+Amr}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{$\sim$\+Rebl\+Amr()}{~ReblAmr()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+\mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::$\sim$\mbox{\hyperlink{classReblAmr}{Rebl\+Amr}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+writes out the log file 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classReblAmr_a1d870bec577ca1e6a0a649a820984fee}\label{classReblAmr_a1d870bec577ca1e6a0a649a820984fee}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!asign\+Weights\+For\+Part@{asign\+Weights\+For\+Part}}
+\index{asign\+Weights\+For\+Part@{asign\+Weights\+For\+Part}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{asign\+Weights\+For\+Part()}{asignWeightsForPart()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::asign\+Weights\+For\+Part (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+assigns wights for each element for weighted partitioning \mbox{\Hypertarget{classReblAmr_a5669456094f8fe106dd52af705ca9697}\label{classReblAmr_a5669456094f8fe106dd52af705ca9697}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!assign\+Part\+To\+Proc@{assign\+Part\+To\+Proc}}
+\index{assign\+Part\+To\+Proc@{assign\+Part\+To\+Proc}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{assign\+Part\+To\+Proc()}{assignPartToProc()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::assign\+Part\+To\+Proc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Partitions and assigns each element to the corresponding process accordignly \mbox{\Hypertarget{classReblAmr_ace3c175fbab25b21c8a7174a7d90b16c}\label{classReblAmr_ace3c175fbab25b21c8a7174a7d90b16c}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!count\+Pointsin\+Box@{count\+Pointsin\+Box}}
+\index{count\+Pointsin\+Box@{count\+Pointsin\+Box}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{count\+Pointsin\+Box()}{countPointsinBox()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::count\+Pointsin\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Calculates the weights to be used for Partitioning Algorithms \mbox{\Hypertarget{classReblAmr_a664f6f7959bec8b2f38b9ee0a1747298}\label{classReblAmr_a664f6f7959bec8b2f38b9ee0a1747298}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!create\+Com\+Pattern@{create\+Com\+Pattern}}
+\index{create\+Com\+Pattern@{create\+Com\+Pattern}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{create\+Com\+Pattern()}{createComPattern()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::create\+Com\+Pattern (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+constructs communication pattern \mbox{\Hypertarget{classReblAmr_ac1be40e71c4df40ba3d4fb0086a710bf}\label{classReblAmr_ac1be40e71c4df40ba3d4fb0086a710bf}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!distribute\+Topology@{distribute\+Topology}}
+\index{distribute\+Topology@{distribute\+Topology}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{distribute\+Topology()}{distributeTopology()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::distribute\+Topology (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classReblAmr_afd423ffee7cd189fc1f2c78236e66bac}\label{classReblAmr_afd423ffee7cd189fc1f2c78236e66bac}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!forest\+Construct@{forest\+Construct}}
+\index{forest\+Construct@{forest\+Construct}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{forest\+Construct()}{forestConstruct()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::forest\+Construct (\begin{DoxyParamCaption}\item[{int}]{argcs,  }\item[{char $\ast$}]{p\+Args\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{length,  }\item[{\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} $\ast$}]{coords,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nx,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{ny,  }\item[{\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}}]{nz }\end{DoxyParamCaption})}
+
+constructor of the forest object \mbox{\Hypertarget{classReblAmr_a907b8f289b180b19c23a50ad63a2cfde}\label{classReblAmr_a907b8f289b180b19c23a50ad63a2cfde}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!generate\+Proc\+Topology@{generate\+Proc\+Topology}}
+\index{generate\+Proc\+Topology@{generate\+Proc\+Topology}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{generate\+Proc\+Topology()}{generateProcTopology()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::generate\+Proc\+Topology (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Generates processor Topology which is a lower level \mbox{\hyperlink{classTree}{Tree}} \mbox{\Hypertarget{classReblAmr_acd82ccef4a03c7c8c75e1cd4923d9eaa}\label{classReblAmr_acd82ccef4a03c7c8c75e1cd4923d9eaa}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!get\+Total\+Mesh\+Size@{get\+Total\+Mesh\+Size}}
+\index{get\+Total\+Mesh\+Size@{get\+Total\+Mesh\+Size}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{get\+Total\+Mesh\+Size()}{getTotalMeshSize()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::get\+Total\+Mesh\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return the global mesh size \mbox{\Hypertarget{classReblAmr_ab35c58d7ff40251f6021688172eda329}\label{classReblAmr_ab35c58d7ff40251f6021688172eda329}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!move\+Geometry@{move\+Geometry}}
+\index{move\+Geometry@{move\+Geometry}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{move\+Geometry()}{moveGeometry()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::move\+Geometry (\begin{DoxyParamCaption}\item[{double $\ast$}]{xx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classReblAmr_a432a0fbbe5961e5bc972360c3bc28dce}\label{classReblAmr_a432a0fbbe5961e5bc972360c3bc28dce}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!M\+P\+I\+Start\+Up@{M\+P\+I\+Start\+Up}}
+\index{M\+P\+I\+Start\+Up@{M\+P\+I\+Start\+Up}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{M\+P\+I\+Start\+Up()}{MPIStartUp()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::M\+P\+I\+Start\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+duplicates and starts up its own Communicator \mbox{\Hypertarget{classReblAmr_aaa3c7e59843ba6603e848c2406385fc9}\label{classReblAmr_aaa3c7e59843ba6603e848c2406385fc9}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!refine\+Forest@{refine\+Forest}}
+\index{refine\+Forest@{refine\+Forest}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{refine\+Forest()}{refineForest()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::refine\+Forest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+performs refinement on forest \mbox{\Hypertarget{classReblAmr_ad6f63b60c46c82769a9d865f44a329dd}\label{classReblAmr_ad6f63b60c46c82769a9d865f44a329dd}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!set\+Forest\+Params@{set\+Forest\+Params}}
+\index{set\+Forest\+Params@{set\+Forest\+Params}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{set\+Forest\+Params()}{setForestParams()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::set\+Forest\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+sets some parameters for forest \mbox{\Hypertarget{classReblAmr_ae457adbea6445bc3a407b3e4ee1aa06b}\label{classReblAmr_ae457adbea6445bc3a407b3e4ee1aa06b}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!write\+Mesh@{write\+Mesh}}
+\index{write\+Mesh@{write\+Mesh}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{write\+Mesh()}{writeMesh()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::write\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+writes out mesh in hdf5 format \mbox{\Hypertarget{classReblAmr_a1a5f144fa6c749227315f0098bc9ac7f}\label{classReblAmr_a1a5f144fa6c749227315f0098bc9ac7f}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!write\+Run\+Info@{write\+Run\+Info}}
+\index{write\+Run\+Info@{write\+Run\+Info}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{write\+Run\+Info()}{writeRunInfo()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue , size\+\_\+t M, typename Mvalue $>$ \\
+void \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::write\+Run\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classReblAmr_adf0b8e77455c3078cd6fb3049d9cbf95}\label{classReblAmr_adf0b8e77455c3078cd6fb3049d9cbf95}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!Com@{Com}}
+\index{Com@{Com}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{Com}{Com}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue$>$ \\
+\mbox{\hyperlink{structMpiCom}{Mpi\+Com}} \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::Com\hspace{0.3cm}{\ttfamily [private]}}
+
+communicator of the class \mbox{\Hypertarget{classReblAmr_a7f5abdc0afc3fcd2c62ae7e52f61a2fa}\label{classReblAmr_a7f5abdc0afc3fcd2c62ae7e52f61a2fa}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!Forest@{Forest}}
+\index{Forest@{Forest}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{Forest}{Forest}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue$>$ \\
+\mbox{\hyperlink{classTemplateForest}{Template\+Forest}}$<$N,Nvalue,M,Mvalue,\mbox{\hyperlink{classTree}{Tree}}$<$M,Mvalue$>$ $>$ \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::\mbox{\hyperlink{classForest}{Forest}}\hspace{0.3cm}{\ttfamily [private]}}
+
+main forest class \mbox{\Hypertarget{classReblAmr_a578fdac81e33fdc2098a77aa284a419c}\label{classReblAmr_a578fdac81e33fdc2098a77aa284a419c}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!G\+MT@{G\+MT}}
+\index{G\+MT@{G\+MT}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{G\+MT}{GMT}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue$>$ \\
+\mbox{\hyperlink{classGeomSTL}{Geom\+S\+TL}} \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::G\+MT\hspace{0.3cm}{\ttfamily [private]}}
+
+object to read and manipulate the S\+TL file \mbox{\Hypertarget{classReblAmr_a89c3a7a5caa752d480fddeab19696eb3}\label{classReblAmr_a89c3a7a5caa752d480fddeab19696eb3}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!ID@{ID}}
+\index{ID@{ID}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue$>$ \\
+\mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}$\ast$ \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::ID =nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+container used for partitioning \mbox{\Hypertarget{classReblAmr_ac79b3649d10d28063e96be4144c4560a}\label{classReblAmr_ac79b3649d10d28063e96be4144c4560a}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!meshlevel@{meshlevel}}
+\index{meshlevel@{meshlevel}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{meshlevel}{meshlevel}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue$>$ \\
+int \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::meshlevel\hspace{0.3cm}{\ttfamily [private]}}
+
+refinement level for each seed \mbox{\Hypertarget{classReblAmr_a26e32330b066f45fe5e12f65d92e3fc3}\label{classReblAmr_a26e32330b066f45fe5e12f65d92e3fc3}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!Part@{Part}}
+\index{Part@{Part}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{Part}{Part}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue$>$ \\
+\mbox{\hyperlink{classPartition}{Partition}} \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::Part\hspace{0.3cm}{\ttfamily [private]}}
+
+object used for partitioning \mbox{\Hypertarget{classReblAmr_af59560765779ccba3b9722e2edfb0ae5}\label{classReblAmr_af59560765779ccba3b9722e2edfb0ae5}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!Proc@{Proc}}
+\index{Proc@{Proc}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{Proc}{Proc}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue$>$ \\
+\mbox{\hyperlink{classTree}{Tree}}$<$\mbox{\hyperlink{params_8h_a869e77c8856c40dc7369197ee4ee8059ab3d1097d7132ac8b8c33439eb2e7c02f}{P\+R\+O\+C\+S\+I\+ZE}}, \mbox{\hyperlink{definitions_8h_a69aa29b598b851b0640aa225a9e5d61d}{uint}}$>$ \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::Proc\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{classTree}{Tree}} processor topology \mbox{\Hypertarget{classReblAmr_a5297343e897b4590989cec2d14895586}\label{classReblAmr_a5297343e897b4590989cec2d14895586}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!proclevel@{proclevel}}
+\index{proclevel@{proclevel}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{proclevel}{proclevel}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue$>$ \\
+int \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::proclevel\hspace{0.3cm}{\ttfamily [private]}}
+
+Initial refinement level for domain decomposition \mbox{\Hypertarget{classReblAmr_abadf47bfc4c8453e3f9633df36e81ada}\label{classReblAmr_abadf47bfc4c8453e3f9633df36e81ada}} 
+\index{Rebl\+Amr@{Rebl\+Amr}!xyz1@{xyz1}}
+\index{xyz1@{xyz1}!Rebl\+Amr@{Rebl\+Amr}}
+\subsubsection{\texorpdfstring{xyz1}{xyz1}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename Nvalue, size\+\_\+t M, typename Mvalue$>$ \\
+\mbox{\hyperlink{definitions_8h_aedc0ad84d1e764530814f57ad931d02a}{real}} \mbox{\hyperlink{classReblAmr}{Rebl\+Amr}}$<$ N, Nvalue, M, Mvalue $>$\+::xyz1\mbox{[}6\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/include/\mbox{\hyperlink{ReblAmr_8h}{Rebl\+Amr.\+h}}\item 
+/ihome/isenocak/jaber/\+Morton\+\_\+\+Parallel\+\_\+v0/test/\+Morton\+\_\+\+Parallel\+\_\+v0/src/\mbox{\hyperlink{ReblAmr_8cpp}{Rebl\+Amr.\+cpp}}\end{DoxyCompactItemize}
